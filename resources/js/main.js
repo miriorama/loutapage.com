@@ -66,6 +66,7 @@ var LT = (function(){
     {date: '06/05', title: 'Officine Corsare', place: 'Torino', lat: 45.073439, lon:7.703500},
     {date: '07/05', title: 'Rock\'n\'food', place: 'Savigliano (CN)', lat: 44.648495, lon:7.639103},
     {date: '14/05', title: 'Les Festejades', place: 'Gruissans (Francia)', lat: 43.107052, lon:3.086181},
+    {date: '27/05', title: 'Giro d\'Italia', place: 'Vinadio (CN)', lat: 44.232910, lon:7.105365},
     {date: '03/06', title: 'Folkampestre', place: 'Montevecchio (LC)', lat: 45.727021, lon:9.351164},
     {date: '11/06', title: 'Levens (Francia)', place: 'Festin dou Boutaù', lat: 43.859184, lon:7.225960},
     {date: '18/06', title: 'Coniolo in Folk', place: 'Coniolo (AL)', lat: 45.147654, lon:8.373502},
@@ -73,6 +74,7 @@ var LT = (function(){
     {date: '07/07', title: 'Piovono Salsicce', place: 'Villastellone (TO)', lat: 44.921204, lon:7.744541},
     {date: '09/07', title: 'Festival dell\'Immateriale', place: 'Bannio Anzino (VB)', lat: 45.984741, lon:8.155819},
     {date: '16/07', title: 'Le Basse del Troll', place: 'Cuneo', lat: 44.392833, lon:7.532394},
+    {date: '23/07', title: '', place: 'Olivetta S. Michele (IM)', lat: 43.879856, lon:7.514627},
     {date: '13/08', title: '', place: 'Pagno (CN)', lat: 44.612944, lon:7.428961},
     {date: '18/08', title: 'Hestiv\'Òc Festival', place: 'Pau (Francia)', lat: 43.298790, lon:-0.37598},
     {date: '19/08', title: '', place: 'Bréole (Francia)', lat: 44.457101, lon:6.291742}
