@@ -1,0 +1,7 @@
+SetOutputFilter DEFLATE
+AddOutputFilter DEFLATE text/css
+
+# 1 Month for most static assets
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico|svg|woff)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>

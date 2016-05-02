@@ -1,0 +1,429 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	padding-bottom: 50px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-transform: uppercase;
+	font-weight: 100;
+}
+h1{
+	font-size: 40px;
+}
+
+.modal a {
+  transition: color 0.4s;
+  color: #E75757;
+}
+.modal a:link,
+.modal a:visited { color: #CE3232; }
+.modal a:hover   { color: #CE3232; }
+.modal a:active  {
+  color: #CE3232;
+}
+
+.navbar {
+	height: 50px;
+	font-weight: 300;
+	text-transform: uppercase;
+	border:none;
+}
+.nav>li>a {
+  padding: 15px 10px;
+}
+
+.social-button-container {
+  margin-top: 5px;
+}
+
+blockquote {
+	padding: 0px 20px;
+  border-color: #e75757;
+}
+blockquote footer:before {
+	content: '';
+}
+
+.section {
+	min-height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 30px 0;
+}
+
+.column {
+	float: none;
+	color: #fff;
+  background-color: rgba(231,87,87,0.9);
+  margin: 0 30px;
+  padding: 30px;
+}
+.column h1 {
+	margin: 0 0 15px 0;
+}
+
+/* Section: LOADING */
+.section-loading {
+	position: fixed;
+	width: 100%;
+	height:100%;
+	background-color: #222222;
+	z-index: 9999;
+	color:#fff;
+}
+
+/* Section: LOU TAPAGE */
+#loutapage {
+	background-color: #e75757;
+	background:url("../img/bkg-lou-tapage.jpg") no-repeat center center;	
+  background-size: cover;
+  height: 100%;
+}
+#loutapage h1 {
+	color:#e75757;
+}
+#loutapage .thumbnail {
+	margin-top: 30px;
+	border:none;
+	padding:0;
+	box-shadow: 0px 0px 25px #400;
+}
+#loutapage .logo {
+	width: 100%;
+	height: 100%;
+	background: url("../img/logo-lou-tapage.svg") no-repeat center center;
+	background-size: contain;
+	opacity: 0.7;
+}
+
+/* Section: FINISTERRE */
+#finisterre a {
+  transition: color 0.4s;
+  color: #E75757;
+}
+#finisterre a:link,
+#finisterre a:visited { color: #D24F4F; }
+#finisterre a:hover   { color: #D24F4F; }
+#finisterre a:active  {
+  color: #D24F4F;
+}
+
+#finisterre {
+	background-color: #C5C5C5;
+	background: url("../img/bkg-finisterre.jpg") no-repeat center center;
+	background-size: cover;
+	font-weight: 300;
+}
+#finisterre h1 {
+	color: #e75757;
+}
+#finisterre p {
+	text-transform: none;
+}
+
+.finisterre-cover {
+	width: 100%;
+	border: 5px solid #eee;
+}
+
+/* Section: CONCERTI */
+#concerti {
+	color:#fff;
+	background-color: #cdcdcd;
+}
+#concerti ul {
+	padding: 0;
+	list-style: none;
+}
+#concerti li {
+	border: 0;
+  background-color: transparent;
+  margin-bottom: 1px;
+  font-weight: 300;
+  padding: 2px 0;
+  font-size: 16px;
+}
+#concerti .date {
+	position: absolute;
+}
+#concerti .city {
+	color: #000;
+  margin: 0 10px 0 55px;
+}
+#concerti #map {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	color: #000;
+  text-align: center;
+
+	height: 100%;
+	width: 100%;
+}
+#concerti #map h4 {
+	font-weight: bold;
+}
+#concerti #map .maps-content {
+	font-size: 16px;
+}
+
+/* Section: MEDIA */
+#media {
+  padding: 0;
+  height: 100%;
+  background-color: #000;
+}
+#media .column {
+  margin: 0;
+  left: 30px;
+  bottom: 30px;
+  padding: 15px;
+}
+#media #video {
+	height: 100%;
+	width: 100%;
+}
+
+#media .carousel,
+#media .carousel-inner,
+#media .item {
+	height: 100%;
+}
+#media .item {
+	height: 100%;
+}
+#media .item:after {
+	content: "";
+  background-image: url(../img/play-icon.png);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.9;
+	cursor: pointer;
+}
+#media .carousel-control {
+	width: 6%;
+	transition-duration: 0.5s; 
+}
+#media .carousel-background {
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#media .carousel-control.hide  {
+	display: block !important;
+	opacity: 0;
+}
+
+#media .carousel-caption {
+	font-size: 24px;
+  text-shadow: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+#modalVideo {
+	padding: 0 !important;
+	overflow: hidden;
+
+
+
+  margin: auto;
+
+}
+
+#modalVideo .modal-dialog {
+  margin: auto;
+  height: 80vh;
+  width: 141.6vh;
+  max-height: 45vw;
+  max-width: 80vw;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#modalVideo .modal-body {
+	padding: 0;
+  background-color: #000;
+}
+#modalVideo .modal-footer {
+  border: none;
+  background-color: #000;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Section: BIOGRAFIA */
+#biografia {
+	color: #e75757;
+	background-color: #cdcdcd;
+	background:url("../img/bkg-biografia.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+/* Section: DISCOGRAFIA */
+#discografia a {
+  transition: background-color 0.4s;
+	border: none;
+	background-color: #e75757;
+}
+
+#discografia a:hover   { background-color: #BB4444; }
+#discografia a:active  {
+  background-color: #BB4444;
+}
+
+#discografia {
+	padding: 30px;
+	background-color: #cdcdcd;
+	background:url("../img/bkg-finisterre.jpg") no-repeat center center;
+	background-size: cover;
+}
+#discografia .discografia-container {
+	margin-right: -15px;
+	overflow:hidden;
+}
+.discografia-disc {
+  width: 16.66666667%;
+  float: left;
+  padding: 15px 15px 0 0;
+}
+.discografia-disc img {
+	width: 100%;
+}
+#discografia .disc-caption {
+  background-color: rgba(255,255,255,0.8);
+  padding: 15px;	
+}
+
+#discografia h4 {
+	margin-top: 0;
+  min-height: 2.5em;
+}
+
+/* Section: CONTATTI */
+#contatti {
+	box-sizing: content-box;
+	padding-bottom: 20px;
+	color: #e75757;
+	background-color: #cdcdcd;
+	background:url("../img/bkg-contatti.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#contatti a{
+	color:#fff;
+	font-weight: bold;
+}
+a:hover{
+	color:#fff;
+}
+
+
+/* Screen-xs */
+@media screen and (max-width: 767px) {
+	.navbar {
+		height: auto;
+	}
+	.navbar-nav>li>a {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 20px;
+	}
+	.column {
+    margin: 0;
+    padding: 15px;
+	}
+	.discografia-disc {
+		width: 100%;
+	}
+	#discografia h4 {
+    margin-top: 0;
+    min-height: auto;
+	}
+	#finisterre, #discografia {
+		background: #cdcdcd;
+	}
+	#concerti {
+    padding: 0;
+	}
+	#concerti li {
+  	font-size: 14px;
+	}
+	#concerti .city {
+  	margin-left: 45px;
+	}
+
+	#media .carousel-caption {
+		font-size: 18px;
+	}
+	#media .column {
+    bottom: 60px;
+    right: 30px;
+  }
+  #media .carousel-media .item:first-child {
+  	background-position: initial;	
+  }
+
+  #contatti {
+    background-position: center right;
+  }
+  #contatti .column {
+    padding: 15px;
+    bottom: 80px;
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+
+}  
+/* Screen-sm */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.discografia-disc {
+		width: 33.33333333333333%;
+	}
+}
+/* Screen-md */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	
+	#discografia h4 {
+		min-height: 3.5em;
+    font-size: 18px;
+	}
+}
+/* Screen-lg */
+@media screen and (min-width: 1200px) {
+
+}
