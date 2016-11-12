@@ -66,21 +66,28 @@ var LT = (function(){
     {date: '06/05', title: 'Officine Corsare', place: 'Torino', lat: 45.073439, lon:7.703500},
     {date: '07/05', title: 'Rock\'n\'food', place: 'Savigliano (CN)', lat: 44.648495, lon:7.639103},
     {date: '14/05', title: 'Les Festejades', place: 'Gruissans (Francia)', lat: 43.107052, lon:3.086181},
-    {date: '27/05', title: 'Giro d\'Italia', place: 'Sant\'Anna di Vinadio (CN)', lat: 44.232910, lon:7.105365},
+    {date: '27/05', title: 'Giro d\'Italia', place: 'Vinadio (CN)', lat: 44.232910, lon:7.105365},
     {date: '03/06', title: 'Folkampestre', place: 'Montevecchio (LC)', lat: 45.727021, lon:9.351164},
     {date: '09/06', title: 'Wey Cup', place: 'Saluzzo (CN)', lat: 44.647405, lon:7.485308},
     {date: '11/06', title: 'Festin dou Boutaù', place: 'Levens (Francia)', lat: 43.859184, lon:7.225960},
     {date: '18/06', title: 'Coniolo in Folk', place: 'Coniolo (AL)', lat: 45.147654, lon:8.373502},
     {date: '25/06', title: '', place: 'Valmadonna (AL)', lat: 44.971097, lon:8.611674},
     {date: '28/06', title: 'Festival Bala cui Rat', place: 'Piacenza', lat: 45.055927, lon: 9.688341},
-    {date: '02/07', title: '', place: 'Cuneo', lat: 44.389024, lon: 7.547838},
-    {date: '07/07', title: 'Piovono Salsicce', place: 'Villastellone (TO)', lat: 44.921204, lon:7.744541},
+    {date: '01/07', title: 'Pizza Fest', place: 'Cuneo', lat: 44.389024, lon: 7.547838},
+    {date: '07/07', title: 'Piovono Salsicce Festival', place: 'Villastellone (TO)', lat: 44.921204, lon:7.744541},
     {date: '09/07', title: 'Festival dell\'Immateriale', place: 'Bannio Anzino (VB)', lat: 45.984741, lon:8.155819},
     {date: '16/07', title: 'Le Basse del Troll', place: 'Cuneo', lat: 44.392833, lon:7.532394},
     {date: '23/07', title: 'Festa Occitana', place: 'Olivetta S. Michele (IM)', lat: 43.879856, lon:7.514627},
+    {date: '27/07', title: '', place: 'Sampeyre (CN)', lat: 44.579364, lon:7.188341},
+    {date: '10/08', title: 'Festa di San Lorenzo', place: 'Chianale (CN)', lat: 44.647451, lon:6.997499},
+    /*{date: '12/08', title: '', place: 'Pradleves (CN)', lat: 44.418719, lon:7.282132},*/
     {date: '13/08', title: '', place: 'Pagno (CN)', lat: 44.612944, lon:7.428961},
     {date: '18/08', title: 'Hestiv\'Òc Festival', place: 'Pau (Francia)', lat: 43.298790, lon:-0.37598},
-    {date: '19/08', title: '', place: 'Bréole (Francia)', lat: 44.457101, lon:6.291742}
+    {date: '19/08', title: '', place: 'Bréole (Francia)', lat: 44.457101, lon:6.291742},
+    {date: '21/08', title: 'Festa della Segale', place: 'Valdieri (CN)', lat: 44.2773858, lon:7.3935701},
+    {date: '30/09', title: '', place: 'Villar Focchiardo (TO)', lat: 45.111320, lon:7.232871},
+    {date: '09/10', title: '', place: 'Bussero (MI)', lat: 45.535730, lon:9.370038},
+    {date: '15/10', title: '', place: 'Borghetto S. Spirito (SV)', lat: 44.1087504, lon:8.2405346}
   ];
 
   if (!String.prototype.format) {
