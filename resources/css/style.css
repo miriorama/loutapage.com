@@ -18,6 +18,11 @@ h1{
 	font-size: 40px;
 }
 
+.container-fluid {
+	padding-right: 30px;
+	padding-left: 30px;		
+}
+
 .modal a {
   transition: color 0.4s;
   color: #E75757;
@@ -40,7 +45,14 @@ h1{
 }
 
 .social-button-container {
-  margin-top: 5px;
+	position: absolute;
+  bottom: 2px;
+  right: 5px;
+  list-style: none;
+  margin: 0;
+}
+.social-button-container li {
+	float: right;
 }
 
 blockquote {
@@ -101,6 +113,15 @@ blockquote footer:before {
 	background: url("../img/logo-lou-tapage.svg") no-repeat center center;
 	background-size: contain;
 	opacity: 0.7;
+}
+
+.logo-white {
+	width: 40px;
+  height: 40px;
+  background: url(../img/logo-lou-tapage-white.svg) no-repeat center center;
+  background-size: contain;
+  opacity: 0.7;
+  margin: 5px 0 5px -10px;
 }
 
 /* Section: FINISTERRE */
@@ -177,6 +198,44 @@ blockquote footer:before {
 	font-size: 16px;
 }
 
+#concerti a {
+	color:#fff;
+}
+#concerti a:hover{
+	color:#fff;
+}
+
+#concerti .year-container {
+  display: inline-block;
+  margin: -10px 0 5px -2px;
+}
+
+#concerti a.load-concert {
+	padding: 2px 5px 0px 5px;
+	margin-right: 5px;
+	cursor: pointer;
+  transition: 0.2s;
+  float: right;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+#concerti a.load-concert.selected, #concerti a.load-concert:hover {
+  background-color: white;
+  color: #e46262;
+  font-weight: bold;
+  text-decoration: none; 
+}
+#concerti a.load-concert::after {
+    display:block;
+    content:attr(data-year);
+    font-weight:bold;
+    height:1px;
+    color:transparent;
+    overflow:hidden;
+    visibility:hidden;
+    margin-bottom:-1px;
+}
+
 /* Section: MEDIA */
 #media {
   padding: 0;
@@ -194,15 +253,19 @@ blockquote footer:before {
 	width: 100%;
 }
 
-#media .carousel,
-#media .carousel-inner,
-#media .item {
+#media .carousel-control {
+  background: none;
+}
+
+.carousel-fullscreen, 
+.carousel-fullscreen .carousel-inner,
+.carousel-fullscreen .item {
 	height: 100%;
 }
-#media .item {
+.carousel-fullscreen .item {
 	height: 100%;
 }
-#media .item:after {
+.carousel-fullscreen .item:after {
 	content: "";
   background-image: url(../img/play-icon.png);
   position: absolute;
@@ -215,11 +278,11 @@ blockquote footer:before {
   opacity: 0.9;
 	cursor: pointer;
 }
-#media .carousel-control {
+.carousel-fullscreen .carousel-control {
 	width: 6%;
 	transition-duration: 0.5s; 
 }
-#media .carousel-background {
+.carousel-fullscreen .carousel-background {
 	width: 100%;
 	height: 100%;
 	opacity: 0.3;
@@ -227,12 +290,12 @@ blockquote footer:before {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#media .carousel-control.hide  {
+.carousel-fullscreen .carousel-control.hide  {
 	display: block !important;
 	opacity: 0;
 }
 
-#media .carousel-caption {
+.carousel-fullscreen .carousel-caption {
 	font-size: 24px;
   text-shadow: none;
   text-transform: uppercase;
@@ -310,6 +373,7 @@ blockquote footer:before {
 	background-color: #cdcdcd;
 	background:url("../img/bkg-finisterre.jpg") no-repeat center center;
 	background-size: cover;
+  min-height: initial;
 }
 #discografia .discografia-container {
 	margin-right: -15px;
@@ -333,6 +397,61 @@ blockquote footer:before {
   min-height: 2.5em;
 }
 
+.store-badge-center {
+	width: 100%;
+	margin-top: 30px;
+}
+.store-badge-container {
+	margin: 0 auto;
+	white-space: nowrap;
+	width: 50%;
+	font-size: 0;
+	letter-spacing: -1px;
+}
+.store-badge {
+	width:24%;
+	margin-right: 1%;
+	max-width: 140px;
+	border-radius: 4px;
+}
+
+
+
+/* Section: LT CANTA DE ANDRÈ */
+#deandre {
+	color: #e75757;
+	background-color: #000;
+	/*background:url("../img/bkg-deandre.jpg") no-repeat center center;
+	background-size: cover;*/
+	min-height: initial;
+}
+
+.caption-place {
+  font-size: 16px;
+  display: block;
+}
+
+#deandre .column {
+	z-index: 10;
+}
+
+#deandre .carousel-fullscreen {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#deandre .carousel-fullscreen .carousel-caption {
+  padding: 15px;
+  bottom: 70px;
+}
+
+#deandre .carousel-control {
+  background: none;
+}
+
 /* Section: CONTATTI */
 #contatti {
 	box-sizing: content-box;
@@ -354,6 +473,19 @@ a:hover{
 
 /* Screen-xs */
 @media screen and (max-width: 767px) {
+	.container-fluid {
+		padding-right: 15px;
+		padding-left: 15px;		
+	}
+
+	 .carousel-control {
+	  margin: 0 10px;
+	}
+
+	.logo-white {
+		margin: 5px 10px;
+	}
+
 	.navbar {
 		height: auto;
 	}
@@ -373,11 +505,22 @@ a:hover{
     margin-top: 0;
     min-height: auto;
 	}
+
+	.store-badge-container {
+		width: 90%;
+  	white-space: normal;
+	}
+	.store-badge {
+		width: 49%;
+		margin-bottom: 3px;
+	}
+
 	#finisterre, #discografia {
 		background: #cdcdcd;
 	}
 	#concerti {
     padding: 0;
+    min-height: initial;
 	}
 	#concerti li {
   	font-size: 14px;
@@ -386,16 +529,37 @@ a:hover{
   	margin-left: 45px;
 	}
 
-	#media .carousel-caption {
+	.carousel-fullscreen .carousel-caption {
 		font-size: 18px;
 	}
-	#media .column {
+	#media .column, #deandre .carousel .column {
     bottom: 60px;
     right: 30px;
   }
-  #media .carousel-media .item:first-child {
+
+  .carousel-fullscreen .item:first-child {
   	background-position: initial;	
   }
+
+  #deandre {
+	  padding: 0;
+  }
+
+  #deandre .carousel-fullscreen {
+	}
+
+	#deandre .carousel-fullscreen .item:after {
+  	background-position: center center;
+	}
+
+	#deandre .carousel-caption {
+		display: block;
+	}
+
+	#deandre .container-carousel {
+		position: relative;
+		padding-bottom: 150%;
+	}
 
   #contatti {
     background-position: center right;
@@ -414,16 +578,81 @@ a:hover{
 	.discografia-disc {
 		width: 33.33333333333333%;
 	}
+
+	.store-badge-container {
+		width: 70%;
+	}
+
+	#deandre .carousel-control.left {
+		left: 45%;
+	}
+	#deandre .carousel-indicators {
+		left: 88%;
+  	width: 30%;
+	}
+	#deandre .carousel-fullscreen .item:after {
+	  background-position: 76% center;
+	}
+	#deandre .carousel-fullscreen .carousel-caption {
+		left:49%;
+	}
 }
 /* Screen-md */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-	
+	.logo-white {
+		margin-right: 10px;
+	}
+
 	#discografia h4 {
 		min-height: 3.5em;
     font-size: 18px;
 	}
+
+	#deandre .carousel-control.left {
+		left: 36%;
+	}
+	#deandre .carousel-indicators {
+		left: 83%;
+  	width: 30%;
+	}
+	#deandre .carousel-fullscreen .item:after {
+	  background-position: 70% center;
+	}
+	#deandre .carousel-fullscreen .carousel-caption {
+		left:50%;
+	}
 }
 /* Screen-lg */
 @media screen and (min-width: 1200px) {
+	.social-button-container {
+		position: fixed;
+		z-index: 9999;
+		bottom: 7px;
+	}	
 
+	.logo-white {
+	  margin-right: 15px;
+	}
+
+	#concerti h1 {
+		display: inline-block;
+	}
+	#concerti .year-container {
+		float:right;
+		margin-top: 0;
+	}
+
+	#deandre .carousel-control.left {
+		left: 36%;
+	}
+	#deandre .carousel-indicators {
+		left: 83%;
+  	width: 30%;
+	}
+	#deandre .carousel-fullscreen .item:after {
+	  background-position: 70% center;
+	}
+	#deandre .carousel-fullscreen .carousel-caption {
+		left:50%;
+	}
 }
