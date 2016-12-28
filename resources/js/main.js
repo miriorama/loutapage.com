@@ -156,6 +156,57 @@ var LT = (function(){
     {date: '27/09', title: 'Saluzzo Musica Festival', place: 'Saluzzo (CN)', lat:44.645186, lon:7.492198}
   ];
 
+  var concerti2013 = [
+    {date: '09/02', title: 'Carnevale Folk', place: 'Bussoleno (TO)', lat:45.136494, lon:7.152207},
+    {date: '16/03', title: 'San Patrick\'s Day', place: 'Piacenza', lat:45.068671, lon:9.692688},
+    {date: '19/05', title: 'Fête des Mai', place: 'Nizza (Francia)', lat:43.720141, lon:7.277305},
+    {date: '24/05', title: 'Sgrana e Traballa Festival', place: 'Firenze', lat:43.7622485, lon:11.3021473},
+    {date: '31/05', title: 'Ferie Medievali Festival', place: 'Pavone Canavese (TO)', lat:45.434599, lon:7.854452},
+    {date: '08/06', title: '24 ore di sport', place: 'Cuneo', lat:44.384483, lon:7.542629},
+    {date: '12/06', title: 'Nuvolari Libera Tribù', place: 'Cuneo', lat:44.384483, lon:7.542629},
+    {date: '15/06', title: 'Arci Camalli', place: 'Imperia', lat:43.888085, lon:8.043274},
+    {date: '21/06', title: '', place: 'Breil-sur-Roya (Francia)', lat:43.937709, lon:7.515678},
+    {date: '22/06', title: '', place: 'Mombaruzzo (AT)', lat:44.773519, lon:8.448443},
+    {date: '29/06', title: 'Paolo Music Fest', place: 'Paullo (MI)', lat:45.417552, lon:9.408073},
+    {date: '07/07', title: 'Find the cure Festival', place: 'Acceglio (CN)', lat:44.477232, lon:6.966383},
+    {date: '14/07', title: 'Irlanda in musica Festival', place: 'Bobbio (PC)', lat:44.77032, lon:9.385744},
+    {date: '25/07', title: 'Estivada de Rodez Festival', place: 'Rodez (Francia)', lat:44.349402, lon:2.575994},
+    {date: '28/07', title: '', place: 'Bernezzo (CN)', lat:44.3840175, lon:7.4387929},
+    {date: '03/08', title: '', place: 'Murazzano (CN)', lat:44.475012, lon:8.021393},
+    {date: '04/08', title: 'Campeggio Resistente', place: 'Valloriate (CN)', lat:44.337785, lon:7.369202},
+    {date: '31/08', title: '', place: 'Savigliano (CN)', lat:44.6470327, lon:7.6624635},
+    {date: '07/09', title: '', place: 'Cosseria (SV)', lat:44.376263, lon:8.232536},
+    {date: '09/09', title: 'San Sereno', place: 'S. Rocco Castagnaretta (CN)', lat:44.365373, lon:7.522159},
+    {date: '26/10', title: 'Circolo Arci Margot', place: 'Carmagnola (TO)', lat:44.848055, lon:7.721450},
+    {date: '06/12', title: 'CPA Fi Sud', place: 'Firenze', lat:43.761582, lon:11.308511},
+    {date: '13/12', title: 'Amenes Etno Bistrot', place: 'Castelletto di Busca (CN)', lat:44.478431, lon:7.445059},
+    {date: '28/12', title: 'Cascina Sacerdote', place: 'Fossano (CN)', lat:44.556715, lon:7.737473}
+  ];
+
+  var concerti2012 = [
+    {date: '11/02', title: 'Carnaval Biarnès Festival', place: 'Pau (Francia)', lat:43.2951, lon:-0.370797},
+    {date: '16/03', title: 'St. Patrick\'s Beer Fest', place: 'Caorso (PC) ', lat:45.055576, lon:9.871559},
+    {date: '25/04', title: '', place: 'Carpentras (Francia)', lat:44.0555639, lon:5.048722},
+    {date: '25/05', title: 'Sgrana e Traballa Festival', place: 'Firenze', lat:43.7622485, lon:11.3021473},
+    {date: '26/05', title: 'Arci Camalli', place: 'Imperia', lat:43.887892, lon:8.031564},
+    {date: '03/06', title: 'NordSud in musica', place: 'La Loggia (TO)', lat:44.9587592, lon:7.6684444},
+    {date: '15/06', title: 'Officine Corsare', place: 'Torino', lat:45.0708515, lon:7.6843404},
+    {date: '30/06', title: '', place: 'Millesimo (SV) ', lat:44.364129, lon:8.2059402},
+    {date: '13/07', title: 'Festen Oc Festival', place: 'Saurat (Francia)', lat:42.877151, lon:1.538256},
+    {date: '20/07', title: '', place: 'Sanremo (IM)', lat:43.8184062, lon:7.7784215},
+    {date: '26/07', title: 'Notte bianca', place: 'Savona', lat:44.3110703, lon:8.4772463},
+    {date: '27/07', title: 'Venigallia Celtic Festival', place: 'Thiene (VI) ', lat:45.7098703, lon:11.4806296},
+    {date: '29/07', title: '', place: 'Bernezzo (CN) ', lat:44.3863293, lon:7.4365983},
+    {date: '31/07', title: 'Festival de Martigues', place: 'Marsiglia (Francia)', lat:43.296482, lon:5.36978},
+    {date: '09/08', title: '', place: 'Cravegna (VB)', lat:46.239537, lon:8.312037},  
+    {date: '12/08', title: '', place: 'Pigna (IM)', lat:43.9332962, lon:7.6618888}, 
+    {date: '17/08', title: '', place: 'Villeneuve sur Lot (Francia)', lat:44.407126, lon:0.703561},
+    {date: '24/08', title: 'Festa della liberazione', place: 'Torre Boldone (BG)', lat:45.7151666, lon:9.7112592},
+    {date: '25/08', title: 'Tarantella Power Festival', place: 'Badolato (CZ)', lat:38.568295, lon:16.525566},
+    {date: '26/08', title: 'CPA Firenze Sud', place: 'Firenze (FI)', lat:43.7622485, lon:11.3021473},
+    {date: '16/11', title: 'Amenes Etno Bistrot', place: 'Castelletto di Busca (CN)', lat:44.478453, lon:7.444967}
+  ];
+
   if (!String.prototype.format) {
     String.prototype.format = function() {
       var args = arguments;
@@ -348,7 +399,7 @@ var LT = (function(){
   }
 
   return {
-    json: {concerti: {2017: concerti2017, 2016: concerti2016, 2015: concerti2015, 2014: concerti2014}, discografia: discografia},
+    json: {concerti: {2017: concerti2017, 2016: concerti2016, 2015: concerti2015, 2014: concerti2014, 2013: concerti2013, 2012: concerti2012}, discografia: discografia},
     year: 2016,
     init: init,
     initMap: initMap
