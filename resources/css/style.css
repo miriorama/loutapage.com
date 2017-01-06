@@ -424,7 +424,7 @@ blockquote footer:before {
 	background-color: #000;
 	/*background:url("../img/bkg-deandre.jpg") no-repeat center center;
 	background-size: cover;*/
-	min-height: initial;
+	/*min-height: initial;*/
 }
 
 .caption-place {
