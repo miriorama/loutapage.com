@@ -163,7 +163,7 @@ blockquote footer:before {
 	padding: 0;
 	list-style: none;
 }
-#concerti li {
+#concerti .concerti-container li {
 	border: 0;
   background-color: transparent;
   margin-bottom: 1px;
@@ -198,20 +198,13 @@ blockquote footer:before {
 	font-size: 16px;
 }
 
-#concerti a {
-	color:#fff;
-}
-#concerti a:hover{
-	color:#fff;
-}
-
 #concerti .year-container {
   display: inline-block;
   width: 100%;
   margin: 0px 0 5px 0px;
 }
 
-#concerti a.load-concert {
+#concerti .load-concert {
 	padding: 2px 5px 0px 5px;
 	margin: 0 5px 5px 0;
 	cursor: pointer;
@@ -219,22 +212,59 @@ blockquote footer:before {
   float: left;
   border: 1px solid #fff;
   border-radius: 2px;
+  background-color: transparent;
+	color:#fff;
 }
-#concerti a.load-concert.selected, #concerti a.load-concert:hover {
+#concerti .load-concert.selected, #concerti .load-concert:hover {
   background-color: white;
   color: #e46262;
   font-weight: bold;
   text-decoration: none; 
 }
-#concerti a.load-concert::after {
-    display:block;
-    content:attr(data-year);
-    font-weight:bold;
-    height:1px;
-    color:transparent;
-    overflow:hidden;
-    visibility:hidden;
-    margin-bottom:-1px;
+#concerti .load-concert::after {
+  display:block;
+  content:attr(data-year);
+  font-weight:bold;
+  height:1px;
+  color:transparent;
+  overflow:hidden;
+  visibility:hidden;
+  margin-bottom:-1px;
+}
+
+#concerti .load-concert-button {
+	width: 60px;
+}
+
+#concerti .dropdown-container {
+	position: relative;
+  display: inline-block;	
+}
+
+
+#concerti .dropdown {
+	position: absolute;
+  top: 100%;
+  background-color: #fff;
+  padding: 0;
+  border-radius: 2px;
+  border: 1px solid #fff;
+  width: calc(100% - 5px);
+  min-width: initial;
+}
+#concerti .dropdown-menu__item {
+	color: #e46262;	
+	padding: 2px 5px;
+	cursor: pointer;
+  text-align: center;
+}
+#concerti .dropdown-menu__item:hover {
+	color: #fff;	
+	background-color: #e46262;
+}
+#concerti .dropdown-menu__item.selected {
+	color: #fff;	
+	background-color: #e46262;
 }
 
 /* Section: MEDIA */
