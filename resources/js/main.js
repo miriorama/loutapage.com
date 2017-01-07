@@ -45,6 +45,8 @@ var LT = (function(){
 
     //gestione click
     $(".navbar a[href^='#']").on('click', function(e) {
+      $('#navCollapse').collapse('hide');
+
       newHash = this.hash;
       e.preventDefault();
 
