@@ -7,9 +7,9 @@ var jsonData = {
         {date: '08/04', title: '', place: 'Acquarossa (Svizzera)', lat:46.456355, lon:8.938265},
         {date: '25/04', title: '', place: 'Saluzzo (CN)', lat:44.647405, lon:7.485308},
         {date: '24/06', title: 'Piemonte in tavola', place: 'Valmadonna (AL)', lat: 44.971097, lon:8.611674},
-        {date: '08/07', title: 'Festen\'oc Festival', place: 'Verrières-en-Forez (Francia)', lat: 45.571183, lon:3.995876},
+        {date: '08/07', title: '', place: 'Verrières-en-Forez (Francia)', lat: 45.571183, lon:3.995876},
         {date: '14/07', title: 'Celtie d\'Oc Festival', place: 'Cazavet (Francia)', lat: 43.002568, lon:1.042527},
-        {date: '15/07', title: '', place: 'Saurat (Francia)', lat: 42.877085, lon:1.538284},
+        {date: '15/07', title: 'Festen\'oc Festival', place: 'Saurat (Francia)', lat: 42.877085, lon:1.538284},
         {date: '29/07', title: '', place: 'Bard (AO)', lat: 45.609086, lon:7.745593}
       ],
       2016: [
