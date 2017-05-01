@@ -218,12 +218,51 @@ var LT = (function(){
     });
   }
 
+  function initBuonenuove() {
+    var i = 1;
+    var timer;
+
+    changeOpacity();
+    function changeOpacity() {
+      $('.buonenuove__img').removeClass('glitch');
+      $('.buonenuove__img[data-id=' + i + ']').addClass('glitch');
+
+      i ++;
+      if (i > 6) {
+        i = 1;        
+      }
+
+      timer = setTimeout(function() {
+        changeOpacity();
+      }, getRandomInt(3000, 6000));
+    }
+
+    $('#buonenuove').click(function(){
+      var videoUrl = $(this).attr('data-video-url');
+
+      clearTimeout(timer);
+
+      $('#modalVideo iframe').attr('src', videoUrl);
+      $('#modalVideo').modal();
+    });
+
+    $('#modalVideo').on('hide.bs.modal', function (e) {
+      $('#modalVideo iframe').attr('src', '');
+      changeOpacity();
+    });
+  }
+
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
   function init() {
     initMenu();
     initConcerti();
     initDiscografia();
     initMedia();
     initDeAndre();
+    initBuonenuove();
   }
 
   return {
