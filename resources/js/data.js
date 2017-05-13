@@ -9,7 +9,6 @@ var jsonData = {
         {date: '23/04', title: 'Insubria Festival', place: 'Marcallo con Casone (MI)', lat:45.483367, lon:8.871979},        
         {date: '26/05', title: 'Sgrana e TraBalla Festival', place: 'Firenze', lat:43.761694, lon:11.309405},
         {date: '27/05', title: 'Circolo Arci Margot', place: 'Carmagnola (TO)', lat:44.848149, lon:7.721613},
-        {date: '02/06', title: 'Meeting del mare', place: 'Marina di Camerota (SA)', lat:40.000215, lon:15.367648},        
         {date: '16/06', title: '', place: 'Dumenza (VA)', lat: 46.020491, lon:8.787733},
         {date: '17/06', title: 'Ruderirock', place: 'Villafalletto (CN)', lat: 44.546086, lon:7.538847},
         {date: '24/06', title: 'Piemonte in tavola', place: 'Valmadonna (AL)', lat: 44.971097, lon:8.611674},
