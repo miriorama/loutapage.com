@@ -9,7 +9,6 @@ var jsonData = {
         {date: '23/04', title: 'Insubria Festival', place: 'Marcallo con Casone (MI)', lat:45.483367, lon:8.871979},        
         {date: '26/05', title: 'Sgrana e TraBalla Festival', place: 'Firenze', lat:43.761694, lon:11.309405},
         {date: '27/05', title: 'Circolo Arci Margot', place: 'Carmagnola (TO)', lat:44.848149, lon:7.721613},
-        {date: '02/06', title: 'Meeting del mare', place: 'Marina di Camerota (SA)', lat:40.000215, lon:15.367648},        
         {date: '16/06', title: '', place: 'Dumenza (VA)', lat: 46.020491, lon:8.787733},
         {date: '17/06', title: 'Ruderirock', place: 'Villafalletto (CN)', lat: 44.546086, lon:7.538847},
         {date: '24/06', title: 'Piemonte in tavola', place: 'Valmadonna (AL)', lat: 44.971097, lon:8.611674},
@@ -17,10 +16,12 @@ var jsonData = {
         {date: '14/07', title: 'Festen\'oc Festival', place: 'Saurat (Francia)', lat: 42.877085, lon:1.538284},
         {date: '15/07', title: 'Celtie d\'Oc Festival', place: 'Cazavet (Francia)', lat: 43.002568, lon:1.042527},
         {date: '16/07', title: '', place: 'Cervasca (CN)', lat: 44.380811, lon:7.470457},
+        {date: '27/07', title: '', place: 'Vanaus (TO)', lat:45.158379, lon:7.012075},
+        {date: '28/07', title: '', place: 'Rossana (CN)', lat:44.543599, lon:7.431411},
         {date: '29/07', title: '', place: 'Bard (AO)', lat: 45.609086, lon:7.745593},
         {date: '03/08', title: '', place: 'Pieve Cesato (RA)', lat:44.337199, lon:11.957956},
         {date: '04/08', title: 'Fêtes de Monein', place: 'Monein (Francia)', lat: 43.290549, lon:-0.566213},
-        {date: '12/08', title: '', place: 'Bolbeno (TN)', lat:46.031127, lon:10.738353}        
+        {date: '12/08', title: '', place: 'Bolbeno (TN)', lat:46.031127, lon:10.738353}
       ],
       2016: [
         {date: '10/01', title: 'Teatro Altrove', place: 'Genova', lat:44.405650, lon:8.946256},
