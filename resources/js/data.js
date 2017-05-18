@@ -21,6 +21,7 @@ var jsonData = {
         {date: '29/07', title: '', place: 'Bard (AO)', lat: 45.609086, lon:7.745593},
         {date: '03/08', title: '', place: 'Pieve Cesato (RA)', lat:44.337199, lon:11.957956},
         {date: '04/08', title: 'Fêtes de Monein', place: 'Monein (Francia)', lat: 43.290549, lon:-0.566213},
+        {date: '10/08', title: 'Festa di San Lorenzo', place: 'Chianale (CN)', lat: 44.647451, lon:6.997499},
         {date: '12/08', title: '', place: 'Bolbeno (TN)', lat:46.031127, lon:10.738353}
       ],
       2016: [
