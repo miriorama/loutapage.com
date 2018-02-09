@@ -16,10 +16,13 @@ var jsonData = {
         {date: '14/07', title: 'Festen\'oc Festival', place: 'Saurat (Francia)', lat: 42.877085, lon:1.538284},
         {date: '15/07', title: 'Celtie d\'Oc Festival', place: 'Cazavet (Francia)', lat: 43.002568, lon:1.042527},
         {date: '16/07', title: '', place: 'Cervasca (CN)', lat: 44.380811, lon:7.470457},
+        {date: '27/07', title: '', place: 'Vanaus (TO)', lat:45.158379, lon:7.012075},
+        {date: '28/07', title: '', place: 'Rossana (CN)', lat:44.543599, lon:7.431411},
         {date: '29/07', title: '', place: 'Bard (AO)', lat: 45.609086, lon:7.745593},
         {date: '03/08', title: '', place: 'Pieve Cesato (RA)', lat:44.337199, lon:11.957956},
         {date: '04/08', title: 'Fêtes de Monein', place: 'Monein (Francia)', lat: 43.290549, lon:-0.566213},
-        {date: '12/08', title: '', place: 'Bolbeno (TN)', lat:46.031127, lon:10.738353}        
+        {date: '10/08', title: 'Festa di San Lorenzo', place: 'Chianale (CN)', lat: 44.647451, lon:6.997499},
+        {date: '12/08', title: '', place: 'Bolbeno (TN)', lat:46.031127, lon:10.738353}
       ],
       2016: [
         {date: '10/01', title: 'Teatro Altrove', place: 'Genova', lat:44.405650, lon:8.946256},
