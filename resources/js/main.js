@@ -179,7 +179,7 @@ var LT = (function(){
 
     for (var i = 0; i < LT.json.concerti[LT.year].length; i++ ) {
       var c = LT.json.concerti[LT.year][i];
-      var htmlStr = '<li><div class="date">{0}</div><div class="city">{1}{2}</div></li>'.format(c.date, (c.title ? c.title + ' - ' : ''), c.place);
+      var htmlStr = '<li><div class="date">{0}</div><div class="city {4}">{1}{2}{3}</div></li>'.format(c.date, (c.title ? c.title + ' - ' : ''), c.place, (c.isCanceled ? ' <span> Annullato</span> ' : ''), (c.isCanceled ? ' is-canceled ' : ''));
       $('.concerti-container').append(htmlStr);
     }
   }

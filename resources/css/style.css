@@ -237,6 +237,15 @@ blockquote footer:before {
   padding: 2px 0;
   font-size: 16px;
 }
+
+#concerti .concerti-container li .city.is-canceled {
+	text-decoration: line-through;
+}
+#concerti .concerti-container li .city.is-canceled span {
+	display: inline-block;
+	text-decoration: none;
+	margin-left: 5px;
+}
 #concerti .date {
 	position: absolute;
 }
