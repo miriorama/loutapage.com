@@ -1,5 +1,10 @@
 var jsonData = {
     concerti: { 
+      2018: [
+        {date: '06/01', title: '', place: 'Celle Ligure (SV)', lat:44.3425107 , lon:8.5450983, isCanceled: true},
+        {date: '10/02', title: '', place: 'Lurisia (CN)', lat:44.304863 , lon:7.708958},
+        {date: '10/03', title: 'Suburbia', place: 'Cuneo', lat:44.376623, lon:7.529243},
+      ],
       2017: [
         {date: '14/01', title: '', place: 'Lurisia (CN)', lat:44.304863, lon:7.708958},
         {date: '18/03', title: 'St. Patrick Celtic Festival', place: 'Campofilone (FM)', lat:43.0807464, lon:13.8178153},
@@ -16,13 +21,19 @@ var jsonData = {
         {date: '14/07', title: 'Festen\'oc Festival', place: 'Saurat (Francia)', lat: 42.877085, lon:1.538284},
         {date: '15/07', title: 'Celtie d\'Oc Festival', place: 'Cazavet (Francia)', lat: 43.002568, lon:1.042527},
         {date: '16/07', title: '', place: 'Cervasca (CN)', lat: 44.380811, lon:7.470457},
-        {date: '27/07', title: '', place: 'Vanaus (TO)', lat:45.158379, lon:7.012075},
+		    {date: '20/07', title: '', place: 'Sampeyre (CN)', lat: 44.579364, lon:7.188341},
+        {date: '27/07', title: 'Festival Alta Felicità', place: 'Vanaus (TO)', lat:45.158379, lon:7.012075},
         {date: '28/07', title: '', place: 'Rossana (CN)', lat:44.543599, lon:7.431411},
         {date: '29/07', title: '', place: 'Bard (AO)', lat: 45.609086, lon:7.745593},
         {date: '03/08', title: '', place: 'Pieve Cesato (RA)', lat:44.337199, lon:11.957956},
         {date: '04/08', title: 'Fêtes de Monein', place: 'Monein (Francia)', lat: 43.290549, lon:-0.566213},
-        {date: '10/08', title: 'Festa di San Lorenzo', place: 'Chianale (CN)', lat: 44.647451, lon:6.997499},
-        {date: '12/08', title: '', place: 'Bolbeno (TN)', lat:46.031127, lon:10.738353}
+		    {date: '05/08', title: '', place: 'Alto (CN)', lat: 44.108493, lon:8.003239},
+		    {date: '10/08', title: 'Festa di San Lorenzo', place: 'Chianale (CN)', lat: 44.647451, lon:6.997499},
+        {date: '12/08', title: '', place: 'Bolbeno (TN)', lat:46.031127, lon:10.738353},
+        {date: '03/09', title: 'World Fest Fest', place: 'Madonna delle Grazie (CN)', lat:44.392877, lon:7.534980},
+        {date: '30/09', title: 'Sagra della Castagna e del Fungo', place: 'Rossana (CN)', lat:44.544188, lon:7.430452},
+        {date: '31/10', title: 'Capodanno Celtico', place: 'Riolo Terme (RA)', lat:44.275094, lon:11.725570},
+        {date: '23/12', title: '', place: 'Centallo (CN)', lat:44.496432, lon:7.585254},
       ],
       2016: [
         {date: '10/01', title: 'Teatro Altrove', place: 'Genova', lat:44.405650, lon:8.946256},
