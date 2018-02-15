@@ -4,6 +4,7 @@ var jsonData = {
         {date: '06/01', title: '', place: 'Celle Ligure (SV)', lat:44.3425107 , lon:8.5450983, isCanceled: true},
         {date: '10/02', title: '', place: 'Lurisia (CN)', lat:44.304863 , lon:7.708958},
         {date: '10/03', title: 'Suburbia', place: 'Cuneo', lat:44.376623, lon:7.529243},
+	{date: '24/03', title: '', place: 'Saluzzo', lat:44.647405, lon:7.485308},
       ],
       2017: [
         {date: '14/01', title: '', place: 'Lurisia (CN)', lat:44.304863, lon:7.708958},
