@@ -7,7 +7,7 @@ var jsonData = {
         {date: '16/03', title: '', place: 'Brescia', lat:45.534207, lon:10.211317},
 	{date: '17/03', title: '', place: 'Pavia (MI)', lat:45.189573, lon:9.161388},
 	{date: '24/03', title: '', place: 'Saluzzo (CN)', lat:44.647405, lon:7.485308},
-	{date: '16/05', title: '', place: 'Piozzo (CN)', lat:44.647405, lon:7.485308},
+	{date: '16/05', title: '', place: 'Piozzo (CN)', lat:44.515297, lon:7.891768},
 	{date: '24/06', title: '', place: 'Normandie [FR]', lat:49.436104, lon:1.089412},
 	{date: '30/06', title: '', place: 'Isla de Baish [FR]', lat:43.613919, lon:1.082228},
         {date: '03/07', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},
