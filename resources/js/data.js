@@ -1,7 +1,7 @@
 var jsonData = {
     concerti: { 
       2018: [
-        {date: '06/01', title: '', place: 'Celle Ligure (SV)', lat:44.3425107 , lon:8.5450983, isCanceled: true},
+        /*{date: '06/01', title: '', place: 'Celle Ligure (SV)', lat:44.3425107 , lon:8.5450983, isCanceled: true},*/
         {date: '10/02', title: '', place: 'Lurisia (CN)', lat:44.304863 , lon:7.708958},
         {date: '10/03', title: 'Suburbia', place: 'Cuneo', lat:44.376623, lon:7.529243},
         {date: '16/03', title: '', place: 'Brescia', lat:45.534207, lon:10.211317},
