@@ -267,7 +267,7 @@ var LT = (function(){
 
   return {
     json: {concerti: jsonData.concerti, discografia: jsonData.discografia},
-    year: 2017,
+    year: 2018,
     init: init,
     initMap: initMap
   }
