@@ -10,8 +10,8 @@ var jsonData = {
 	{date: '16/05', title: '', place: 'Piozzo (CN)', lat:44.515297, lon:7.891768},
 	{date: '24/06', title: '', place: 'Normandie [FR]', lat:49.436104, lon:1.089412},
 	{date: '30/06', title: '', place: 'Isla de Baish [FR]', lat:43.613919, lon:1.082228},
-        {date: '03/07', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},
-	{date: '04/07', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},	      
+        {date: '03/08', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},
+	{date: '04/08', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},	      
 	{date: '29/09', title: 'Festival Interculturel APV', place: 'Carcassonne (Francia)', lat:43.211310, lon:2.351110},
       ],
       2017: [
