@@ -7,6 +7,8 @@ var jsonData = {
         {date: '16/03', title: '', place: 'Brescia', lat:45.534207, lon:10.211317},
 	{date: '17/03', title: '', place: 'Pavia (MI)', lat:45.189573, lon:9.161388},
 	{date: '24/03', title: '', place: 'Saluzzo (CN)', lat:44.647405, lon:7.485308},
+        {date: '25/03', title: '', place: 'Celle Ligure (SV)', lat:44.3425107 , lon:8.5450983},
+	{date: '25/04', title: 'Circolo ARCI Cinema Vekkio', place: 'Corneliano d\'Alba (CN)', lat: 44.735958, lon: 7.958443},
 	{date: '16/05', title: '', place: 'Piozzo (CN)', lat:44.515297, lon:7.891768},
 	{date: '24/06', title: '', place: 'Normandie [FR]', lat:49.436104, lon:1.089412},
 	{date: '30/06', title: '', place: 'Isla de Baish [FR]', lat:43.613919, lon:1.082228},
