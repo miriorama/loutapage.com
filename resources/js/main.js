@@ -218,6 +218,14 @@ var LT = (function(){
     });
   }
 
+  function initCrowdfunding() {
+    $('#crowdfunding .play').click(function(){
+      var videoUrl = $(this).attr('data-video-url');
+      $('#modalVideo iframe').attr('src', videoUrl);
+      $('#modalVideo').modal();
+    });
+  }
+
   function initBuonenuove() {
     var i = 1;
     var timer;
@@ -256,20 +264,28 @@ var LT = (function(){
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+  function scrollTo(id) {
+    $('html, body').animate({
+        scrollTop: $(id).offset().top
+    }, 750);
+  }
+
   function init() {
     initMenu();
     initConcerti();
     initDiscografia();
     initMedia();
     initDeAndre();
-    initBuonenuove();
+    //initBuonenuove();
+    initCrowdfunding();
   }
 
   return {
     json: {concerti: jsonData.concerti, discografia: jsonData.discografia},
     year: 2018,
     init: init,
-    initMap: initMap
+    initMap: initMap,
+    scrollTo: scrollTo
   }
 })();
 

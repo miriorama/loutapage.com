@@ -99,6 +99,9 @@ blockquote footer:before {
   background-size: cover;
   height: 100%;
 }
+#loutapage a{
+	cursor: pointer;
+}
 #loutapage h1 {
 	color:#e75757;
 }
@@ -110,10 +113,14 @@ blockquote footer:before {
 }
 #loutapage .logo {
 	width: 100%;
-	height: 100%;
-	background: url("../img/logo-lou-tapage.svg") no-repeat center center;
-	background-size: contain;
-	opacity: 0.7;
+	height: 41%;
+	text-align: center;
+}
+
+#loutapage .logo img{
+	width: 350px;
+	max-width: 90%;
+	margin-top: 35px;
 }
 
 .logo-white {
@@ -123,6 +130,15 @@ blockquote footer:before {
   background-size: contain;
   opacity: 0.7;
   margin: 5px 0 5px -10px;
+}
+
+
+/* Screen-xs */
+@media screen and (max-width: 1025px) {
+	#loutapage .logo img{
+		margin-top: 0;
+		width: 260px;
+	}
 }
 
 /* Section: FINISTERRE */
@@ -219,6 +235,50 @@ blockquote footer:before {
     opacity: 1;
     cursor: pointer;
 }
+
+/* Section: CROWDFUNDING */
+
+#crowdfunding .bkg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000 url(../img/bkg-crowdfunding.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#crowdfunding .column {
+	z-index: 999;
+}
+
+#crowdfunding .play{
+	background-image: url(../img/play-icon.png);
+	width: 70%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	#crowdfunding .bkg {
+    position: relative;
+		padding-bottom: 50%;
+	}
+
+	#crowdfunding .play{
+		width: 100%;
+	}
+
+	#crowdfunding {
+		padding: 0;
+		min-height: initial;
+	}
+}
+
 
 /* Section: CONCERTI */
 #concerti {
