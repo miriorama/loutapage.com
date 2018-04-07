@@ -12,9 +12,12 @@ var jsonData = {
         {date: '16/05', title: '', place: 'Piozzo (CN)', lat:44.515297, lon:7.891768},
         {date: '18/05', title: '', place: 'Cavallermaggiore (CN)', lat:44.708768, lon:7.688387},
         {date: '19/05', title: '', place: 'Volano (TN)', lat:45.917994, lon:11.063898},
+        {date: '08/06', title: 'La Strada Festival', place: 'Brescia', lat:45.533366, lon:10.216124},
         {date: '16/06', title: '', place: 'Barge (CN)', lat:44.726265, lon:7.326945},
 	      {date: '24/06', title: '', place: 'Normandie [FR]', lat:49.436104, lon:1.089412},
-	      {date: '30/06', title: '', place: 'Isla de Baish [FR]', lat:43.613919, lon:1.082228},
+        {date: '30/06', title: '', place: 'Isla de Baish [FR]', lat:43.613919, lon:1.082228},
+        /*{date: '21/07', title: '', place: 'Albissola Marina (SV)', lat: 44.326915, lon:8.501675},
+        {date: '21/07', title: '', place: 'Olivetta S. Michele (IM)', lat: 43.879856, lon:7.514627},*/
         {date: '03/08', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},
         {date: '04/08', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},
         {date: '15/08', title: '', place: 'Entracque (CN)', lat:44.241300, lon:7.398903},	      
