@@ -12,6 +12,7 @@ var jsonData = {
         {date: '16/05', title: '', place: 'Piozzo (CN)', lat:44.515297, lon:7.891768},
         {date: '18/05', title: '', place: 'Cavallermaggiore (CN)', lat:44.708768, lon:7.688387},
         {date: '19/05', title: '', place: 'Volano (TN)', lat:45.917994, lon:11.063898},
+        {date: '26/05', title: 'Sgrana e Traballa Festival', place: 'Firenze', lat:43.7622485, lon:11.3021473},
         {date: '08/06', title: 'La Strada Festival', place: 'Brescia', lat:45.533366, lon:10.216124},
         {date: '16/06', title: '', place: 'Barge (CN)', lat:44.726265, lon:7.326945},
 	      {date: '24/06', title: '', place: 'Normandie [FR]', lat:49.436104, lon:1.089412},
@@ -20,7 +21,8 @@ var jsonData = {
         {date: '21/07', title: '', place: 'Olivetta S. Michele (IM)', lat: 43.879856, lon:7.514627},*/
         {date: '03/08', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},
         {date: '04/08', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},
-        {date: '15/08', title: '', place: 'Entracque (CN)', lat:44.241300, lon:7.398903},	      
+        {date: '15/08', title: '', place: 'Entracque (CN)', lat:44.241300, lon:7.398903},	
+	      {date: '08/09', title: '', place: 'San Defendente di Cervasca (CN)', lat: 44.395203, lon:7.491598},
         {date: '29/09', title: 'Festival Interculturel APV', place: 'Carcassonne (Francia)', lat:43.211310, lon:2.351110},
         {date: '06/10', title: '', place: 'Rossana (CN)', lat:44.543599, lon:7.431411},
       ],
