@@ -16,6 +16,7 @@ var jsonData = {
         {date: '08/06', title: 'La Strada Festival', place: 'Brescia', lat:45.533366, lon:10.216124},
         {date: '16/06', title: '', place: 'Barge (CN)', lat:44.726265, lon:7.326945},
 	      {date: '24/06', title: '', place: 'Normandie [FR]', lat:49.436104, lon:1.089412},
+        {date:'28/06', title:'La Muntà di Rat', place:'Piacenza', lat:45.0537735 , lon:9.6951421 },
         {date: '30/06', title: '', place: 'Isla de Baish [FR]', lat:43.613919, lon:1.082228},
         /*{date: '21/07', title: '', place: 'Albissola Marina (SV)', lat: 44.326915, lon:8.501675},
         {date: '21/07', title: '', place: 'Olivetta S. Michele (IM)', lat: 43.879856, lon:7.514627},*/
