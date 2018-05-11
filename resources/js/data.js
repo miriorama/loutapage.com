@@ -1,31 +1,34 @@
 var jsonData = {
-    concerti: { 
+	concerti: { 
       2018: [
         /*{date: '06/01', title: '', place: 'Celle Ligure (SV)', lat:44.3425107 , lon:8.5450983, isCanceled: true},*/
         {date: '10/02', title: '', place: 'Lurisia (CN)', lat:44.304863 , lon:7.708958},
         {date: '10/03', title: 'Suburbia', place: 'Cuneo', lat:44.376623, lon:7.529243},
         {date: '16/03', title: 'Irlanda in Festa', place: 'Brescia', lat:45.534207, lon:10.211317, isCanceled: true},
-	      {date: '17/03', title: 'St. Patrick’s Irish Party', place: 'Pavia (MI)', lat:45.189573, lon:9.161388},
-	      {date: '24/03', title: 'Notte della Bianca', place: 'Saluzzo (CN)', lat:44.647405, lon:7.485308},
+      	{date: '17/03', title: 'St. Patrick’s Irish Party', place: 'Pavia (MI)', lat:45.189573, lon:9.161388},
+      	{date: '24/03', title: 'Notte della Bianca', place: 'Saluzzo (CN)', lat:44.647405, lon:7.485308},
         {date: '25/03', title: '', place: 'Celle Ligure (SV)', lat:44.3425107 , lon:8.5450983},
-	      {date: '25/04', title: 'Circolo ARCI Cinema Vekkio', place: 'Corneliano d\'Alba (CN)', lat: 44.735958, lon: 7.958443},
+	{date: '25/04', title: 'Circolo ARCI Cinema Vekkio', place: 'Corneliano d\'Alba (CN)', lat: 44.735958, lon: 7.958443},
         {date: '16/05', title: '', place: 'Piozzo (CN)', lat:44.515297, lon:7.891768},
         {date: '18/05', title: '', place: 'Cavallermaggiore (CN)', lat:44.708768, lon:7.688387},
         {date: '19/05', title: '', place: 'Volano (TN)', lat:45.917994, lon:11.063898},
         {date: '26/05', title: 'Sgrana e Traballa Festival', place: 'Firenze', lat:43.7622485, lon:11.3021473},
         {date: '08/06', title: 'La Strada Festival', place: 'Brescia', lat:45.533366, lon:10.216124},
         {date: '16/06', title: '', place: 'Barge (CN)', lat:44.726265, lon:7.326945},
-	      {date: '24/06', title: '', place: 'Normandie [FR]', lat:49.436104, lon:1.089412},
+      	{date: '24/06', title: '', place: 'Normandie [FR]', lat:49.436104, lon:1.089412},
         {date:'28/06', title:'La Muntà di Rat', place:'Piacenza', lat:45.0537735 , lon:9.6951421 },
         {date: '30/06', title: '', place: 'Isla de Baish [FR]', lat:43.613919, lon:1.082228},
-        /*{date: '21/07', title: '', place: 'Albissola Marina (SV)', lat: 44.326915, lon:8.501675},
-        {date: '21/07', title: '', place: 'Olivetta S. Michele (IM)', lat: 43.879856, lon:7.514627},*/
+        {date: '12/07', title: 'Nuvolari Libera Tribù', place: 'Cuneo', lat:44.388786, lon:7.554539},
+        {date: '21/07', title: '', place: 'Saint-Rhémy-en-Bosses (AO)', lat: 45.835751, lon:7.181997},
         {date: '03/08', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},
         {date: '04/08', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},
-        {date: '15/08', title: '', place: 'Entracque (CN)', lat:44.241300, lon:7.398903},	
-	      {date: '08/09', title: '', place: 'San Defendente di Cervasca (CN)', lat: 44.395203, lon:7.491598},
+        {date: '15/08', title: '', place: 'Entracque (CN)', lat:44.241300, lon:7.398903},
+	{date: '26/08', title: '', place: 'Manta (CN)', lat:44.6168888 , lon:7.4881296},
+      	{date: '07/09', title: 'Fête du Bois', place: 'La Martre [FR]', lat: 43.766318, lon:6.590405},
+      	{date: '08/09', title: '', place: 'San Defendente di Cervasca (CN)', lat: 44.395203, lon:7.491598},
         {date: '29/09', title: 'Festival Interculturel APV', place: 'Carcassonne (Francia)', lat:43.211310, lon:2.351110},
         {date: '06/10', title: '', place: 'Rossana (CN)', lat:44.543599, lon:7.431411},
+      	{date: '10/11', title: '', place: 'Tarantasca (CN)', lat:44.493170, lon:7.544874},
       ],
       2017: [
         {date: '14/01', title: '', place: 'Lurisia (CN)', lat:44.304863, lon:7.708958},
