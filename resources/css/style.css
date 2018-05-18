@@ -126,6 +126,10 @@ blockquote footer:before {
 #nextLive {
 	text-shadow: 0 1px 1px #d1d8db, 0 -1px 1px #d1d8db, -1px 0 1px #d1d8db, 1px 0 1px #d1d8db;
 	margin: 0;
+	text-decoration: none;
+}
+#loutapage .logo a:hover {
+	text-decoration: none;
 }
 
 #nextLive span {	
