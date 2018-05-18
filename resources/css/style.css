@@ -102,7 +102,7 @@ blockquote footer:before {
 #loutapage a{
 	cursor: pointer;
 }
-#loutapage h1 {
+#loutapage h1, #loutapage h4 {
 	color:#e75757;
 }
 #loutapage .thumbnail {
@@ -118,9 +118,20 @@ blockquote footer:before {
 }
 
 #loutapage .logo img{
-	width: 350px;
+	width: 250px;
 	max-width: 90%;
 	margin-top: 35px;
+}
+
+#nextLive {
+	text-shadow: 0 1px 1px #d1d8db, 0 -1px 1px #d1d8db, -1px 0 1px #d1d8db, 1px 0 1px #d1d8db;
+	margin: 0;
+}
+
+#nextLive span {	
+	font-size: 18px;
+	margin-bottom: 6px;
+	display: inline-block;
 }
 
 .logo-white {

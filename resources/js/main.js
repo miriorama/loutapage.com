@@ -260,6 +260,36 @@ var LT = (function(){
     });
   }
 
+  function initNextLive () {
+    var current = new Date();
+    current.setHours(0,0,0,0);
+    var tomorrow = new Date();
+    tomorrow.setDate(current.getDate() + 1);
+    let currentYear = current.getFullYear();
+    let nextLive;
+
+    for (var i = 0; i < LT.json.concerti[LT.year].length; i++ ) {
+      var c = LT.json.concerti[currentYear][i];
+      var date = new Date(currentYear, c.date.split('/')[1] - 1, c.date.split('/')[0]);
+            
+      if (date.getTime() >= current.getTime() && !c.isCanceled) {
+        nextLive = c;
+        break;
+      }
+    }
+
+    if (nextLive) {
+      /*let date;
+      if (c.date.split('/')[0] == current.getDate() && c.date.split('/')[1] - 1 == current.getMonth()) {
+        date = 'OGGI'
+      } else if (c.date.split('/')[0] == tomorrow.getDate() && c.date.split('/')[1] - 1 == tomorrow.getMonth()) {
+        date = 'DOMANI'
+      }*/
+      var html = '<span style="font-size: 25px;">Prossimo concerto</span><br><b>{0} - {1}{2}</b>'.format(c.date, (c.title ? c.title + '<br>' : ''), c.place);
+      $('#nextLive').html(html);
+    }
+  }
+
   function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
@@ -273,6 +303,7 @@ var LT = (function(){
   function init() {
     initMenu();
     initConcerti();
+    initNextLive();
     initDiscografia();
     initMedia();
     initDeAndre();
