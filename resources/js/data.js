@@ -13,7 +13,7 @@ var jsonData = {
         {date: '18/05', title: 'Sketchmate Festival', place: 'Cavallermaggiore (CN)', lat:44.708768, lon:7.688387},
         {date: '19/05', title: 'Memoriae in Folk Festival', place: 'Volano (TN)', lat:45.917994, lon:11.063898},
         {date: '26/05', title: 'Sgrana e Traballa Festival', place: 'Firenze', lat:43.7622485, lon:11.3021473},
-        {date: '02/06', title:'Rampignado', place:'Bernezzo (CN)', lat:44.384017, lon:7.438793},
+        {date: '01/06', title:'Rampignado', place:'Bernezzo (CN)', lat:44.384017, lon:7.438793},
         {date: '08/06', title: 'La Strada Festival', place: 'Brescia', lat:45.533366, lon:10.216124},
         {date: '16/06', title: '', place: 'Barge (CN)', lat:44.726265, lon:7.326945},
       	{date: '24/06', title: 'La Ferme aux Amaranthes', place: 'Bernay [FR]', lat:49.090151, lon:0.598538},        
