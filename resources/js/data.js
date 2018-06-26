@@ -20,7 +20,7 @@ var jsonData = {
         {date: '30/06', title: '', place: 'Isla de Baish [FR]', lat:43.613919, lon:1.082228},
         {date: '05/07', title:'La Muntà di Rat', place:'Piacenza', lat:45.0537735 , lon:9.6951421 },
         {date: '12/07', title: 'Nuvolari Libera Tribù', place: 'Cuneo', lat:44.388786, lon:7.554539},
-        {date: '21/07', title: '', place: 'Saint-Rhémy-en-Bosses (AO)', lat: 45.835751, lon:7.181997},
+        {date: '21/07', title: '', place: 'Saint-Rhémy-en-Bosses (AO)', lat: 45.835751, lon:7.181997, isCanceled: true},
         {date: '24/07', title: '', place: 'Gorzano (AT)', lat: 44.848991, lon:8.026179},
         {date: '03/08', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},
         {date: '04/08', title: 'Montelago Celtic Festival', place: 'Serravalle di Chienti (MC)', lat:43.037578, lon:12.911694},
