@@ -126,7 +126,7 @@ var LT = (function(){
 
       markers.push(marker);
 
-      var content = '<h4>' + c.date + '/2016' + '</h4><span class="maps-content"> ' + (c.title ? c.title + ' - ' : '') + c.place + '</span>';
+      var content = '<h4>' + c.date + '/' + LT.year + '</h4><span class="maps-content"> ' + (c.title ? c.title + ' - ' : '') + c.place + '</span>';
       var infowindow = new google.maps.InfoWindow({
         content: content
       });
