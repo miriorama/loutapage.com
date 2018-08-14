@@ -34,6 +34,7 @@ var jsonData = {
       	{date: '08/09', title: '', place: 'San Defendente di Cervasca (CN)', lat: 44.395203, lon:7.491598},
         {date: '29/09', title: 'Festival Interculturel APV', place: 'Carcassonne (Francia)', lat:43.211310, lon:2.351110, isCanceled: true},
         {date: '06/10', title: '', place: 'Rossana (CN)', lat:44.543599, lon:7.431411},
+        {date: '20/10', title: 'Presentazione nuovo disco "Buone nuove"', place: 'Savigliano (CN)', lat: 44.648495, lon:7.639103},
       	{date: '10/11', title: '', place: 'Tarantasca (CN)', lat:44.493170, lon:7.544874},
       ],
       2017: [
