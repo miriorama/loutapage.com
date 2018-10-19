@@ -7,3 +7,5 @@ AddOutputFilter DEFLATE text/css
 <filesMatch ".(css|jpg|jpeg|png|gif|js|ico|svg|woff)$">
 Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
+
+RewriteRule ^digital-download(/)?$ digital-download.html [L]
