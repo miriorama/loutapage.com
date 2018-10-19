@@ -1,14 +1,12 @@
 <!doctype html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Buone Nuove - Digital download</title>
-  <meta name="description" content="">
+  <meta name="description" content="Buone Nuove - Digital download">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <script src="/vendors/atomic.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
   <style>
     /*
@@ -18,11 +16,11 @@
       blue #2a5a71
     */
 
-*, *:before, *:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    *, *:before, *:after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
     body {
       background-color: #3b424c;
@@ -127,18 +125,35 @@
     let APP = (function(){
       let _app = {};
 
+      _app.init = function() {
+        alertify.logPosition('bottom right').maxLogItems(1);
+        alertify.loading = function (message) {
+          alertify.delay(0).log(message).delay(5000);
+        };
+      }
+
       _app.download = function() {
-        console.log('download');
+        alertify.loading('Download in corso...');
         
         let id = document.getElementById('key').value;
 
-        atomic('https://buone-nuove.glitch.me/digital-download/' + id + '?domain=127.0.0.1:5500')
+        if (!id) {
+          alertify.error('Inserire il codice.');
+        } else {
+          alertify.loading('Controllo codice in corso...');
+          atomic('https://buone-nuove.glitch.me/digital-download/' + id)
           .then(function (resp) {
-            console.log(resp.data);
+            if (resp.data) {
+              alertify.success('Download in corso...');
+              location.href = resp.data;
+            } else {
+              alertify.error('Codice non valido o scaduto.');
+            }            
           })
           .catch(function (error) {
-            console.log(error.status);
+            alertify.error('Errore durante il download.');
           });
+        }
       }
 
       return _app;
@@ -163,6 +178,8 @@
     ga('create', 'UA-24934102-1', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script src="/vendors/atomic.min.js"></script>
+  <script src="vendors/alertify.min.js"></script>
+  <script>APP.init();</script>
 </body>
-
 </html>
