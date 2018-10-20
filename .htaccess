@@ -8,6 +8,6 @@ AddOutputFilter DEFLATE text/css
 Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 
-RewriteRule * buone-nuove
+RewriteRule .* buone-nuove
 
 RewriteRule ^digital-download(/)?$ digital-download.html [L]
