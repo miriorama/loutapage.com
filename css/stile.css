@@ -188,6 +188,16 @@ h3{
 }
 .relative{position:relative}
 
+.visuallyhidden{
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
 
 /* GRID */
 .container {
@@ -364,7 +374,7 @@ h3{
 .hp__stamp {
     position: absolute;
     transform: rotate(10deg);
-    top: -78px;
+    top: -56px;
     right: -44px;
     width: 250px;
 }
@@ -382,6 +392,76 @@ h3{
     top: 100px;
 }
 
+.hp__main.side{
+    width:100%;
+    border:none;
+    height:270px;
+}
+
+.lt__claim{
+font-family: 'Playfair Display', serif;
+    width: 265px;
+    /*background: #281111;*/
+    background: linear-gradient(45deg, #55a9b2 0%, #418e96 100%);
+    position: absolute;
+    bottom: -125px;
+    right: 0;
+    color: #fff;
+    padding: 18px;
+    line-height: 21px;
+    font-size: 14px;
+}
+
+.lt__num{
+    font-weight: 100;
+    font-size: 390px;
+    line-height: 420px;
+    color: #000;
+    color: rgba(25,0,0,.6);
+    position: absolute;
+    bottom: -100px;
+    left: -120px;
+    letter-spacing: -30px;
+}
+
+.lt__name{
+font-weight: 300;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000;
+    color: rgba(25,0,0,.6);
+    position: absolute;
+    top: 65px;
+    left: -137px;
+    letter-spacing: -3px;
+    transform: rotate(-90deg);
+}
+
+.lt__name h2{
+    font-family: 'Ubuntu Mono', monospace;
+    line-height: 14px;
+    font-size: 44px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 7px 0;
+    margin: 0;
+        letter-spacing: -3px;
+}
+
+.hp__main.side .lt__name{
+    text-align:right;
+    top:175px;
+}
+
+.hp__first{
+    width:300px;
+    height:300px;
+    margin-top:60px;
+    position:relative;
+    padding:25px 20px;
+    margin-left: 0px;
+}
 
 .lt__when{
     font-family: 'Ubuntu Mono', monospace;
@@ -421,6 +501,34 @@ h3{
     letter-spacing: -3px;
 }
 
+.lt__slide{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.lt__slide div.slick-slide,
+.lt__slide>div,
+.lt__slide .slick-track {
+    width:100%;
+    height:100%;
+    background-size:cover;
+}
+
+.lt__where>div:last-child{
+    padding-left:20px;
+}
+
+.lt__where h3{
+    position: absolute;
+    color: #dcd7d7;
+    right: -62px;
+    top: 18px;
+    font-size: 100px;
+    margin: 0;
+}
 
 #hero{
     background: url(/img/stripes.svg);
@@ -463,6 +571,194 @@ h3{
     padding-left:40px; 
 }
 
+/* SPONSOR */
+div.sponsor{
+    width: calc(33.3333% - 12px);
+    margin: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius:2px;
+    overflow:hidden;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    height: 72px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-color:#fff;
+    border: 12px solid #fff;
+}
+
+div.sponsor.sponsor--full {
+    width:calc(100% - 12px);
+}
+
+div.sponsor.sponsor--main {
+    width:calc(50% - 12px);
+	height: 90px;
+}
+
+.programma__content .sponsors {
+	margin-left: -6px;
+}
+
+.programma__content .sponsor {
+	width: calc(50% - 12px);
+}
+
+/* GALLERIA */
+
+div.albums,
+div.photos {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+div.album,
+div.photo {
+    width: calc(33.3333% - 24px);
+    margin: 12px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    position: relative;
+}
+
+div.album:hover,
+div.photo:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+div.album__photo,
+div.photo__image {
+    height: 150px;
+    background-color: #fefefe;
+    background-size: cover;
+    background-position: center;
+}
+
+div.album__dida {
+    background: #fff;
+    padding: 15px 12px 15px;
+    position: relative;
+}
+
+div.album__title {
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+div.album__dida a.button {
+    position: absolute;
+    right: 12px;
+    top: -23px;
+}
+
+div.album__dida>span.t-small {
+    font-size: 11px;
+    vertical-align: 2px;
+}
+
+div.photo__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+div.photo__hover a.button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 200px;
+}
+
+div.photo:hover div.photo__hover {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+div.photo:hover div.photo__hover a.button {
+    top: 57px;
+}
+
+#galleria__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 3000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+
+#galleria__modal.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+div.photo__zoom {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+div.photo__zoom img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div.photo__zoom:focus {
+    outline: none
+}
+
+a.slick-prev,
+a.slick-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1001;
+}
+
+a.slick-prev {
+    left: 24px;
+    background-color: #d7922a;
+}
+
+a.slick-next {
+    right: 24px;
+    background-color: #d7922a;
+}
+
+a.slick-close {
+    position: fixed;
+    right: 24px;
+    z-index: 3001;
+    top: 24px;
+    display: none;
+    background-color: #d7922a;
+}
+
+.slick-list,
+.slick-track {
+    height: 100%
+}
+
+/* PROGRAMMA */
+div.programma__hour{width:25%;color: #418e96;}
+div.programma__hour i {vertical-align:-2px}
+div.programma__content{width:75%}
 
 /* FOOTER */
 footer{
@@ -474,4 +770,252 @@ footer{
     font-size: 14px;
     line-height: 20px;
     position:relative;
+}
+
+.footer__go-home{
+	position:absolute;
+	right:24px;
+	top:0;
+    background-color:#d7922a
+}
+
+/*  MEDIA QUERIES */
+
+@media (max-width: 1260px) {
+    
+    .lt__where {
+        font-size: 70px;
+        line-height: 60px;
+        left: 80px;
+    }
+
+    .lt__where h3 {
+        top: 25px;
+    }    
+    
+}
+
+@media (max-width: 1025px) {
+    
+    .hp__blocks {
+        width: 600px;
+    }
+
+    .hp {
+        height: 300px;
+    }
+    
+    .hp__main{
+        width: 300px;
+        height: 300px;
+        top: 77px;
+    }
+
+    .logo, .logo--dark {
+        top: 0;
+        left: 0;
+        padding: 15px;
+    }
+
+    .logo__tipo {
+        height: 80px;
+    }
+
+    .lt__when {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .presents {
+        font-size: 44px;
+        line-height: 44px;
+    }
+    
+    .hp__stamp {
+        top: -71px;
+        right: -60px;
+        width: 180px;
+    }
+
+    #hero {
+        height: 120px;
+    }
+
+    .hp__first{
+        width: 250px;
+        height: 250px;
+        margin-top:0;
+        border-top:5px solid #fff;
+        border-bottom:5px solid #fff;
+    }
+    
+    .hp__second {
+        width: 210px;
+        top: 122px;
+        left: 20px;
+    }
+
+    .button.lt__detail {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .logo, .logo--dark{
+        top: 0;
+        left: 0;
+        /*width: 100%;
+        background: #231f20;*/
+        padding:15px;
+    }        
+    
+    .logo__tipo{height: 80px}
+    .logo__payoff{display:none !important;}
+    
+    .menu__open, .menu__close{
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .container{
+        padding:0 20px;
+    }
+    
+    h1{
+        font-size: 37px;
+        line-height: 37px;
+        margin-top: 27px;
+        margin-bottom: 27px;
+        letter-spacing:0;        
+    }
+    
+    .hp{
+        height:auto;
+    }
+
+    .hp__stamp {
+        top: -16px;
+        left: 117px;
+        width: 180px;
+    }
+
+    #hero {
+        height: 50px;
+    }
+
+    .hp{
+        overflow:hidden;
+    }
+    
+    .hp__blocks {width:100%}
+    /*.hp__blocks>div {
+        width:100%;
+        border:none;
+        height:auto;
+        text-align: center;
+    }   */  
+
+    .hp__main {
+        width: calc(100% - 60px);
+        height: calc(100vw - 60px);
+        text-align: center;
+        margin: 0 30px 40px;        
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    .lt__num{display:none;}
+    
+    .lt__name{
+        transform: none;
+        position: static;
+        left: 0;
+        top: 0;
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+    
+    .lt__claim{
+        position:static;
+        width:100%;
+        bottom:auto;
+    }
+    
+    .hp__second {
+        width: calc(100% - 60px);
+        height: 295px;
+        position: relative;
+        top: 64px;
+        left: 30px;
+    }
+    
+    .lt__where{
+        position:static;
+        top:auto;
+        left:auto;
+        padding:15px 15px 25px 15px;
+    }
+    
+    .lt__where h3 {
+        display:none;
+    }  
+
+    .side__left{
+        width: 100%;
+
+    }
+    
+    .side__right{
+        width:100%;
+        padding-left:0;        
+        
+    }
+
+    .side__info {
+        margin-bottom: 30px;
+    }
+/*
+    .side__info .p1 {
+        float: left;
+        width: 30%;
+    }
+    
+    .side__info .p2 {
+        float: left;
+        margin-left: 21px;
+        width: 30%;
+    }
+
+    .side__info .p3 {
+        float: left;
+        width: 30%;
+    }*/
+
+    footer{
+        margin-top:27px;
+        padding:27px 0 70px 0;;
+        text-align:center;
+    } 
+
+    .footer__go-home{
+        right:0;
+        left:0;
+        top:0;
+        margin:auto;
+        top:auto;
+        bottom:-50px;
+    }    
+    
+}
+
+@media (max-width: 600px) {
+    div.sponsor, div.sponsor.sponsor--main {width: calc(100% - 12px)}
+	
+	div.programma__hour{width:100%}
+    div.programma__content{width:100%}
 }
