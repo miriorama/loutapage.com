@@ -46,6 +46,10 @@ body{
 	background: #f2ecde;
 }
 
+.social-button-container li {
+    list-style: none;
+}
+
 /* ATOMS */
 a{
     color: inherit;
