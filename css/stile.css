@@ -783,7 +783,7 @@ footer{
     .hp{
         overflow:hidden;
     }
-    
+
     .hp__blocks {width:100%}
     /*.hp__blocks>div {
         width:100%;
@@ -796,7 +796,8 @@ footer{
         width: calc(100% - 60px);
         height: calc(100vw - 60px);
         text-align: center;
-        margin: 0 30px 40px;        
+        margin: 0 30px 40px;    
+        top: 30px;    
     }
 
     .hp__second {
