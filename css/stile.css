@@ -46,8 +46,32 @@ body{
 	background: #f2ecde;
 }
 
+@font-face {
+    font-family: 'nova';
+    src: url('/fonts/nova.woff2') format('woff2'),
+         url('/fonts/nova.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.social-button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: flex-end;
+}
+
 .social-button-container li {
     list-style: none;
+    float: right;
+}
+
+.social-sf {
+    width: 145px;margin: 4px 0 7px;height: 20px;
+}
+.social-yt {
+    padding: 8px 0px 0px 20px;width: 135px;
 }
 
 /* ATOMS */
@@ -140,7 +164,7 @@ h1{
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'nova', serif;
     font-size: 27px;
     line-height: 27px;
     font-weight: 300;
@@ -159,12 +183,24 @@ h3{
     letter-spacing: -1px;
 }
 
+em {
+    color: #c63742;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 28px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+}
+
 
 /* HELPER */
 .t-center{text-align:center}
 .t-right{text-align:right}
 .t-bold, b{font-weight:600}
 .t-underline{text-decoration:underline}
+.t-line-through {text-decoration: line-through}
 .t-italic, i{font-style:italic}
 .t-small{
     font-size:13px;
@@ -467,12 +503,19 @@ font-weight: 300;
     margin-left: 0px;
 }
 
-.lt__when{
+.hp__when, .hp__where{
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
     font-size: 36px;
     line-height: 35px;
     color: #f2ecde;
+}
+.hp__where{
+    font-size: 26px;
+    display: inline-block;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .hp__second {
@@ -547,6 +590,17 @@ font-weight: 300;
     width:30%;
 }
 
+.side--concerts {
+    background-color: #306885;
+}
+.concert--current {
+    font-weight: bold;
+    background-color: #f2ecde;
+    color: #306885;
+    padding: 0px 5px;
+    display: inline-block;
+}
+
 .side__info{
     font-family: 'Ubuntu Mono', monospace;
     width: 100%;
@@ -559,11 +613,13 @@ font-weight: 300;
     text-align: right;
 }
 
-.side__info h2{
+.side__info h2 {
     color: #f2ecde;
     margin-top: 0;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 36px;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 
 .side__info p{
@@ -574,195 +630,6 @@ font-weight: 300;
     width:70%;
     padding-left:40px; 
 }
-
-/* SPONSOR */
-div.sponsor{
-    width: calc(33.3333% - 12px);
-    margin: 6px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    border-radius:2px;
-    overflow:hidden;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    height: 72px;
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-color:#fff;
-    border: 12px solid #fff;
-}
-
-div.sponsor.sponsor--full {
-    width:calc(100% - 12px);
-}
-
-div.sponsor.sponsor--main {
-    width:calc(50% - 12px);
-	height: 90px;
-}
-
-.programma__content .sponsors {
-	margin-left: -6px;
-}
-
-.programma__content .sponsor {
-	width: calc(50% - 12px);
-}
-
-/* GALLERIA */
-
-div.albums,
-div.photos {
-    margin-left: -12px;
-    margin-right: -12px;
-}
-
-div.album,
-div.photo {
-    width: calc(33.3333% - 24px);
-    margin: 12px;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 2px;
-    overflow: hidden;
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    position: relative;
-}
-
-div.album:hover,
-div.photo:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-div.album__photo,
-div.photo__image {
-    height: 150px;
-    background-color: #fefefe;
-    background-size: cover;
-    background-position: center;
-}
-
-div.album__dida {
-    background: #fff;
-    padding: 15px 12px 15px;
-    position: relative;
-}
-
-div.album__title {
-    line-height: 18px;
-    height: 36px;
-    overflow: hidden;
-    margin-bottom: 5px;
-}
-
-div.album__dida a.button {
-    position: absolute;
-    right: 12px;
-    top: -23px;
-}
-
-div.album__dida>span.t-small {
-    font-size: 11px;
-    vertical-align: 2px;
-}
-
-div.photo__hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-}
-
-div.photo__hover a.button {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 200px;
-}
-
-div.photo:hover div.photo__hover {
-    background-color: rgba(0, 0, 0, 0.5)
-}
-
-div.photo:hover div.photo__hover a.button {
-    top: 57px;
-}
-
-#galleria__modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 3000;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s 0s, visibility 0s 0.3s;
-}
-
-#galleria__modal.is-visible {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.3s 0s, visibility 0s 0s;
-}
-
-div.photo__zoom {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-}
-
-div.photo__zoom img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-div.photo__zoom:focus {
-    outline: none
-}
-
-a.slick-prev,
-a.slick-next {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: 1001;
-}
-
-a.slick-prev {
-    left: 24px;
-    background-color: #d7922a;
-}
-
-a.slick-next {
-    right: 24px;
-    background-color: #d7922a;
-}
-
-a.slick-close {
-    position: fixed;
-    right: 24px;
-    z-index: 3001;
-    top: 24px;
-    display: none;
-    background-color: #d7922a;
-}
-
-.slick-list,
-.slick-track {
-    height: 100%
-}
-
-/* PROGRAMMA */
-div.programma__hour{width:25%;color: #418e96;}
-div.programma__hour i {vertical-align:-2px}
-div.programma__content{width:75%}
 
 /* FOOTER */
 footer{
@@ -825,7 +692,7 @@ footer{
         height: 80px;
     }
 
-    .lt__when {
+    .hp__when, .hp__where {
         font-size: 24px;
         line-height: 24px;
     }
@@ -887,6 +754,10 @@ footer{
     .container{
         padding:0 20px;
     }
+
+    em {
+        margin: 20px 0;
+    }
     
     h1{
         font-size: 37px;
@@ -901,9 +772,8 @@ footer{
     }
 
     .hp__stamp {
-        top: -16px;
-        left: 117px;
-        width: 180px;
+        top: -43px;
+        right: 0;
     }
 
     #hero {
@@ -927,6 +797,10 @@ footer{
         height: calc(100vw - 60px);
         text-align: center;
         margin: 0 30px 40px;        
+    }
+
+    .hp__second {
+        text-align: center;
     }
     
     .logo {
@@ -982,23 +856,12 @@ footer{
 
     .side__info {
         margin-bottom: 30px;
-    }
-/*
-    .side__info .p1 {
-        float: left;
-        width: 30%;
-    }
-    
-    .side__info .p2 {
-        float: left;
-        margin-left: 21px;
-        width: 30%;
+        text-align: center;
     }
 
-    .side__info .p3 {
-        float: left;
-        width: 30%;
-    }*/
+    .social-button-container {
+        align-items: center;
+    }
 
     footer{
         margin-top:27px;
@@ -1015,11 +878,4 @@ footer{
         bottom:-50px;
     }    
     
-}
-
-@media (max-width: 600px) {
-    div.sponsor, div.sponsor.sponsor--main {width: calc(100% - 12px)}
-	
-	div.programma__hour{width:100%}
-    div.programma__content{width:100%}
 }
