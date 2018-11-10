@@ -33,6 +33,7 @@
     "@type" : "MusicGroup",  
     "name" : "Lou Tapage",  
     "url" : "https://loutapage.com",  
+    "email": "info@loutapage.com",
     "image" : "https://loutapage.com/img/foto.jpg",  
     "sameAs" : [    
       "https://www.facebook.com/loutapage",       
@@ -223,7 +224,7 @@ raccontare, facendo muovere le idee e i piedi di chi ascolta.</b></p><br>
                 let now = new Date();
                 for (var i = 0; i < dates.length; i++ ) {
                     let arr = dates[i].date.split('/');
-                    let date = new Date(arr[2], arr[1] - 1, arr[0]);
+                    let date = new Date(arr[2], arr[1] - 1, arr[0], 23, 59);
                     let cssClass = '';
 
                     if (date > now && $('.hp__when').text() == '') {
