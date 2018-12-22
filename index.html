@@ -14,8 +14,10 @@
     <meta property='og:site_name' content='Lou Tapage' />
     <meta property='og:type' content='website'/>	
   
-  <link href="/css/stile.css?1" rel="stylesheet">
+  <link href="/css/stile.css?2" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
   <link href="/css/themify-icons.css" rel="stylesheet" type="text/css">
   <script src="/js/jquery-3.1.1.min.js"></script>
 
@@ -182,9 +184,197 @@ e chitarre distorte.</p>
 "corretto"; la musica popolare fa così quello per cui è nata: si mischia, si fa meticcia,
 si scontra con altre influenze e altre lingue in funzione della storia che deve
 raccontare, facendo muovere le idee e i piedi di chi ascolta.</b></p><br>
+<style>
+ul.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
 
-        </div>    
-    </div>
+ul.products li {
+    background-color: #306885;
+    box-shadow: 0 0 10px #00000024;
+    list-style: none;
+    width: calc(50% - 10px);
+    margin-top: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.product--img {
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+.product--title{
+    font-family: 'nova', sans-serif;
+    font-size: 1.8em;
+}
+.product--price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.product--footer {
+    padding: 0.8em;
+    text-align: center;
+    background-color: #306885;
+    color: #f2ecde;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.button--red {
+    background-color: #c63742;
+    color: #f2ecde;
+}
+
+.btn svg {
+    margin-right: 6px
+}
+
+.btn.orange {
+    background-color: #ff9d00
+}
+
+.btn:focus {
+    outline: 0
+}
+
+.btn--red:hover {
+    background-color: transparent;
+    border: #c63742 1px solid;
+    color: #c63742 !important;
+}
+</style>
+<h2 class="no-margin">Shop</h2>
+<i>Spese di spedizione gratuite sopra i 20 €.</i>
+<ul class="products">
+    <li>
+        <div class="product--img" style="background-image:url(/img/cd-buone-nuove.jpg)"></div>
+        <div class="product--footer">
+            <div class="product--title">CD Buone Nuove</div>
+            <div class="product--price">15 €</div>
+
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="YNW8EBUAG85G8">
+                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
+                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+            </form>
+                
+      
+        </div>
+    </li>
+    <li>
+        <div class="product--img" style="background-image:url(/img/vinile.jpg)"></div>
+        <div class="product--footer">
+            <div class="product--title">Vinile Buone Nuove</div>
+            <div class="product--price">25 €</div>
+
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="E9L8KCN7LB82S">
+                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
+                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+            </form>              
+        </div>
+    </li>
+    <li>
+        <div class="product--img" style="background-image:url(/img/cassetta.jpg)"></div>
+        <div class="product--footer">
+            <div class="product--title">Cassetta Buone Nuove</div>
+            <div class="product--price">15 €</div>
+
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="Q3JDV97JP86LQ">
+                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
+                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+            </form>
+                
+
+              
+        </div>
+    </li>
+    <li>
+        <div class="product--img" style="background-image:url(/img/tshirt-buone-nuove.jpg)"></div>
+        <div class="product--footer">
+            <div class="product--title">Tshirt Buone nuove</div>
+            <div class="product--price">15 €</div>  
+
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="7FER5TJZK2B4C">
+                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
+                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+            </form>           
+        </div>
+    </li>
+    <li>
+        <div class="product--img" style="background-image:url(/img/tshirt-bodi-yellow.jpg)"></div>
+        <div class="product--footer">
+            <div class="product--title">Tshirt Bodi</div>
+            <div class="product--price">15 €</div>
+
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="649NP4QWXEPKA">
+                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
+                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+            </form>
+                            
+        </div>
+    </li>
+    <li>
+        <div class="product--img" style="background-image:url(/img/tshirt-bodi-blue.jpg)"></div>
+        <div class="product--footer">
+            <div class="product--title">Tshirt Bodi</div>
+            <div class="product--price">15 €</div> 
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="PVZKQCADEVL7Y">
+                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
+                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+            </form>
+                               
+        </div>
+    </li>
+    <li>
+        <div class="product--img" style="background-image:url(/img/shopper.jpg)"></div>
+        <div class="product--footer">
+            <div class="product--title">Shopper Buone nuove</div>
+            <div class="product--price">5 €</div>      
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="LM3TN4F2TWBT6">
+                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
+                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+            </form>                          
+        </div>
+    </li>
+    <li>
+        <div class="product--img" style="background-image:url(/img/spartiti.jpg)"></div>
+        <div class="product--footer">
+            <div class="product--title">Spartiti Buone Nuove</div>
+            <div class="product--price">5 €</div>    
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="VSZWLEB3HGP86">
+                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
+                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+            </form>
+                          
+        </div>
+    </li>
+</ul>
+
+</div>
+</div>
 
     <footer style="margin-top: 0;">
 	    <div class="container row relative">
@@ -294,7 +484,7 @@ raccontare, facendo muovere le idee e i piedi di chi ascolta.</b></p><br>
             {date: '30/11/2018', place: 'Draguignan [FR]', title: 'Bucéphale'},
             {date: '01/12/2018', place: 'Tourrette-Levens [FR]'},
             {date: '22/12/2018', place: 'Centallo (CN)'},
-            {date: '11/01/2019', place: 'Lou Tapage canta De André - Teatro Toselli - Cuneo'},
+            {date: '11/01/2019', place: 'LT canta De André - Teatro Toselli (CN)'},
             {date: '09/02/2019', place: 'Lurisia (CN)'},
             {date: '14/02/2019', place: 'Cinzano (CN)'}
         ];
