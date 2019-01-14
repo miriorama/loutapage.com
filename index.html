@@ -220,6 +220,9 @@ ul.products li {
     font-size: 1.5em;
     line-height: 1.5em;
 }
+.product--size {
+    margin-bottom: 0.5em;
+}
 .product--footer {
     padding: 0.8em;
     text-align: center;
@@ -252,7 +255,15 @@ ul.products li {
 }
 </style>
 <h2 class="no-margin">Shop</h2>
-<i>Spese di spedizione gratuite sopra i 20 €.</i>
+<i>Spese di spedizione gratuite sopra i 30 €.</i>
+<br><br>
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+    <button class="button button--red no-margin" type="submit">VAI AL CARRELLO</button>
+    <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+</form>
+
 <ul class="products">
     <li>
         <div class="product--img" style="background-image:url(/img/cd-buone-nuove.jpg)"></div>
@@ -310,6 +321,21 @@ ul.products li {
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="7FER5TJZK2B4C">
+                <div class="product--size">                           
+                    <input type="hidden" name="on0" value="Taglia">
+                    <label for="os0">Taglia</label>
+                    <select name="os0">
+                        <option value="Uomo S">Uomo S </option>
+                        <option value="Uomo M">Uomo M </option>
+                        <option value="Uomo L">Uomo L </option>
+                        <option value="Uomo XL">Uomo XL </option>
+                        <option value="Uomo XXL">Uomo XXL </option>
+                        <option value="Donna XS">Donna XS </option>
+                        <option value="Donna S">Donna S </option>
+                        <option value="Donna M">Donna M </option>
+                        <option value="Donna L">Donna L </option>
+                    </select>
+                </div>
                 <button class="button button--red no-margin" type="submit">ACQUISTA</button>
                 <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
             </form>           
@@ -324,6 +350,21 @@ ul.products li {
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="649NP4QWXEPKA">
+                <div class="product--size">                           
+                    <input type="hidden" name="on0" value="Taglia">
+                    <label for="os0">Taglia</label>
+                    <select name="os0">
+                        <option value="Uomo S">Uomo S </option>
+                        <option value="Uomo M">Uomo M </option>
+                        <option value="Uomo L">Uomo L </option>
+                        <option value="Uomo XL">Uomo XL </option>
+                        <option value="Uomo XXL">Uomo XXL </option>
+                        <option value="Donna XS">Donna XS </option>
+                        <option value="Donna S">Donna S </option>
+                        <option value="Donna M">Donna M </option>
+                        <option value="Donna L">Donna L </option>
+                    </select>
+                </div>
                 <button class="button button--red no-margin" type="submit">ACQUISTA</button>
                 <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
             </form>
@@ -338,6 +379,21 @@ ul.products li {
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="PVZKQCADEVL7Y">
+                <div class="product--size">                           
+                        <input type="hidden" name="on0" value="Taglia">
+                        <label for="os0">Taglia</label>
+                        <select name="os0">
+                            <option value="Uomo S">Uomo S </option>
+                            <option value="Uomo M">Uomo M </option>
+                            <option value="Uomo L">Uomo L </option>
+                            <option value="Uomo XL">Uomo XL </option>
+                            <option value="Uomo XXL">Uomo XXL </option>
+                            <option value="Donna XS">Donna XS </option>
+                            <option value="Donna S">Donna S </option>
+                            <option value="Donna M">Donna M </option>
+                            <option value="Donna L">Donna L </option>
+                        </select>
+                    </div>
                 <button class="button button--red no-margin" type="submit">ACQUISTA</button>
                 <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
             </form>
@@ -371,7 +427,38 @@ ul.products li {
                           
         </div>
     </li>
+    <li>
+        <div class="product--img" style="background-image:url(/img/vecchi-cd.jpg)"></div>
+        <div class="product--footer">
+            <div class="product--title">Discografia precedente</div>
+            <div class="product--price">10 €</div>    
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="NGJWJBN4FZEE2">
+                <div class="product--size">                           
+                    <input type="hidden" name="on0" value="CD">
+                    <label for="os0">CD</label>
+                    <select name="os0" style="max-width: 100%;">
+                        <option value="Live CPA Firenze Sud - 2015">Live CPA Firenze Sud - 2015 </option>
+                        <option value="Finisterre - 2013">Finisterre - 2013 </option>
+                        <option value="Storia di un impiegato -  2010">Storia di un impiegato -  2010 </option>
+                        <option value="Que vos lej far - 2009">Que vos lej far - 2009 </option>
+                        <option value="Reve eterne - 2007">Réve eternè - 2007 </option>
+                        <option value="Lou Tapage - 2005">Lou Tapage - 2005 </option>
+                    </select>
+                </div>
+                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
+                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+            </form>                            
+        </div>
+    </li>        
 </ul>
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+    <button class="button button--red no-margin" type="submit">VAI AL CARRELLO</button>
+    <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+</form><br>
 
 </div>
 </div>
