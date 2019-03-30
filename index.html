@@ -582,4 +582,82 @@ ul.products li {
             {date: '04/05/2019', place: 'Roccaforte M.vì (CN)'}
         ];
     </script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "MusicGroup",
+        "name": "Lou Tapage",
+        "description": "Band description",
+        "url": "https://loutapage.com",
+        "genre": [
+            "Folk rock",
+            "Folk",
+            "Rock"
+        ],
+	    "sameAs": [
+	        "https://www.facebook.com/loutapage",
+	        "https://instagram.com/loutapage",
+	        "https://www.youtube.com/user/loutapage",
+	        "https://soundcloud.com/loutapage"
+	    ],
+        "album": [{
+            "@type": "MusicAlbum",
+            "name": "Buone nuove",
+            "datePublished": "2018"
+            },{
+            "@type": "MusicAlbum",
+            "name": "Finisterre",
+            "datePublished": "2013"
+        }],
+        "event": [{
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "Lou Tapage @ Saluzzo",
+            "startDate": "2019-03-10T21:30",
+            "location": {
+              "@type": "Place",
+              "name": "Pala Crs",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Don Giacomo Soleri, 16",
+                "addressLocality": "Saluzzo",
+                "postalCode": "12037",
+                "addressCountry": "IT"
+              }
+            }
+            },{
+                "@context": "https://schema.org",
+                "@type": "Event",
+                "name": "Lou Tapage @ Cinzano",
+                "startDate": "2019-04-18T21:30",
+                "location": {
+                    "@type": "Place",
+                    "name": "Cinzano Life",
+                    "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Strada cinzano, 68 bis",
+                    "addressLocality": "Cinzano",
+                    "postalCode": "12069",
+                    "addressCountry": "IT"
+                    }
+                }
+            },{
+                "@context": "https://schema.org",
+                "@type": "Event",
+                "name": "Lou Tapage @ Roccaforte M.vì (CN)",
+                "startDate": "2019-05-04T21:30",
+                "location": {
+                    "@type": "Place",
+                    "name": "Roccaforte Mondovì",
+                    "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "via Roma, 1",
+                    "addressLocality": "Roccaforte Mondovì",
+                    "postalCode": "12088",
+                    "addressCountry": "IT"
+                }
+            }
+        }]
+    }
+</script>
 </body></html>
