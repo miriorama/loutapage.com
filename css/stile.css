@@ -637,6 +637,52 @@ font-weight: 300;
     padding-left:40px; 
 }
 
+/* MODAL */
+#modal__container{
+    position: fixed;
+    top: 0;left: 0;bottom: 0;right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    overflow-x: auto;
+    z-index: 2000;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    opacity: 0;
+    visibility: hidden; 
+}
+
+#modal__container.is-visible{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+#modal__window{
+    display: flex;
+    flex-direction: column; /*IE11*/
+    height: 100%;
+}
+
+#modal__content{
+    border-radius: 3px;
+    background: #000;
+    width: 100%;
+    max-width: 800px;
+    padding: 0;
+    margin: auto;
+    max-height: 500px;
+    overflow-y:auto;
+}
+
+#modal__content .button{
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+#modal__content img.mobile{
+    display: none;
+}
+
+
 /* FOOTER */
 footer{
     font-family: 'Ubuntu Mono', monospace;
@@ -884,5 +930,19 @@ footer{
         top:auto;
         bottom:-50px;
     }    
+
+   
     
+}
+
+
+@media (max-width: 426px) {
+
+    #modal__content img{
+        display: none;
+    }
+
+    #modal__content img.mobile{
+        display: block;
+    }
 }

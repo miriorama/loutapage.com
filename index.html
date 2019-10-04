@@ -447,6 +447,17 @@ ul.products li {
 </div>
 </div>
 
+<div id="modal__container" class="is-visible">
+    <div id="modal__window">
+        <div id="modal__content">
+            <img src="/img/de-andre-2019.jpg" alt="Lou Tapage canta De andré" />
+            <img class="mobile" src="/img/de-andre-2019-square.jpg" alt="Lou Tapage canta De andré" />
+            <a href="https://www.eventbrite.it/e/biglietti-lou-tapage-canta-de-andre-73938880181" target="_blank" class="button button--red">ACQUISTA BIGLIETTI<i class="ti-arrow-right"></i></a>
+            <a onclick="modal__close();" class="button">CHIUDI<i class="ti-close"></i></a>
+        </div>
+    </div>
+</div>
+
     <footer style="margin-top: 0;">
 	    <div class="container row relative">
 		    <div class="side__left" style="padding:0">
@@ -500,6 +511,8 @@ ul.products li {
 
                     $('.side--concerts').append(template)
                 }
+                
+                modal__open();
             };
             ret.goDown = function () {
                 if ($('#hero').length) {
@@ -545,6 +558,23 @@ ul.products li {
         function closeMenu(){
             $("#menu__wrapper").removeClass("is-visible");
             $("body").css("overflow","auto");
+        }
+
+        function modal__open(content,type){
+            type = type || "";
+            if(type != ""){
+                $("#modal__content").addClass(type);
+            }
+            $("#modal__content").html();     
+            $('#modal__container').addClass('is-visible');  
+            $('body').css('overflow','hidden');
+        }
+
+        function modal__close(){
+            $('#modal__container').removeClass();
+            $('#modal__content').removeClass();
+            $('body').css('overflow','auto');
+            $('#modal__content').empty();
         }
         
         let dates = [
@@ -669,5 +699,7 @@ ul.products li {
             }
         }]
     }
+
+    
 </script>
 </body></html>
