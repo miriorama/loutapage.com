@@ -710,6 +710,7 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
+    line-height: 0;
 }
 .banner img {
     max-width: 900px;
