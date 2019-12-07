@@ -714,6 +714,7 @@ footer{
 }
 .banner img {
     max-width: 900px;
+    width: 100%;
 }
 
 .natale {
