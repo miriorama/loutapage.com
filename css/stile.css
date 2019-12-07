@@ -58,6 +58,10 @@ body{
     font-style: normal;
 }
 
+.mobile {
+    display: none;
+}
+
 .social-button-container {
     width: 100%;
     display: flex;
@@ -702,6 +706,24 @@ footer{
     background-color:#d7922a
 }
 
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.banner img {
+    max-width: 900px;
+}
+
+.natale {
+    background-color: #95292b;    
+}
+.piacenza {
+    background-color: #fff;    
+}
+
+
+
 /*  MEDIA QUERIES */
 
 @media (max-width: 1260px) {
@@ -944,5 +966,12 @@ footer{
 
     #modal__content img.mobile{
         display: block;
+    }
+
+    .mobile {
+        display: block;
+    }
+    .not-mobile {
+        display: none;
     }
 }
