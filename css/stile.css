@@ -593,7 +593,7 @@ font-weight: 300;
     background-position: top;
     background-repeat: repeat-x; 
     padding: 0;
-    height: 160px;    
+    height: 60px;    
 }
 
 .side__left{
@@ -689,9 +689,10 @@ font-weight: 300;
 
 /* FOOTER */
 footer{
-    font-family: 'Ubuntu Mono', monospace;
-    background: #3b424c;
-    color:#fff;
+    font-family: 'Montserrat', monospace;
+    text-align: center;
+    background: #353991;
+    color:#cdf6b4;
     margin-top:47px;
     padding:47px 0;
     font-size: 14px;
@@ -717,11 +718,166 @@ footer{
     width: 100%;
 }
 
-.natale {
+.banner.natale {
     background-color: #95292b;    
 }
-.piacenza {
+.banner.piacenza {
     background-color: #fff;    
+}
+
+.banner.live2020{
+    background-image: url(../img/live-2020.jpg);
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-color: #cdf6b4;
+    
+}
+.banner.live2020 h2, .banner.live2020 h3 {
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+    color: #353991;
+    font-weight: 700;
+}
+.banner.live2020 h2 {
+    margin-top: 15px;
+    font-size: 2.8em;
+}
+.banner.live2020 h3 {
+    font-weight: 500;
+    font-size: 1.6em;
+}
+.live2020 .container {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 50px;
+    margin-bottom: auto;
+}
+.live2020 .container > * {
+    width: 50%;
+}
+.live2020 .logo-2020 {
+    position: relative;
+    width: 100%;
+}
+.live2020 .right {
+    margin-left: 20px;
+}
+
+
+.concerts {
+    background-color: #353991;
+    display: flex;
+    padding: 80px 50px 50px;
+    color: #cdf6b4;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    justify-content: center;
+}
+
+.concerts > div {
+    display: flex;
+    flex-direction: column;    
+}
+
+.concert {
+    display: flex;
+    justify-content: space-between;
+}
+.concert--past {
+    opacity: .6;
+}
+
+.concert span {
+text-align: right;
+    right: 0;
+    margin-left: 40px;
+    background-color: #353991 ;
+    z-index: 1;
+    padding-left: 4px;
+}
+
+.concert b{
+    background-color: #353991 ;
+    z-index: 1;
+    padding-right: 4px;
+}
+
+.concert {
+ position: relative;
+}
+.concert:after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    border-bottom: dotted 2px;
+}
+
+.concert.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 150px;font-size: .8em;
+}
+.concert.footer:after {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .live2020 .container {
+        margin-bottom: 40vmax;
+        font-size: .8em;
+    }
+}
+@media (max-width: 768px) {
+    .live2020 .container {
+        flex-direction: column;
+        text-align: center;
+        font-size: .8em;
+        margin-top: auto;
+    }
+    .live2020 .container > * {
+        width: 100%;
+    }
+    .live2020 .right {
+        margin-left: 0;
+    }
+
+    .concert {
+        font-size: .8em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .concert span {
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .concert:after {
+        display: none;
+    }
+
+    .concert.footer {
+    flex-direction: column;
+    margin-top: 80px;
+    }
+
+    .concerts {
+        padding: 30px 50px 30px;
+    }
+}
+@media (max-width: 425px) {
+    .live2020 .container {
+        font-size: .6em;
+        
+    }
 }
 
 
@@ -785,7 +941,7 @@ footer{
     }
 
     #hero {
-        height: 120px;
+        height: 60px;
     }
 
     .hp__first{
