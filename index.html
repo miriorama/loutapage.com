@@ -592,7 +592,7 @@ ul.products li {
                     let date = new Date(arr[2], arr[1] - 1, arr[0], 23, 59);
                     let cssClass = '';
 
-                    if (date > now && $('.hp__when').text() == '') {
+                    if (date < now && $('.hp__when').text() == '') {
                         $('.hp__when').text(dates[i].date);
                         $('.hp__where').text(dates[i].place);
                         cssClass = 'concert--past';
