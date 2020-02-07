@@ -602,7 +602,7 @@ ul.products li {
                     template = template.replace('{{place}}', dates[i].place);
                     template = template.replace('{{cssClass}}', cssClass);                    
 
-                    $('[data-concerts]').prepend(template)
+                    $('[data-concerts] .footer').before(template)
                 }
                 
                 //modal__open();
