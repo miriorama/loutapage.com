@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png" >
     <link rel="apple-touch-icon" type="image/png" href="img/favicon.png" />
   
-  <link href="/css/stile.css?5" rel="stylesheet">
+  <link href="/css/stile.css?6" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
@@ -34,6 +34,19 @@
 
   gtag('config', 'UA-24934102-1');
   </script>
+  <style>
+      .btn {
+        color: #cdf6b4;
+        background-color: #353991;
+        display: inline-block;
+        padding: 18px 20px;
+        font-weight: bold;
+        border-radius: 80px;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+  </style>
 </head>
 <body id="top" class="">
     <a href="https://loutapage.com">
@@ -62,7 +75,7 @@
     </div> -->
 
     <div class="banner live2020">
-<div class="container">
+<div class="container" style="z-index: 1;">
         <svg class="logo-2020" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 531 189" style="enable-background:new 0 0 531 189;" xml:space="preserve">
 <style type="text/css">
@@ -124,17 +137,26 @@
 
 </svg>
         <div class="right">
-            <h2>20 MARZO 2020</h2>
-            <h3>Mulligans St Patrick's Festival</h3>
-            <h3>GATTINARA (VC)</h3>
+            <h2>17 LUGLIO 2020</h2>
+            <h3>Lou Tapage canta De André</h3>
+            <h3>Piazza Castello - FOSSANO (CN)</h3>
+            <a class="btn" href="https://www.imbaravalle.it/masterclass/iscrizione/106" target="_blank" rel="noopener noreferrer">ACQUISTA BIGLIETTI</a>
         </div>
     </div>
+    <div style="
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0, transparent, #ccf5b3);
+"></div>
     </div>
     <div class="concerts">
         <div data-concerts>
 
 
-            <div class=" concert footer" style=""><div>© Lou Tapage 2020</div><a style="text-decoration: none;" href="mailto:info@loutapage.com">info@loutapage.com</a><span>+39 3395090662</span> </div>
+            <div class=" concert footer" style="margin-top: 0;"><div>© Lou Tapage 2020</div><a style="text-decoration: none;" href="mailto:info@loutapage.com">info@loutapage.com</a><span>+39 3395090662</span> </div>
         </div>
     </div>
 
@@ -638,7 +660,7 @@ ul.products li {
         })();
 
         $(function () {
-            LT.init();
+            //LT.init();
         });
 
         function scrollToEl(_id){
