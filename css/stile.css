@@ -779,6 +779,7 @@ footer{
     font-size: 1.3em;
     line-height: 1.3em;
     justify-content: center;
+    overflow: hidden;
 }
 
 .concerts > div {
