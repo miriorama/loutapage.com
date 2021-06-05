@@ -192,6 +192,7 @@ nav.social a {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
 .streaming > a {
   height: 50px;
@@ -626,6 +627,12 @@ nav.social a {
   .page-andre .inline-gallery {
     margin: 0 -40px 60px !important;
     width: calc(100% + 80px) !important;
+  }
+  .streaming {
+    justify-content: center;
+  }
+  .streaming a {
+    width: 150px;
   }
   nav {
     flex-direction: column;
