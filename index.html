@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="it">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
-    <title>Lou Tapage</title> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lou Tapage</title>
     <meta name="description" content="Canzone d'autore, musica popolare e rock si mescolano per tornare a parlare della montagna.">
     <meta property='og:title' content="Lou Tapage" />
     <meta property='og:description' content="Lou Tapage - Canzone d'autore, musica popolare e rock si mescolano per tornare a parlare della montagna."/>
@@ -14,46 +12,127 @@
     <meta property='og:site_name' content='Lou Tapage' />
     <meta property='og:type' content='website'/>	
 
-        
     <link rel="icon" type="image/png" href="img/favicon.png" >
     <link rel="apple-touch-icon" type="image/png" href="img/favicon.png" />
-  
-  <link href="/css/stile.css?7" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
-  <link href="/css/themify-icons.css" rel="stylesheet" type="text/css">
-  <script src="/js/jquery-3.1.1.min.js"></script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24934102-1"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap" rel="stylesheet">
 
-  gtag('config', 'UA-24934102-1');
-  </script>
-  <style>
-      .btn {
-        color: #f5e4b3;
-        background-color: #351b13;
-        display: inline-block;
-        padding: 18px 20px;
-        font-weight: bold;
-        border-radius: 80px;
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 10px;
-        text-decoration: none;
-      }
-  </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24934102-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-24934102-1');
+    </script>
 </head>
-<body id="top" class="">
-    <a href="https://loutapage.com">
-        <div class="logo row">
-            <img class="logo__tipo" src="/img/logo.png" alt="">
-            <img class="logo__payoff is-hidden" src="/img/logo.png" alt="Lou Tapage">
+<body>
+    <nav>
+        <a onclick="UI.scrollToEl('.page-about');">CHI SIAMO</a>
+        <a onclick="UI.scrollToEl('.page-disk');">DISCOGRAFIA</a>
+        <a onclick="UI.scrollToEl('.page-andre');">CANTA DE ANDRÉ</a>
+        <a onclick="UI.scrollToEl('.page-contact');">CONTATTI</a>
+    </nav>
+
+    <div class="pages">
+        <div class="page page-fullscreen">
+            <div class="photo-credits">Photo credits<br><b>Chiara Bruno</b></div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/loutapage" target="_blank"><img src="/img/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/loutapage/" target="_blank"><img src="/img/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.youtube.com/user/loutapage" target="_blank"><img src="/img/youtube.svg" alt="YouTube"></a>
+                <a href="https://wa.me/+393395090662" target="_blank"><img src="/img/whatsapp.svg" alt="WhatsApp"></a>
+            </div>
+
+            <div class="block-bkg" style="background-image: url(/img/photo/tapage-live-2.jpg);"></div>
+            <svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 531 89" style="enable-background:new 0 0 531 89;" xml:space="preserve">
+               <style type="text/css">
+                   .st0{fill:#ddd;}
+               </style>
+               <path class="st0" d="M61.74,20.41H35.62V1.33h76.19v19.08h-26v65.98H61.74V20.41z"/>
+               <path class="st0" d="M171.71,69.87h-35.97l-6.68,16.53h-24.55l37.55-85.06h23.7l37.67,85.06H178.4L171.71,69.87z M164.67,52.12 L153.73,24.9l-10.94,27.22H164.67z"/>
+               <path class="st0" d="M267.96,5.16c5.67,2.55,10.04,6.2,13.12,10.94c3.08,4.74,4.62,10.31,4.62,16.71c0,6.4-1.54,11.95-4.62,16.65
+                   c-3.08,4.7-7.45,8.32-13.12,10.88c-5.67,2.55-12.35,3.83-20.05,3.83h-14.83v22.24h-24.06V1.33h38.89
+                   C255.6,1.33,262.28,2.61,267.96,5.16z M257.63,41.98c2.51-2.15,3.77-5.2,3.77-9.17c0-3.97-1.26-7.05-3.77-9.24
+                   c-2.51-2.19-6.24-3.28-11.18-3.28h-13.37V45.2h13.37C251.39,45.2,255.11,44.12,257.63,41.98z"/>
+               <path class="st0" d="M339.77,69.87H303.8l-6.68,16.53h-24.55l37.55-85.06h23.7l37.67,85.06h-25.03L339.77,69.87z M332.72,52.12
+                   L321.79,24.9l-10.94,27.22H332.72z"/>
+               <path class="st0" d="M429.21,42.04h21.27v35.24c-4.86,3.48-10.45,6.16-16.77,8.02c-6.32,1.86-12.64,2.79-18.96,2.79
+                   c-8.91,0-16.93-1.88-24.06-5.65c-7.13-3.77-12.72-9.01-16.77-15.74c-4.05-6.72-6.08-14.34-6.08-22.85s2.02-16.12,6.08-22.85
+                   c4.05-6.72,9.68-11.97,16.89-15.74c7.21-3.77,15.35-5.65,24.42-5.65c7.94,0,15.07,1.34,21.39,4.01
+                   c6.32,2.67,11.58,6.52,15.8,11.54l-15.31,13.85c-5.75-6.32-12.64-9.48-20.66-9.48c-7.29,0-13.17,2.21-17.62,6.62
+                   c-4.46,4.42-6.68,10.31-6.68,17.68c0,4.7,1.01,8.89,3.04,12.58c2.02,3.69,4.86,6.56,8.51,8.63s7.82,3.1,12.52,3.1
+                   c4.62,0,8.95-0.93,13-2.79V42.04z"/>
+               <path class="st0" d="M528,67.8v18.59h-68.29V1.33h66.71v18.59h-42.9v14.34h37.79v17.98h-37.79V67.8H528z"/>
+           
+               <path class="st0" d="M0.33,87.54v-8.05h22.09V65.9h6.39v21.64H0.33z"/>
+               <path class="st0" d="M27.46,56.48c-1.27,2.4-3.04,4.28-5.29,5.65c-2.25,1.37-4.79,2.05-7.61,2.05c-2.82,0-5.35-0.68-7.61-2.05
+                   c-2.25-1.37-4.01-3.25-5.29-5.65c-1.27-2.4-1.91-5.1-1.91-8.11s0.64-5.71,1.91-8.11c1.27-2.4,3.04-4.28,5.29-5.65
+                   c2.25-1.37,4.79-2.05,7.61-2.05c2.82,0,5.36,0.69,7.61,2.05c2.25,1.37,4.01,3.25,5.29,5.65c1.27,2.4,1.91,5.1,1.91,8.11
+                   S28.73,54.08,27.46,56.48z M21.68,44.46c-0.68-1.17-1.63-2.09-2.87-2.77c-1.23-0.68-2.65-1.02-4.25-1.02
+                   c-1.6,0-3.02,0.34-4.25,1.02c-1.23,0.68-2.19,1.6-2.87,2.77c-0.68,1.17-1.02,2.47-1.02,3.9c0,1.44,0.34,2.74,1.02,3.9
+                   c0.68,1.17,1.63,2.09,2.87,2.77c1.23,0.68,2.65,1.02,4.25,1.02c1.6,0,3.02-0.34,4.25-1.02c1.23-0.68,2.19-1.6,2.87-2.77
+                   c0.68-1.17,1.02-2.47,1.02-3.9C22.7,46.93,22.36,45.63,21.68,44.46z"/>
+               <path class="st0" d="M25.91,25.04c-2.3,2.35-5.57,3.52-9.8,3.52H0.33v-8.05h15.54c4.56,0,6.83-1.8,6.83-5.41
+                   c0-3.58-2.28-5.37-6.83-5.37H0.33V1.8h15.78c4.23,0,7.5,1.17,9.8,3.52c2.3,2.35,3.46,5.63,3.46,9.86S28.22,22.7,25.91,25.04z"/>
+           </svg>
+
+            <!--<div class="social-container">
+                <div class="social-yt" style="padding: 8px 0px 0px 15px;width: 135px;">
+                    <div class="g-ytsubscribe" data-channel="LouTapage" data-layout="default" data-theme="dark" data-count="default"></div>
+                </div>
+                <script type="text/javascript">
+                    window.___gcfg = {lang: 'it'};
+                    (function() {
+                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                        po.src = 'https://apis.google.com/js/platform.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                    })();
+                </script>
+                <div class="social-fb" style="padding: 10px 0px 0px 15px;width: 141px;">
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=952944314731212";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                    <div style="padding:0px" class="fb-like" data-href="http://facebook.com/loutapage" data-width="300" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true">
+                    </div>
+                </div>
+                <div class="social-sf" style="width: 150px;padding: 5px 0 0 0px;">
+                    <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6itlMlgqhm9vckjPAsIxg4&size=basic&theme=dark" width="200" height="28" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+                </div>
+		    </div>-->
         </div>
+<<<<<<< HEAD
+
+        <div class="page page-about">
+            <p>
+                La traduzione letterale di Lou Tapage è il <b>frastuono della festa</b>, il rumore della <b>folla danzante</b>, il sano casino della buona compagnia. Mescolando <b>culture</b> e <b>lingue</b> (Italiano, Francese, Occitano, Piemontese, Catalano) <b>dal 2000</b> i Lou Tapage portano a spasso tra palchi italiani ed Europei un <b>rock folk</b> nato dalla <b>musica popolare</b> delle Alpi piemontesi.
+            </p>
+            
+            <div class="about-image" style="background-image:url(img/photo/Foto-1079.jpg)">
+                <div class="highlights">
+                    Due ore di musica popolare, in un viaggio che dall'Italia di De Andrè arriva fino alle melodie delle scogliere irlandesi.
+                </div>
+            </div>
+            <div class="" ></div>
+            <p>
+                Hanno suonato nei più grandi festival folk internazionali come <b>Montelago Celtic Festival, Folkest, Capodanno Celtico (Castello Sforzesco, Milano), Collisioni Festival, Musicultura, Insubria Folk Festival, Nubilaria Celtic Festival, Balla coi Cinghiali, Festival Alta Felicità, Estivada de Rodez, Hestiv' Oc, Celtie d'Oc, Taranta Power, Etnorock</b>.
+            </p>
+            <p>
+                Nel 2009 pubblicano la riscrittura in lingua occitana di "Storia di un impiegato" di <b>Fabrizio De Andrè</b> e nel 2014 partecipano al festival "<b>Risonando De André</b>", dove <b>Dori Ghezzi</b> e il direttore artistico Pier Michelatti (bassista di De André) consegnano al gruppo cuneese il <b>primo premio</b>.
+            </p>
+            <p>
+                I Lou Tapage hanno condiviso palchi con grandi artisti internazionali come <b>Hevia, Eugenio Bennato, Mahones, Dubioza Kolektiv, Kila, Modena City Ramblers</b> e molti altri.
+            </p>
+=======
     </a>    
     <!--<a class="menu__open" onclick="LT.menuOpen()">
         <span></span>
@@ -141,616 +220,278 @@
             <h3>Lou Tapage canta De André</h3>
             <h3>Ex Caserma Mario Musso - SALUZZO (CN)</h3>            
             <a class="btn" href="https://www.mailticket.it/manifestazione/8730/LOU_TAPAGE" target="_blank" rel="noopener noreferrer" style="font-size: 1.5em;margin-top:15px;">ACQUISTA BIGLIETTI</a>
+>>>>>>> 8d588c71cf4757ec24d273ab1a70a6d1747ec52c
         </div>
-    </div>
-    <div style="
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(0, transparent, #f5e4b3);
-"></div>
-    </div>
-    <div class="concerts">
-        <div data-concerts>
 
-
-            <div class=" concert footer" style="margin-top: 0;"><div>© Lou Tapage 2020</div><a style="text-decoration: none;" href="mailto:info@loutapage.com">info@loutapage.com</a><span>+39 3395090662</span> </div>
+        <div class="page page-about page-streaming">
+            <div class="page-title">ASCOLTACI SU</div>
+            <div class="streaming">
+                <a href="https://open.spotify.com/artist/6itlMlgqhm9vckjPAsIxg4?si=_NkO8O9YQqSISJif1TcddA" target="_blank" rel="noopener noreferrer"><div style="background-image: url(img/streaming/spotify.jpg);"></div></a>
+                <a href="https://music.apple.com/it/artist/lou-tapage/427516484" target="_blank" rel="noopener noreferrer"><div style="background-image: url(img/streaming/apple.jpg);"></div></a>
+                <a href="https://www.youtube.com/channel/UCWW0IogNGS8GX4ctmQV3Eyg" target="_blank" rel="noopener noreferrer"><div style="background-image: url(img/streaming/youtube.jpg);"></div></a>
+                <a href="https://www.deezer.com/en/artist/2370881" target="_blank" rel="noopener noreferrer"><div style="background-image: url(img/streaming/deezer.jpg);"></div></a>
+                <a href="https://www.amazon.it/s?k=Lou+Tapage&i=digital-music&search-type=ss&ref=ntt_srch_drd_B008L6UUK0" target="_blank" rel="noopener noreferrer"><div style="background-image: url(img/streaming/amazon.jpg);"></div></a>
+                <a href="https://tidal.com/" target="_blank" rel="noopener noreferrer"><div style="background-image: url(img/streaming/tidal.jpg);"></div></a>
+            </div>
         </div>
-    </div>
 
+        <div class="inline-gallery">
+            <div style="background-image:url(img/photo/tapage-1.jpg)"></div>
+            <div style="background-image:url(img/photo/tapage-5.jpg)"></div>
+            <div style="background-image:url(img/photo/tapage-12.jpg)"></div>
+            <div style="background-image:url(img/photo/tapage-14.jpg)"></div>
+            <div style="background-image:url(img/photo/tapage-16.jpg)"></div>
+            <div style="background-image:url(img/photo/tapage-13.jpg)"></div>
+            <div style="background-image:url(img/photo/tapage-3.jpg)"></div>
+            <div style="background-image:url(img/photo/tapage-8.jpg)"></div>
+            <div style="background-image:url(img/photo/tapage-18.jpg)"></div>
+        </div>
 
-    <!-- <div class="banner piacenza">
-        <a href="https://botteghinoweb.com/tn_spettacolo.php?id=4457" target="_blank" rel="noopener noreferrer"><img src="img/piacenza.jpg" alt="Lou Tapage canta De André - Piacenza 2019"></a>
-    </div> -->
-    
-        <!-- SPLASH SCREEN 
-        <div class="hp">
-            <div class="hp__blocks row">
-                <div class="hp__main">
+        <div class="page page-disk">
+            <div class="page-title">DISCOGRAFIA</div>
 
+            <div class="disk-container">
+                <div class="disk">
+                    <img class="disk-cover" src="/img/dischi/lt-canta-da.jpg">
+                    <div class="disk-title">Lou Tapage canta De André</div>
+                    <div class="disk-year">2019</div>
+                    <div class="disk-label">LT Records</div>
+
+                    <div class="disk-cta">
+                        <a href="https://open.spotify.com/album/3Hf5o2TcRQcKck2a5mf8JH?si=5SOt71fZTHOrynNy1rkdbQ" target="_blank" class="btn">ASCOLTA</a>
+
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="WTYRSGZE79GQJ">
+                            <button class="btn" type="submit">ACQUISTA</button>
+                        </form>
+                    </div>
                 </div>
-                
-                <div class="hp__second">
-                    
-                    <div class="lt__where"></div>
-                        <img src="img/stamp-white.png" class="hp__stamp" />
-                        <div class="hp__when"></div>
-                        <div class="hp__where"></div>
+                <div class="disk">
+                    <img class="disk-cover" src="/img/dischi/buone-nuove.jpg">
+                    <div class="disk-title">Buone Nuove</div>
+                    <div class="disk-year">2018</div>
+                    <div class="disk-label">LT Records</div>
+
+                    <div class="disk-cta">
+                        <a href="https://open.spotify.com/album/3zsdlWJUyoT0uZyn7ynyv7?si=qGzaesfrSH6DXDFpU8ZlPA" class="btn" target="_blank">ASCOLTA</a>
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="YNW8EBUAG85G8">
+                            <button class="btn" type="submit">ACQUISTA</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="disk">
+                    <img class="disk-cover" src="/img/dischi/live-cpa.jpg">
+                    <div class="disk-title">Live CPA Firenze Sud</div>
+                    <div class="disk-year">2015</div>
+                    <div class="disk-label">LT Records</div>
+
+                    <div class="disk-cta">
+                        <a href="https://open.spotify.com/album/739bJWOmJHZjaemGWXO0Nx?si=12vi03L7Tke9OYLsJKY_4Q" class="btn" target="_blank">ASCOLTA</a>
+
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="NGJWJBN4FZEE2">
+                            <div class="product--size">
+                                <input type="hidden" name="on0" value="CD">
+                                <input type="hidden" name="os0" value="Live CPA Firenze Sud - 2015">
+                            </div>
+                            <button class="btn" type="submit">ACQUISTA</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="disk">
+                    <img class="disk-cover" src="/img/dischi/finisterre.jpg">
+                    <div class="disk-title">Finisterre</div>
+                    <div class="disk-year">2013</div>
+                    <div class="disk-label">LT Records</div>
+
+                    <div class="disk-cta">
+                        <a href="https://open.spotify.com/album/3AuRcxlJwBmM5s0fpDLMsL?si=dWA7kB5CTiSCa2oY8WQ20g" class="btn" target="_blank">ASCOLTA</a>
+
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="NGJWJBN4FZEE2">
+                            <div class="product--size">
+                                <input type="hidden" name="on0" value="CD">
+                                <input type="hidden" name="os0" value="Finisterre - 2013">
+                            </div>
+                            <button class="btn" type="submit">ACQUISTA</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="disk">
+                    <img class="disk-cover" src="/img/dischi/storia-di-un-impiegato.jpg">
+                    <div class="disk-title">Storia di un impiegato</div>
+                    <div class="disk-year">2010</div>
+                    <div class="disk-label">LT Records</div>
+
+                    <div class="disk-cta">
+                        <a href="https://open.spotify.com/album/1xaqH6UfEBxPv8PMSdbMIt?si=YiwpVnAwRE6M45J1An9tsA" class="btn" target="_blank">ASCOLTA</a>
+                        <div class="btn btn-soldout">ESAURITO</div>
+                    </div>
+                </div>
+                <div class="disk">
+                    <img class="disk-cover" src="/img/dischi/que-vos-lej-far.jpg">
+                    <div class="disk-title">Que vos lej far</div>
+                    <div class="disk-year">2009</div>
+                    <div class="disk-label">Folkest Dischi</div>
+
+                    <div class="disk-cta">
+                        <a href="https://open.spotify.com/album/6AEfR8VginnZBEy6xZueMx?si=hHn7nt2fSZ2-r_mceM_rSA" class="btn" target="_blank">ASCOLTA</a>
+
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="NGJWJBN4FZEE2">
+                            <div class="product--size">
+                                <input type="hidden" name="on0" value="CD">
+                                <input type="hidden" name="os0" value="Que vos lej far - 2009">
+                            </div>
+                            <button class="btn" type="submit">ACQUISTA</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="disk">
+                    <img class="disk-cover" src="/img/dischi/reve-eterne.jpg">
+                    <div class="disk-title">Réve eternè</div>
+                    <div class="disk-year">2007</div>
+                    <div class="disk-label">Folkest Dischi</div>
+
+                    <div class="disk-cta">
+                        <a href="https://open.spotify.com/album/2bkmVUv8mJjhSBVcF5FMLl?si=okrg-w0iQ5KcqF3_cso4wQ" class="btn" target="_blank">ASCOLTA</a>
                         
-                        <div class="presents">
-                            <h1 class="presents">Lou Tapage</h1>
-                            <div>presenta</div>
-                        </div>
-                    <a class="button lt__detail ti-arrow-down" onclick="LT.goDown()" style="    background-color: #c63742;    border-radius: 999px;"></a></div>
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="NGJWJBN4FZEE2">
+                            <div class="product--size">
+                                <input type="hidden" name="on0" value="CD">
+                                <input type="hidden" name="os0" value="Reve eterne - 2007">
+                            </div>
+                            <button class="btn" type="submit">ACQUISTA</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="disk">
+                    <img class="disk-cover" src="/img/dischi/lou-tapage.jpg">
+                    <div class="disk-title">Lou Tapage</div>
+                    <div class="disk-year">2005</div>
+                    <div class="disk-label">Videoradio</div>
+
+                    <div class="disk-cta">
+                        <a href="https://open.spotify.com/album/5GRFYVA3fz43qIpPqaZkR8?si=FJF6YE_nRTy-0St155V7gA" class="btn" target="_blank">ASCOLTA</a>
+                        
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="NGJWJBN4FZEE2">
+                            <div class="product--size">
+                                <input type="hidden" name="on0" value="CD">
+                                <input type="hidden" name="os0" value="Lou Tapage - 2005">
+                            </div>
+                            <button class="btn" type="submit">ACQUISTA</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>-->
-    
 
-    <!-- MAIN CONTENT 
-    <div id="hero"></div>
-    <div class="container row">
-        <div class="side__left">
+        </div>
 
-
+        <div class="page page-andre">
+            <div class="background-image" style="background-image: url(img/photo/Foto-1231.jpg);"></div>
             
-            <iframe src="https://open.spotify.com/embed/album/3zsdlWJUyoT0uZyn7ynyv7" width="100%" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <ul class="social-button-container">
-                            <li class="social-sf">
-                                <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6itlMlgqhm9vckjPAsIxg4&amp;size=basic&amp;theme=dark" width="200" height="28" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
-                            </li>
-                            <li class="social-fb">
-                                    <div id="fb-root"></div>
-                                    <script>(function(d, s, id) {
-                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                        if (d.getElementById(id)) return;
-                                        js = d.createElement(s); js.id = id;
-                                        js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=952944314731212";
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                    }(document, 'script', 'facebook-jssdk'));</script>
-                                    <div style="padding:0px" class="fb-like" data-href="http://facebook.com/loutapage" data-width="300" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true">
-                                    </div>
-                            </li>
-                            <li class="social-yt">
-                                <div id="___ytsubscribe_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 115px; height: 24px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 115px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1540239765814" name="I0_1540239765814" src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channel=LouTapage&amp;layout=default&amp;theme=dark&amp;count=default&amp;hl=it&amp;origin=http%3A%2F%2F127.0.0.1%3A5500&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.5k5bJ6K71X8.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCMeGxk4E_0m9hGqwGyyLZbo3JGjIA%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1540239765814&amp;_gfid=I0_1540239765814&amp;parent=http%3A%2F%2F127.0.0.1%3A5500&amp;pfname=&amp;rpctoken=18048794" data-gapiattached="true"></iframe></div>
-                            </li>
-                            <script type="text/javascript">
-                                window.___gcfg = {lang: 'it'};
-                                (function() {
-                                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                                    po.src = 'https://apis.google.com/js/platform.js';
-                                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                                })();
-                            </script>
-                        </ul>
             
-        </div>
-        <div class="side__right">-->
-
-
-<!--<h1>LOU TAPAGE presenta</h1>
-
-<em style="margin-top: 0;">Dopo 5 anni i Lou Tapage tornano con un disco di inediti; canzone
-d'autore, musica popolare e rock si mescolano per tornare a parlare
-della montagna, ma in un nuovo modo: si può fare?<br>
-Forse sì, e sono queste le BUONE NUOVE.</em>-->
-
-<!--<img class="photo" src="img/foto.jpg" />
-<iframe src="https://www.youtube.com/embed/tKUsOiVLdX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:315px;"></iframe>
-
-<p>I <b>Lou Tapage</b> sono tornati dal lungo viaggio di Finisterre: giunti nella terra più ad Ovest
-di tutte sembrava non ci fosse più nulla da vedere oltre l'oceano. A differenza del
-genovese Colombo, i Lou Tapage hanno scoperto un nuovo mondo non oltre le acque,
-ma sulla strada del ritorno. <i>Queste sono le "Buone Nuove": il grido della vedetta che
-grida «Terra!» puntando il dito non verso l'ignoto, ma verso casa, guardando il paese
-d'infanzia con gli occhi del viaggiatore, scoprendo un nuovo modo di vedere le vecchie
-cose</i>.</p>
-<p>"Buone Nuove" è un disco composto come una lunga lettera scritta per un amico
-lontano, a cui i Tapage racconta le ultime notizie da casa: dalle futili risse d'osteria
-alle semplici giornate di sole e tempo perso, passando per la cronaca nera di provincia,
-i racconti di valli abbandonate, notti senza sonno, amori traballanti e viaggi attraverso
-il deserto compiuti da nuovi abitanti della montagna.</p>
-<p>L'album si apre e si chiude con due brani cantati il <i>lingua occitana</i> - nella parlata di
-Bellino, un'adunata di borgate dell'alta valle Varaita - per svilupparsi nella parte centrale
-con testi in italiano, un'apparente normalità che ha quasi del rivoluzionario nella
-stretta cerchia della musica popolare cuneese. Nel corso dei <i>dodici brani</i> i Lou Tapage
-giocano con i più <i>diversi generi e registri</i>, in un continuo dialogo tra gli strumenti tradizionali
-legati al mondo del folk e la loro controparte fatta di una potente sezione ritmica
-e chitarre distorte.</p>
-<p><b>In questo disco non c'è nulla di puro, di canonicamente tradizionale o di filologicamente 
-"corretto"; la musica popolare fa così quello per cui è nata: si mischia, si fa meticcia,
-si scontra con altre influenze e altre lingue in funzione della storia che deve
-raccontare, facendo muovere le idee e i piedi di chi ascolta.</b></p><br>-->
-<style>
-ul.products {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-
-ul.products li {
-    background-color: #306885;
-    box-shadow: 0 0 10px #00000024;
-    list-style: none;
-    width: calc(50% - 10px);
-    margin-top: 20px;
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-.product--img {
-    width: 100%;
-    height: 200px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: white;
-}
-.product--title{
-    font-family: 'nova', sans-serif;
-    font-size: 1.8em;
-}
-.product--price {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    line-height: 1.5em;
-}
-.product--size {
-    margin-bottom: 0.5em;
-}
-.product--footer {
-    padding: 0.8em;
-    text-align: center;
-    background-color: #306885;
-    color: #f2ecde;
-    font-family: 'Ubuntu Mono', monospace;
-}
-
-.button--red {
-    background-color: #c63742;
-    color: #f2ecde;
-}
-
-.btn svg {
-    margin-right: 6px
-}
-
-.btn.orange {
-    background-color: #ff9d00
-}
-
-.btn:focus {
-    outline: 0
-}
-
-.btn--red:hover {
-    background-color: transparent;
-    border: #c63742 1px solid;
-    color: #c63742 !important;
-}
-</style>
-<!--
-<h2 class="no-margin">Shop</h2>
-<i>Spese di spedizione gratuite sopra i 30 €.</i>
-<br><br>
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-    <button class="button button--red no-margin" type="submit">VAI AL CARRELLO</button>
-    <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-</form>-->
-
-<ul class="products" style="display: none;">
-    <li>
-        <div class="product--img" style="background-image:url(/img/cd-lt-canta-da.jpg)"></div>
-        <div class="product--footer">
-            <div class="product--title">CD Lou Tapage canta De André</div>
-            <div class="product--price">15 €</div>
-
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="WTYRSGZE79GQJ">
-                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
-                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-            </form>
-        </div>
-    </li>
-    <li>
-        <div class="product--img" style="background-image:url(/img/cover-lt-canta-da.jpg)"></div>
-        <div class="product--footer">
-            <div class="product--title">Chiavetta USB Lou Tapage canta De André</div>
-            <div class="product--price">15 €</div>
-
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="3KSEDMR9VJJZ6">
-                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
-                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-            </form>
-        </div>
-    </li>
-    <li>
-        <div class="product--img" style="background-image:url(/img/cd-buone-nuove.jpg)"></div>
-        <div class="product--footer">
-            <div class="product--title">CD Buone Nuove</div>
-            <div class="product--price">15 €</div>
-
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="YNW8EBUAG85G8">
-                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
-                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-            </form>
+            <div class="andre-intro">
                 
-      
-        </div>
-    </li>
-    <li>
-        <div class="product--img" style="background-image:url(/img/vinile.jpg)"></div>
-        <div class="product--footer">
-            <div class="product--title">Vinile Buone Nuove</div>
-            <div class="product--price">25 €</div>
+                <div class="page-title">Lou Tapage canta<br>De André</div>
 
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="E9L8KCN7LB82S">
-                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
-                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-            </form>              
-        </div>
-    </li>
-    <li>
-        <div class="product--img" style="background-image:url(/img/cassetta.jpg)"></div>
-        <div class="product--footer">
-            <div class="product--title">Cassetta Buone Nuove</div>
-            <div class="product--price">15 €</div>
-
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="Q3JDV97JP86LQ">
-                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
-                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-            </form>
-                
-
-              
-        </div>
-    </li>
-    <li>
-        <div class="product--img" style="background-image:url(/img/tshirt-buone-nuove.jpg)"></div>
-        <div class="product--footer">
-            <div class="product--title">Tshirt Buone nuove</div>
-            <div class="product--price">15 €</div>
-
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="7FER5TJZK2B4C">
-                <div class="product--size">                           
-                    <input type="hidden" name="on0" value="Taglia">
-                    <label for="os0">Taglia</label>
-                    <select name="os0">
-                        <option value="Uomo S">Uomo S </option>
-                        <option value="Uomo M">Uomo M </option>
-                        <option value="Uomo L">Uomo L </option>
-                        <option value="Uomo XL">Uomo XL </option>
-                        <option value="Uomo XXL">Uomo XXL </option>
-                        <option value="Donna XS">Donna XS </option>
-                        <option value="Donna S">Donna S </option>
-                        <option value="Donna M">Donna M </option>
-                        <option value="Donna L">Donna L </option>
-                    </select>
+                <div class="andre-cit">    
+                    "Benedetto Croce diceva <br>che fino all'età dei diciotto anni tutti scrivono poesie.<br>
+                    Dai diciotto anni in poi, rimangono a scriverle<br>due categorie di persone: i poeti e i cretini.
+                    <br><br>
+                    E quindi io precauzionalmente<br>preferirei considerarmi un cantautore."
                 </div>
-                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
-                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-            </form>           
-        </div>
-    </li>
-    <li>
-        <div class="product--img" style="background-image:url(/img/tshirt-bodi-yellow.jpg)"></div>
-        <div class="product--footer">
-            <div class="product--title">Tshirt Bodi</div>
-            <div class="product--price">15 €</div>
 
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="649NP4QWXEPKA">
-                <div class="product--size">                           
-                    <input type="hidden" name="on0" value="Taglia">
-                    <label for="os0">Taglia</label>
-                    <select name="os0">
-                        <option value="Uomo S">Uomo S </option>
-                        <option value="Uomo M">Uomo M </option>
-                        <option value="Uomo L">Uomo L </option>
-                        <option value="Uomo XL">Uomo XL </option>
-                        <option value="Uomo XXL">Uomo XXL </option>
-                        <option value="Donna XS">Donna XS </option>
-                        <option value="Donna S">Donna S </option>
-                        <option value="Donna M">Donna M </option>
-                        <option value="Donna L">Donna L </option>
-                    </select>
+                <div class="andre-cta">
+                    <a class="btn" href="https://youtu.be/nemdFzxdF-8" target="_blank">Contattaci</a>
+                    <a class="btn btn-important" href="https://youtu.be/nemdFzxdF-8" target="_blank">Guarda il teaser</a>
                 </div>
-                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
-                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-            </form>
-                            
+            </div>
+            
+            <div class="andre-text-strong">
+                "<b>Lou Tapage canta de André</b>" non è un semplice concerto, ma un incontro con l'autore e il mondo nascosto dietro i testi e i personaggi delle sue canzoni" 
+            </div>
+
+            <div class="andre-text">
+                <div>
+                    La luce in sala è spenta e il sipario ancora chiuso, quando una voce familiare inizia a raccontare la storia di una ragazza che arriva col treno nella stazione di Sant'llario, un piccolo paese di provincia.
+                    La giovane è conosciuta come Bocca di Rosa, mentre la voce familiare che si rivolge al pubblico è quella di <b>Fabrizio De André</b>.
+                </div>
+                <div>
+                    Non fosse che sono passati <b>20 anni dalla sua scomparsa</b>, si potrebbe quasi credere che sia proprio lì, dietro il sipario.
+                    Pronto - nonostante la sua ben nota ritrosia - ad iniziare il concerto.
+                    A suonare sul palco ci sono i Lou Tapage, ma la voce di De André rimarrà a farci compagnia per tutto il concerto, grazie ad un montaggio del repertorio di <b>video</b>, <b>interviste</b> e concerti, alcuni <b>particolarmente rari</b> e <b>poco conosciuti</b>.
+                </div>
+            </div>
+            
+            <div class="inline-gallery">
+                <div style="background-image:url(img/photo/Foto-1151.jpg)"></div>
+                <div style="background-image:url(img/photo/Foto-1186.jpg)"></div>
+                <div style="background-image:url(img/photo/Foto-1162.jpg)"></div>
+            </div>
+
+            <p class="andre-text-one-column">
+                In questo spettacolo la band piemontese <b>Lou Tapage</b> ripercorre il viaggio di Fabrizio attraverso le sue canzoni.
+                <b>Due ore di concerto</b> con brani scelti attentamente nella vastissima produzione di Faber e un arrangiamento che lascia spazio tanto alla <b>tradizione popolare</b> di <b>violino</b>, <b>flauto</b> e <b>cornamusa</b> quanto al rock più imponente di marca PFM. 
+            </p>
+
+            <img class="andre-img"  src="img/photo/Foto-1177.jpg">
         </div>
-    </li>
-    <li>
-        <div class="product--img" style="background-image:url(/img/tshirt-bodi-blue.jpg)"></div>
-        <div class="product--footer">
-            <div class="product--title">Tshirt Bodi</div>
-            <div class="product--price">15 €</div>
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="PVZKQCADEVL7Y">
-                <div class="product--size">                           
-                        <input type="hidden" name="on0" value="Taglia">
-                        <label for="os0">Taglia</label>
-                        <select name="os0">
-                            <option value="Uomo S">Uomo S </option>
-                            <option value="Uomo M">Uomo M </option>
-                            <option value="Uomo L">Uomo L </option>
-                            <option value="Uomo XL">Uomo XL </option>
-                            <option value="Uomo XXL">Uomo XXL </option>
-                            <option value="Donna XS">Donna XS </option>
-                            <option value="Donna S">Donna S </option>
-                            <option value="Donna M">Donna M </option>
-                            <option value="Donna L">Donna L </option>
-                        </select>
+
+        <div class="inline-gallery">
+            <div style="background-image:url(img/photo/Foto-1195.jpg)"></div>
+            <div style="background-image:url(img/photo/Foto-1077.jpg)"></div>
+            <div style="background-image:url(img/photo/Foto-1180.jpg)"></div>
+            <div style="background-image:url(img/photo/Foto-1039.jpg)"></div>
+            <div style="background-image:url(img/photo/Foto-1187.jpg)"></div>
+            <div style="background-image:url(img/photo/Foto-1073.jpg)"></div>
+            <div style="background-image:url(img/photo/Foto-1123.jpg)"></div>
+            <div style="background-image:url(img/photo/Foto-1050.jpg)"></div>
+            <div style="background-image:url(img/photo/Foto-1173.jpg)"></div>
+        </div>
+
+        <div class="page page-newsletter">
+            <div class="page-title">Iscriviti alla newsletter</div>
+
+            <form action="https://loutapage.us19.list-manage.com/subscribe/post?u=13c3d7524db2d290b7902ea21&amp;id=e8df93ef50" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                    <div class="newsletter-input">
+                        <label for="mce-EMAIL">Email</label>
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                     </div>
-                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
-                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-            </form>
-                               
-        </div>
-    </li>
-    <li>
-        <div class="product--img" style="background-image:url(/img/shopper.jpg)"></div>
-        <div class="product--footer">
-            <div class="product--title">Shopper Buone nuove</div>
-            <div class="product--price">5 €</div>
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="LM3TN4F2TWBT6">
-                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
-                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-            </form>                          
-        </div>
-    </li>
-    <li>
-        <div class="product--img" style="background-image:url(/img/spartiti.jpg)"></div>
-        <div class="product--footer">
-            <div class="product--title">Spartiti Buone Nuove</div>
-            <div class="product--price">5 €</div>
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="VSZWLEB3HGP86">
-                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
-                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-            </form>
-                          
-        </div>
-    </li>
-    <li>
-        <div class="product--img" style="background-image:url(/img/vecchi-cd.jpg)"></div>
-        <div class="product--footer">
-            <div class="product--title">Discografia precedente</div>
-            <div class="product--price">10 €</div>
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="NGJWJBN4FZEE2">
-                <div class="product--size">                           
-                    <input type="hidden" name="on0" value="CD">
-                    <label for="os0">CD</label>
-                    <select name="os0" style="max-width: 100%;">
-                        <option value="Live CPA Firenze Sud - 2015">Live CPA Firenze Sud - 2015 </option>
-                        <option value="Finisterre - 2013">Finisterre - 2013 </option>
-                        <!--<option value="Storia di un impiegato -  2010">Storia di un impiegato -  2010 </option>-->
-                        <option value="Que vos lej far - 2009">Que vos lej far - 2009 </option>
-                        <option value="Reve eterne - 2007">Réve eternè - 2007 </option>
-                        <option value="Lou Tapage - 2005">Lou Tapage - 2005 </option>
-                    </select>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_13c3d7524db2d290b7902ea21_e8df93ef50" tabindex="-1" value=""></div>
+                    <input type="submit" value="Iscriviti" name="subscribe" id="mc-embedded-subscribe" class="btn">
                 </div>
-                <button class="button button--red no-margin" type="submit">ACQUISTA</button>
-                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-            </form>                            
+            </form>
         </div>
-    </li>        
-</ul>
-<!--<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIG1QYJKoZIhvcNAQcEoIIGxjCCBsICAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCsb5kmajwPikmydN7JMkk12b51ouqIYDIetFQI6HQZNiNPI9uV4GKcgEktioDB91goDve0IeAzTk7l1HB67SNnDN0fg2AaDQQoYDa+yXw21Xs3EIKXZG1gDwDID91pIL6JGL05fa+Ehl8MUMuVM3wviCzZRuYOeZ7wZ331n6tHQzELMAkGBSsOAwIaBQAwUwYJKoZIhvcNAQcBMBQGCCqGSIb3DQMHBAgSW1JoK2+j2IAwjxRsnlUE6NvSmhc4izC6I29DpFCtvYP+8ABg29ezFfSrFn2aAQmTGHezd/kFRAUOoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTkwMTE0MTk0OTAzWjAjBgkqhkiG9w0BCQQxFgQUEzwgH1ron1UN8AmsWmEQniIQ2T8wDQYJKoZIhvcNAQEBBQAEgYCbp3LZYSqUNRRpG+P7FF7/tHUO3EHXeSc1IxbVVSUr8QNyoTSumTFCHZxvs6eE1j9h3BzKwyoSkrbs+bHHrKiuTgzb8F/AKUc/wooFRcq1/PiDIcDtp1sn78B1WBWOBVt3W9nl6Q3ehTSiWJB4j8pTk4FipSpglVJEmZ8VLtJytA==-----END PKCS7-----">
-    <button class="button button--red no-margin" type="submit">VAI AL CARRELLO</button>
-    <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-</form><br>-->
 
-</div>
-</div>
-
-<div id="modal__container" class="is-visible" hidden>
-    <div id="modal__window">
-        <div id="modal__content">
-            <img src="/img/de-andre-2019.jpg?1" alt="Lou Tapage canta De andré" />
-            <img class="mobile" src="/img/de-andre-2019-square.jpg?1" alt="Lou Tapage canta De andré" />
-            <a href="https://www.eventbrite.it/e/biglietti-lou-tapage-canta-de-andre-75758376343" target="_blank" class="button button--red">ACQUISTA BIGLIETTI<i class="ti-arrow-right"></i></a>
-            <a onclick="modal__close();" class="button">CHIUDI<i class="ti-close"></i></a>
+        <div class="page page-contact">
+            <div class="page-title">Contatti</div>
+            <div>
+                <div class="contact-title">Band</div>
+                <a href="mailto:info@loutapage.com">info@loutapage.com</a>
+            </div>
+            <div>
+                <div class="contact-title">Management</div>
+                <a href="mailto:management@loutapage.com">management@loutapage.com</a><br>
+                <a href="tel:+39 3395090662">+39 3395090662</a>
+            </div>
+            <div>
+                <div class="contact-title">Technical rider</div>
+                <a class="btn" href="/download/rider-tapage-2021.pdf" target="_blank">LIVE 2021</a><br>
+                <a class="btn" href="/download/rider-tapage-de-andre-2021.pdf" target="_blank" target="_blank">De André 2021</a>
+            </div>
         </div>
     </div>
-</div>
-<!--
-    <footer style="margin-top: 0;">
-		    <div class="">
-                    
-
-
-                © Lou Tapage 2020<br>
-                <a href="mailto:info@loutapage.com">info@loutapage.com</a><br>
-                +39 3395090662<br>                
-		    </div>
-	    </div>	
-    </footer>    
-
-    <!-- MENU -->
-    <!--<div class="menu__wrapper">
-        <div class="menu">
-            <a href="/" class="active">Home</a>
-            <!--<a href="/concerti" class="">Concerti</a>
-        </div>	    
-    </div>-->
-    
-    <script>
-        var LT = (function () {
-            'use strict';
-            let ret = {};
-
-            ret.init = function () {
-                $('.menu>a').on('click', function () {
-                    _lt.menuClose();
-                });
-                
-                let now = new Date();
-                for (var i = 0; i < dates.length; i++ ) {
-                    let arr = dates[i].date.split('/');
-                    let date = new Date(arr[2], arr[1] - 1, arr[0], 23, 59);
-                    let cssClass = '';
-
-                    if (date < now && $('.hp__when').text() == '') {
-                        $('.hp__when').text(dates[i].date);
-                        $('.hp__where').text(dates[i].place);
-                        cssClass = 'concert--past';
-                    }
-                    let template = '<div class="{{cssClass}} concert"><b>{{date}}</b> <span>{{place}}</span></div>';
-                    template = template.replace('{{date}}', dates[i].date);
-                    template = template.replace('{{place}}', dates[i].place);
-                    template = template.replace('{{cssClass}}', cssClass);                    
-
-                    $('[data-concerts] .footer').before(template)
-                }
-                
-                //modal__open();
-            };
-            ret.goDown = function () {
-                if ($('#hero').length) {
-                    $('html, body').animate({
-                        scrollTop: $('#hero').offset().top
-                    }, 200, function () {
-                    });
-                }
-            }
-            ret.goUp = function () {
-                $('html, body').animate({
-                    scrollTop: $('#top').offset().top
-                }, 200, function () {
-                });
-            }
-            ret.menuOpen = function (){
-                $('.menu__wrapper').addClass('is-visible');
-                $('.menu__close').show();
-            }
-            ret.menuClose = function (){
-                $('.menu__wrapper').removeClass('is-visible');
-                $('.menu__close').hide();
-            }
-
-            return ret;
-        })();
-
-        $(function () {
-            //LT.init();
-        });
-
-        function scrollToEl(_id){
-            $('html, body').animate({
-                scrollTop: $(_id).offset().top
-            }, 750);
-        }
-
-        function openMenu(){
-            $("#menu__wrapper").addClass("is-visible");
-            $("body").css("overflow","hidden");
-        }
-
-        function closeMenu(){
-            $("#menu__wrapper").removeClass("is-visible");
-            $("body").css("overflow","auto");
-        }
-
-        function modal__open(content,type){
-            type = type || "";
-            if(type != ""){
-                $("#modal__content").addClass(type);
-            }
-            $("#modal__content").html();     
-            $('#modal__container').addClass('is-visible');  
-            $('body').css('overflow','hidden');
-        }
-
-        function modal__close(){
-            $('#modal__container').removeClass();
-            $('#modal__content').removeClass();
-            $('body').css('overflow','auto');
-            $('#modal__content').empty();
-        }
-        
-        let dates = [
-            /*{date: '20/10/2018', place: 'Savigliano (CN)'},
-            {date: '10/11/2018', place: 'Tarantasca (CN)'},
-            {date: '24/11/2018', place: 'Chianocco (TO)', title: 'Taverna Tortuga'},
-            {date: '29/11/2018', place: 'Nice [FR]', title: 'Trident'},
-            {date: '30/11/2018', place: 'Draguignan [FR]', title: 'Bucéphale'},
-            {date: '01/12/2018', place: 'Tourrette-Levens [FR]'},
-            {date: '22/12/2018', place: 'Centallo (CN)'},
-            {date: '11/01/2019', place: 'LT canta De André - Teatro Toselli (CN)'},
-	    	{date: '25/01/2019', place: 'Torino - Askatasuna'},
-	    	{date: '26/01/2019', place: 'Firenze - CPA'},
-	    	{date: '27/01/2019', place: 'Camporosso (IM)'},
-          	{date: '09/02/2019', place: 'Lurisia (CN)'},
-            {date: '17/03/2019', place: 'Gattinara (VC)'},
-            {date: '30/03/2019', place: 'Saluzzo (CN)'},            
-            {date: '18/04/2019', place: 'Cinzano (CN)'},
-            {date: '04/05/2019', place: 'Roccaforte M.vì (CN)'},
-            {date: '18/05/2019', place: 'Boves (CN)'},
-            {date: '26/05/2019', place: 'Cuneo (CN)', title: 'Open Baladin'},
-            {date: '07/06/2019', place: 'Mestre (VE)', title: 'Cipre Lab Festival'},
-            {date: '14/06/2019', place: 'Caramagna Piemonte (CN)', title: 'Sand Music Festival'},
-            {date: '15/06/2019', place: 'Vernante (CN)', title: 'Festa del Troll'},
-            {date: '16/06/2019', place: 'Barge (CN)', title: 'Festa Ponte Grana'},
-            {date: '21/06/2019', place: 'Mantova'},
-            {date: '28/06/2019', place: 'Milano', title: 'L\'isola che non c\'era'},
-            {date: '30/06/2019', place: 'Sampeyre (CN)', title: 'Rifugio Sant\'Anna (pomeriggio)'},
-            {date: '07/07/2019', place: 'Plaine-Joux [FR]', title:'Feufliâzhe Festival'},
-	        {date: '11/07/2019', place: 'Mantova', title:'Arci Festival'},
-            {date: '13/07/2019', place: 'Saurat [FR]', title:'Festen\'Oc Festival'},
-            {date: '03/08/2019', place: 'Saint-Raphaël [FR]'},
-            {date: '15/08/2019', place: 'Piozzo (CN)', title: 'Open Garden Baladin'},
-            {date: '17/08/2019', place: 'Elva (CN)', title: ''},
-            {date: '18/08/2019', place: 'Roaschia (CN)'},
-            {date: '20/08/2019', place: 'Entracque (CN)'},
-            {date: '21/08/2019', place: 'Charvensod (AO)', title: 'Etétrad Festival'},
-            {date: '23/08/2019', place: 'Manta (CN)'},
-            {date: '25/08/2019', place: 'Pau [FR]', title:'Hestiv\'Oc Festival'},
-            {date: '01/09/2019', place: 'Cuneo', title: 'World Fest Festival'},
-            {date: '07/09/2019', place: 'San Donato Mil.se - Sando Folk Festival'},
-            {date: '08/09/2019', place: 'S. Defendente di Cervasca (CN)'},
-            {date: '27/09/2019', place: 'Pisa Rock Festival'},
-	    {date: '04/10/2019', place: 'Arci Primo Maggio - San Benedetto Po (MN)'},
-            {date: '05/10/2019', place: 'Rossana (CN)'},
-	        {date: '19/10/2019', place: 'Occitoberfet - Savigliano (CN)'},
-		{date: '26/10/2019', place: 'Guarene (CN)'},
-        {date: '31/10/2019', place: 'Firenze - Critical Mass CPA'},
-		{date: '02/11/2019', place: 'Uvernada - Saluzzo (CN)'},
-		{date: '08/11/2019', place: 'LT canta De André - Cinema Aurora - Savigliano (CN)'},
-        {date: '10/11/2019', place: 'LT canta De André - Cinema Aurora - Savigliano (CN)'},*/
-
-        {date: '11/01/2020', place: 'LT canta De André - Palacongressi Salina - ARONA (NO)'},
-        {date: '12/01/2020', place: 'LT canta De André - Teatro President - PIACENZA'},
-        {date: '08/02/2020', place: 'Pala CRF - CENTALLO (CN)'},
-        {date: '21/02/2020', place: 'Officine Folk - TORINO'},
-        {date: '20/03/2020', place: 'Mulligans St Patrick\'s Festival - GATTINARA (VC)'},
-        ];
-    </script>
-</body></html>
+    <script src="js/main.js"></script>
+</body>
+</html>
