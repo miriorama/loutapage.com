@@ -10,12 +10,12 @@
     <meta property='og:image' content='https://loutapage.com/resources/img/bkg-lou-tapage.jpg' />
     <meta property='og:url' content="https://loutapage.com/" />
     <meta property='og:site_name' content='Lou Tapage' />
-    <meta property='og:type' content='website'/>	
+    <meta property='og:type' content='website'/>
 
     <link rel="icon" type="image/png" href="img/favicon.png" >
     <link rel="apple-touch-icon" type="image/png" href="img/favicon.png" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=2">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap" rel="stylesheet">
 
@@ -24,12 +24,13 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-    
+
         gtag('config', 'UA-24934102-1');
     </script>
 </head>
 <body>
     <nav>
+        <a onclick="UI.scrollToEl('.page-concert');">CONCERTI</a>
         <a onclick="UI.scrollToEl('.page-about');">CHI SIAMO</a>
         <a onclick="UI.scrollToEl('.page-disk');">DISCOGRAFIA</a>
         <a onclick="UI.scrollToEl('.page-andre');">CANTA DE ANDRÉ</a>
@@ -68,7 +69,7 @@
                    c-4.46,4.42-6.68,10.31-6.68,17.68c0,4.7,1.01,8.89,3.04,12.58c2.02,3.69,4.86,6.56,8.51,8.63s7.82,3.1,12.52,3.1
                    c4.62,0,8.95-0.93,13-2.79V42.04z"/>
                <path class="dirty-white" d="M528,67.8v18.59h-68.29V1.33h66.71v18.59h-42.9v14.34h37.79v17.98h-37.79V67.8H528z"/>
-           
+
                <path class="dirty-white" d="M0.33,87.54v-8.05h22.09V65.9h6.39v21.64H0.33z"/>
                <path class="dirty-white" d="M27.46,56.48c-1.27,2.4-3.04,4.28-5.29,5.65c-2.25,1.37-4.79,2.05-7.61,2.05c-2.82,0-5.35-0.68-7.61-2.05
                    c-2.25-1.37-4.01-3.25-5.29-5.65c-1.27-2.4-1.91-5.1-1.91-8.11s0.64-5.71,1.91-8.11c1.27-2.4,3.04-4.28,5.29-5.65
@@ -81,15 +82,49 @@
                    c0-3.58-2.28-5.37-6.83-5.37H0.33V1.8h15.78c4.23,0,7.5,1.17,9.8,3.52c2.3,2.35,3.46,5.63,3.46,9.86S28.22,22.7,25.91,25.04z"/>
            </svg>
         </div>
+        <div class="page page-concert">
+                <div class="page-title">CONCERTI</div>
+
+                <div class="concerts">
+                    <div class="concert">
+                        <div class="concert-date">03/07/2021</div>
+                        <div class="concert-text">
+                            <div class="concert-place">Montbrison (FR) - <b>Prabot Festival</b></div>
+                            <div class="concert-name"></div>
+                        </div>
+                    </div>
+                    <div class="concert">
+                        <div class="concert-date">04/07/2021</div>
+                        <div class="concert-text">
+                            <div class="concert-place">Valloriate (CN) - <b>Nuovi Mondi Festival</b></div>
+                            <div class="concert-name">Lou Tapage canta De André</div>
+                        </div>
+                        <div class="concert-cta">
+                            <a class="btn" href="http://www.nuovimondifestival.it/schedule/lou-tapage-canta-fabrizio-de-andre/" target="_blank" rel="noopener noreferrer">INFO</a>
+                            <a class="btn" href="https://www.eventbrite.it/e/biglietti-lou-tapage-canta-fabrizio-de-andre-160819701055" target="_blank" rel="noopener noreferrer">BIGLIETTI</a>
+                        </div>
+                    </div>
+                    <!--<div class="concert">
+                        <div class="concert-date">02/08/2021</div>
+                        <div class="concert-text">
+                            <div class="concert-place">Cuneo - <b>Open Baladin</b></div>
+                            <div class="concert-name">Lou Tapage canta De André</div>
+                        </div>
+                    </div>-->
+                </div>
+        </div>
         <div class="page page-about">
+            <div class="page-title">CHI SIAMO</div>
             <p>
                 La traduzione letterale di Lou Tapage è il <b>frastuono della festa</b>, il rumore della <b>folla danzante</b>, il sano casino della buona compagnia. Mescolando <b>culture</b> e <b>lingue</b> (Italiano, Francese, Occitano, Piemontese, Catalano) <b>dal 2000</b> i Lou Tapage portano a spasso tra palchi italiani ed Europei un <b>rock folk</b> nato dalla <b>musica popolare</b> delle Alpi piemontesi.
             </p>
-            
+
+            <div class="highlights">
+                Due ore di musica popolare, in un viaggio che dall'Italia di De Andrè arriva fino alle melodie delle scogliere irlandesi.
+            </div>
+
             <div class="about-image" style="background-image:url(img/photo/Foto-1079.jpg)">
-                <div class="highlights">
-                    Due ore di musica popolare, in un viaggio che dall'Italia di De Andrè arriva fino alle melodie delle scogliere irlandesi.
-                </div>
+
             </div>
             <div class="" ></div>
             <p>
@@ -241,7 +276,7 @@
 
                     <div class="disk-cta">
                         <a href="https://open.spotify.com/album/2bkmVUv8mJjhSBVcF5FMLl?si=okrg-w0iQ5KcqF3_cso4wQ" class="btn" target="_blank">ASCOLTA</a>
-                        
+
                         <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="NGJWJBN4FZEE2">
@@ -261,7 +296,7 @@
 
                     <div class="disk-cta">
                         <a href="https://open.spotify.com/album/5GRFYVA3fz43qIpPqaZkR8?si=FJF6YE_nRTy-0St155V7gA" class="btn" target="_blank">ASCOLTA</a>
-                        
+
                         <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="NGJWJBN4FZEE2">
@@ -279,13 +314,13 @@
 
         <div class="page page-andre">
             <div class="background-image" style="background-image: url(img/photo/Foto-1231.jpg);"></div>
-            
-            
+
+
             <div class="andre-intro">
-                
+
                 <div class="page-title">Lou Tapage canta<br>De André</div>
 
-                <div class="andre-cit">    
+                <div class="andre-cit">
                     "Benedetto Croce diceva <br>che fino all'età dei diciotto anni tutti scrivono poesie.<br>
                     Dai diciotto anni in poi, rimangono a scriverle<br>due categorie di persone: i poeti e i cretini.
                     <br><br>
@@ -297,9 +332,9 @@
                     <a class="btn btn-important" href="https://youtu.be/nemdFzxdF-8" target="_blank">Guarda il teaser</a>
                 </div>
             </div>
-            
+
             <div class="andre-text-strong">
-                "<b>Lou Tapage canta de André</b>" non è un semplice concerto, ma un incontro con l'autore e il mondo nascosto dietro i testi e i personaggi delle sue canzoni" 
+                "<b>Lou Tapage canta de André</b>" non è un semplice concerto, ma un incontro con l'autore e il mondo nascosto dietro i testi e i personaggi delle sue canzoni"
             </div>
 
             <div class="andre-text">
@@ -313,7 +348,7 @@
                     A suonare sul palco ci sono i Lou Tapage, ma la voce di De André rimarrà a farci compagnia per tutto il concerto, grazie ad un montaggio del repertorio di <b>video</b>, <b>interviste</b> e concerti, alcuni <b>particolarmente rari</b> e <b>poco conosciuti</b>.
                 </div>
             </div>
-            
+
             <div class="inline-gallery">
                 <div style="background-image:url(img/photo/Foto-1151.jpg)"></div>
                 <div style="background-image:url(img/photo/Foto-1186.jpg)"></div>
@@ -322,7 +357,7 @@
 
             <p class="andre-text-one-column">
                 In questo spettacolo la band piemontese <b>Lou Tapage</b> ripercorre il viaggio di Fabrizio attraverso le sue canzoni.
-                <b>Due ore di concerto</b> con brani scelti attentamente nella vastissima produzione di Faber e un arrangiamento che lascia spazio tanto alla <b>tradizione popolare</b> di <b>violino</b>, <b>flauto</b> e <b>cornamusa</b> quanto al rock più imponente di marca PFM. 
+                <b>Due ore di concerto</b> con brani scelti attentamente nella vastissima produzione di Faber e un arrangiamento che lascia spazio tanto alla <b>tradizione popolare</b> di <b>violino</b>, <b>flauto</b> e <b>cornamusa</b> quanto al rock più imponente di marca PFM.
             </p>
 
             <img class="andre-img"  src="img/photo/Foto-1177.jpg">
