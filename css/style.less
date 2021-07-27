@@ -44,6 +44,11 @@ hidden, .hidden {
     float: right;
 }
 
+[disabled] {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
 .btn {
     background-color: transparent;
     color: @white;
@@ -482,6 +487,10 @@ nav.social a {
     max-width: 1000px;
     margin: 0 auto;
 
+    a {
+        color: #fff;
+    }
+
     .concerts {
         width: 100%;
 
@@ -501,17 +510,18 @@ nav.social a {
                 font-size: 1.3rem;
                 font-weight: bold;
                 margin-right: 20px;
-
             }
             .concert-text {
                 flex-grow: 1;
             }
             .concert-place {
                 margin-right: 10px;
+                margin-bottom: 5px;
             }
             .concert-name {
                 width: 100%;
                 font-style: italic;
+                font-size: .9rem;
             }
 
             .concert-cta {
