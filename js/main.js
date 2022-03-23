@@ -39,7 +39,7 @@ let UI = (function() {
         //  //   x: clientX,
         //  //   y: clientY
         //  // });
-        //  
+        //
         //  requestAnimationFrame(render);
         //};
         //requestAnimationFrame(render);
@@ -62,6 +62,29 @@ let UI = (function() {
         t = t || 0,
         element = document.querySelector(e),
         window.scrollTo(0, element.offsetTop - t)
+    }
+
+    ui.toggleAudio = function() {
+        let $video = document.querySelector('video');
+        let $off = document.querySelector('.volume-off');
+        let $on = document.querySelector('.volume-on');
+
+        if($video.muted) {
+            $off.setAttribute('hidden', '');
+            $on.removeAttribute('hidden');
+
+            $video.muted = false;
+        } else {
+            $on.setAttribute('hidden', '');
+            $off.removeAttribute('hidden');
+
+            $video.muted = true;
+        }
+    }
+
+    ui.pauseVideo = function() {
+        //let $video = document.querySelector('video');
+        //$video.paused? $video.play() : $video.pause();
     }
 
     return ui;
