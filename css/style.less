@@ -256,6 +256,40 @@ nav.social a {
     }
 }
 
+.page-vento {
+    justify-content: center;
+    background-image: url(../img/vento-in-tasca-bkg.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: none;
+    padding: 80px 60px 100px;
+
+    .vento-cover {
+        width: 300px;
+        margin-right: 30px;
+        box-shadow: 0 0 100px #191919;
+        transition: .3s;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+    .vento-title {
+        font-size: 2rem;
+        text-transform: uppercase;
+        align-self: flex-end;
+
+        .btn-important {
+            margin-top: 15px;
+        }
+    }
+
+    .btn + .btn {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
 .streaming {
     display: flex;
     justify-content: space-between;
@@ -923,6 +957,17 @@ video {
         }
 
         .ventinove-title {
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+
+    .page-vento {
+        .vento-cover {
+            margin-right: 0;
+        }
+
+        .vento-title {
             text-align: center;
             margin-top: 30px;
         }
