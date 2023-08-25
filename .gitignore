@@ -1,3 +1,4 @@
 .gitignore
 .resources
 .vscode
+.ds_store
