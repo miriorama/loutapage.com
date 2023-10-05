@@ -229,6 +229,8 @@ nav.social a {
     background-position: center;
     max-width: none;
     padding: 80px 60px 100px;
+    z-index: 100;
+    position: relative;
 
     .ventinove-cover {
         width: 300px;
@@ -269,6 +271,8 @@ nav.social a {
         margin-right: 30px;
         box-shadow: 0 0 100px #191919;
         transition: .3s;
+        z-index: 100;
+        position: relative;
 
         &:hover {
             transform: translateY(-5px);
@@ -304,6 +308,8 @@ nav.social a {
         margin-right: 30px;
         box-shadow: 0 0 100px #191919;
         transition: .3s;
+        z-index: 100;
+        position: relative;
 
         &:hover {
             transform: translateY(-5px);
@@ -313,6 +319,43 @@ nav.social a {
         font-size: 2rem;
         text-transform: uppercase;
         align-self: flex-end;
+
+        .btn-important {
+            margin-top: 15px;
+        }
+    }
+
+    .btn + .btn {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+.page-novecento {
+    justify-content: center;
+    background-image: url(../img/novecento-bkg.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: none;
+    padding: 80px 60px 100px;
+
+    .nuove-dal-fronte-cover {
+        width: 300px;
+        margin-right: 30px;
+        box-shadow: 0 0 100px #191919;
+        transition: .3s;
+        z-index: 100;
+        position: relative;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+    .novecento-title {
+        font-size: 2rem;
+        text-transform: uppercase;
+        align-self: flex-end;
+        color: #0F2225;
 
         .btn-important {
             margin-top: 15px;
