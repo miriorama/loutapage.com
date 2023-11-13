@@ -87,6 +87,12 @@ let UI = (function() {
         //$video.paused? $video.play() : $video.pause();
     }
 
+    ui.showConcertsOld = function() {
+        let $concertsOld = document.querySelector('.concerts-old');
+
+        $concertsOld.classList.toggle('visible');
+    }
+
     return ui;
 })();
 

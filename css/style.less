@@ -650,6 +650,7 @@ nav.social a {
     }
 
     .concerts {
+        width: 100%;
         margin: 0 auto;
 
         .concert:nth-child(odd) {
@@ -686,6 +687,21 @@ nav.social a {
                 display: flex;
                 margin-left: 15px;
             }
+        }
+    }
+
+    .show-all {
+        width: 100%;
+        margin: 40px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .concerts-old {
+        display: none;
+
+        &.visible {
+            display: block;
         }
     }
 }
