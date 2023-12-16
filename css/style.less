@@ -395,14 +395,13 @@ nav.social a {
     .disk-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        gap: 16px;
 
         .disk {
             padding: 20px;
             background: #222;
-            margin-bottom: 50px;
             box-shadow: 0 0 30px #00000044;
-            width: calc(22%);
+            width: calc(20% - 13px);
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -441,8 +440,6 @@ nav.social a {
                 text-align: right;
                 flex-grow: 1;
                 display: flex;
-                justify-content: flex-end;
-                flex-wrap: wrap;
 
                 form > .btn {
                     margin-left: 10px;
@@ -461,6 +458,67 @@ nav.social a {
         }
 
 
+    }
+}
+
+.page-shop {
+    .shop-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        .shop-item {
+            padding: 20px;
+            background: #222;
+            box-shadow: 0 0 30px #00000044;
+            width: calc(17% - 18px);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            transition: .3s;
+            will-change: transform;
+
+            &:hover {
+                transform: scale(1.03)
+            }
+
+            .shop-item-title {
+                font-weight: bold;
+                margin-top: 15px;
+                font-size: 1.2rem;
+                text-align: right;
+            }
+
+            .shop-item-year {
+                font-weight: 500;
+            }
+
+            .shop-item-year, .shop-item-label {
+                text-align: right;
+            }
+
+            .shop-item-cover {
+                width: calc(100% + 40px);
+                height: auto;
+                background-size: cover;
+                margin: -20px -20px 0 -20px;
+                max-width: none;
+            }
+
+            .shop-item-cta {
+                margin-top: 20px;
+                text-align: right;
+                flex-grow: 1;
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+
+                .btn{
+                    margin-bottom: 5px;
+                    align-self: flex-end;
+                }
+            }
+        }
     }
 }
 
@@ -770,72 +828,6 @@ nav.social a {
         z-index: 1;
     }
 }
-
-/* SHOP */
-
-/* BLOCKS */
-.shop-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    margin-top: 40vh;
-    margin-bottom: 300px;
-}
-
-.shop-item {
-    width: 70vw;
-    max-width: 2000px;
-    margin: 0 auto;
-    margin-bottom: 0;
-    display: flex;
-
-    position: relative;
-
-    .thumbs {
-        display: flex;
-        flex-direction: column;
-
-        .thumb {
-            width: 100px;
-            margin: 0 0 10px 20px;
-        }
-    }
-
-    .item-title {
-        font-size: 3rem;
-        color: @white;
-    }
-
-    .item-year {
-        font-size: 2rem;
-    }
-
-    .item-img {
-        height: 500px;
-        width: 500px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .item-desc {
-        margin: 0 50px;
-        font-size: 1.2rem;
-    }
-
-    .item-text {
-        margin: 40px 0 80px;
-        color: @white;
-    }
-}
-
-.item-alternative {
-    flex-direction: row-reverse;
-
-    .item-desc {
-        text-align: right;
-    }
-}
-
 
 /* BLOCKS */
 .blocks {
