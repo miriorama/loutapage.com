@@ -17,10 +17,6 @@
 
     <link rel="stylesheet" href="css/style.css?v=16">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24934102-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -33,1004 +29,191 @@
 <body>
     <div class="pages">
         <div class="page page-fullscreen">
-            <!--<div class="photo-credits">Photo credits<br><b>Chiara Bruno</b></div>-->
-
-            <div class="social">
-                <a href="https://www.facebook.com/loutapage" target="_blank"><img src="/img/facebook.svg" alt="Facebook"></a>
-                <a href="https://www.instagram.com/loutapage/" target="_blank"><img src="/img/instagram.svg" alt="Instagram"></a>
-                <a href="https://www.youtube.com/user/loutapage" target="_blank"><img src="/img/youtube.svg" alt="YouTube"></a>
-                <a href="https://wa.me/+393395090662" target="_blank"><img src="/img/whatsapp.svg" alt="WhatsApp"></a>
-            </div>
-
-            <!--<div class="block-bkg" style="background-image: url(/img/photo/tapage-live-2.jpg);"></div>-->
-            <video src="/video/video.mp4" autoplay loop muted onclick="UI.pauseVideo();"></video>
-
-
-    <nav>
-        <a onclick="UI.scrollToEl('.page-concert');">CONCERTI</a>
-        <a onclick="UI.scrollToEl('.page-about');">CHI SIAMO</a>
-        <a onclick="UI.scrollToEl('.page-disk');">DISCOGRAFIA</a>
-        <a onclick="UI.scrollToEl('.page-shop');">SHOP</a>
-        <a onclick="UI.scrollToEl('.page-andre');">CANTA DE ANDRÉ</a>
-        <a onclick="UI.scrollToEl('.page-contact');">CONTATTI</a>
-    </nav>
-
-            <img class="volume-off" onclick="UI.toggleAudio();" src="img/volume-x.svg" alt="Audio Off">
-            <img class="volume-on" onclick="UI.toggleAudio();" src="img/volume-2.svg" alt="Audio On" hidden>
-
-            <svg class="logo" width="100%" height="100%" viewBox="0 0 3242 770" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"><g transform="matrix(3.13252,0,0,3.13252,-1949.06,-3200.24)"><g transform="matrix(6.86109,0,0,6.86109,-1598.21,-4871.14)"><g transform="matrix(50,0,0,50,342.721,894.287)"><path d="M.486-.7c.003 0 .006.001.008.003.002.003.003.006.002.009l-.012.097-.004.008a.012.012 0 01-.009.004H.349l-.004.001-.001.004-.069.562a.02.02 0 01-.004.008A.012.012 0 01.262 0H.148A.01.01 0 01.14-.004C.138-.006.137-.009.138-.012l.069-.562c.001-.003 0-.005-.004-.005H.087C.08-.579.076-.583.076-.591l.012-.097a.02.02 0 01.005-.009A.011.011 0 01.101-.7h.385z" style="fill-rule:nonzero"/></g><g transform="matrix(50,0,0,50,362.671,894.287)"><path d="M.308 0C.301 0 .297-.004.297-.011L.293-.107c.001-.001 0-.003-.001-.004L.288-.112H.165c-.004 0-.006.002-.006.005l-.028.096C.129-.004.124 0 .117 0H.004c-.008 0-.011-.004-.008-.013l.225-.676C.223-.696.228-.7.235-.7h.131c.007 0 .011.004.012.011l.058.676v.003c0 .007-.004.01-.011.01H.308zM.193-.226c-.001.003 0 .005.003.005h.087c.003 0 .005-.002.005-.005L.276-.499.273-.502.27-.499l-.077.273z" style="fill-rule:nonzero"/></g><g transform="matrix(50,0,0,50,386.071,894.287)"><path d="M.316-.701c.049 0 .087.016.116.048a.185.185 0 01.042.127.332.332 0 01-.002.038.242.242 0 01-.066.149.184.184 0 01-.135.056H.199c-.003 0-.005.002-.006.005l-.032.266C.16-.009.159-.006.156-.004A.012.012 0 01.147 0H.034a.01.01 0 01-.008-.004C.024-.006.023-.009.024-.012l.083-.677c.001-.003.002-.006.005-.009A.011.011 0 01.12-.701h.196zm-.061.308a.07.07 0 00.058-.03.133.133 0 00.023-.082.09.09 0 00-.015-.055.053.053 0 00-.043-.019H.235c-.003 0-.005.002-.005.005l-.022.176c0 .003.001.005.004.005h.043z" style="fill-rule:nonzero"/></g><g transform="matrix(50,0,0,50,406.171,894.287)"><path d="M.308 0C.301 0 .297-.004.297-.011L.293-.107c.001-.001 0-.003-.001-.004L.288-.112H.165c-.004 0-.006.002-.006.005l-.028.096C.129-.004.124 0 .117 0H.004c-.008 0-.011-.004-.008-.013l.225-.676C.223-.696.228-.7.235-.7h.131c.007 0 .011.004.012.011l.058.676v.003c0 .007-.004.01-.011.01H.308zM.193-.226c-.001.003 0 .005.003.005h.087c.003 0 .005-.002.005-.005L.276-.499.273-.502.27-.499l-.077.273z" style="fill-rule:nonzero"/></g><g transform="matrix(50,0,0,50,428.621,894.287)"><path d="M.206.008A.177.177 0 01.08-.035a.152.152 0 01-.046-.117l.002-.029.041-.338a.21.21 0 01.07-.138.216.216 0 01.147-.051c.053 0 .095.014.126.043.031.03.046.069.046.118l-.002.029L.46-.48a.02.02 0 01-.005.009.016.016 0 01-.009.003H.333a.011.011 0 01-.008-.003C.323-.474.322-.477.323-.48l.005-.04.001-.012a.057.057 0 00-.013-.04.048.048 0 00-.037-.015.058.058 0 00-.043.018.089.089 0 00-.022.049l-.042.34c-.002.02.001.036.01.048a.042.042 0 00.038.019.058.058 0 00.044-.019.083.083 0 00.022-.048l.01-.08c0-.003-.001-.005-.004-.005H.249a.01.01 0 01-.008-.004.008.008 0 01-.002-.008L.25-.366c0-.003.001-.006.004-.009a.016.016 0 01.009-.003h.172c.007 0 .011.004.011.012l-.023.185a.21.21 0 01-.07.138.22.22 0 01-.147.051z" style="fill-rule:nonzero"/></g><g transform="matrix(50,0,0,50,451.271,894.287)"><path d="M.452-.591l-.004.008a.012.012 0 01-.009.004H.236c-.003 0-.005.002-.005.005l-.02.158c0 .003.001.005.004.005h.117a.01.01 0 01.008.004.008.008 0 01.002.008L.33-.302l-.004.008a.012.012 0 01-.009.004H.201c-.004 0-.006.002-.006.005l-.019.159c-.001.003 0 .005.004.005h.202c.003 0 .006.001.009.004a.008.008 0 01.002.008l-.012.097-.004.008A.012.012 0 01.368 0H.035a.01.01 0 01-.008-.004C.025-.006.024-.009.025-.012l.083-.676C.109-.691.11-.694.113-.697A.011.011 0 01.121-.7h.333c.003 0 .006.001.008.003.002.003.003.006.002.009l-.012.097z" style="fill-rule:nonzero"/></g></g><g transform="matrix(2.27203e-16,-3.7105,3.7105,2.27203e-16,-2564.86,2543.67)"><g transform="matrix(50,0,0,50,342.721,894.287)"><path d="M.056 0a.01.01 0 01-.008-.004.01.01 0 01-.004-.008v-.676c0-.003.001-.006.004-.009A.011.011 0 01.056-.7h.117l.009.003a.016.016 0 01.003.009v.562c0 .003.002.005.005.005H.4a.01.01 0 01.008.004.01.01 0 01.004.008v.097a.01.01 0 01-.004.008A.01.01 0 01.4 0H.056z" style="fill-rule:nonzero"/></g><g transform="matrix(50,0,0,50,363.821,894.287)"><path d="M.236.008a.202.202 0 01-.147-.054.191.191 0 01-.055-.144v-.32c0-.06.018-.108.055-.144a.202.202 0 01.147-.054c.061 0 .11.018.148.054a.191.191 0 01.055.144v.32c0 .06-.018.108-.055.144a.206.206 0 01-.148.054zm0-.121a.053.053 0 00.045-.02.077.077 0 00.017-.051v-.332a.08.08 0 00-.017-.052.055.055 0 00-.045-.019.053.053 0 00-.044.019.08.08 0 00-.017.052v.332c0 .021.006.038.017.051.011.014.025.02.044.02z" style="fill-rule:nonzero"/></g><g transform="matrix(50,0,0,50,387.471,894.287)"><path d="M.24.008a.189.189 0 01-.144-.057.202.202 0 01-.055-.15v-.489c0-.003.001-.006.004-.009A.011.011 0 01.053-.7H.17l.009.003a.016.016 0 01.003.009v.503c0 .021.005.039.016.052.011.013.025.02.042.02a.05.05 0 00.041-.02.079.079 0 00.016-.052v-.503c0-.003.001-.006.004-.009A.011.011 0 01.309-.7h.117l.009.003a.016.016 0 01.003.009v.489a.206.206 0 01-.054.15.192.192 0 01-.144.057z" style="fill-rule:nonzero"/></g></g></g></svg>
+            <video src="/video/video.mp4" autoplay loop muted></video>
+            <nav class="menu">
+                <a href="#concerti">CONCERTI</a>
+                <a href="#chi-siamo">CHI SIAMO</a>
+                <a href="#discografia">DISCOGRAFIA</a>
+                <a href="#merch">MERCH</a>
+                <a href="#canta-de-andre">CANTA DE ANDRÉ</a>
+                <a href="#contatti">CONTATTI</a>
+            </nav>
+            <img src="img/logo.svg" alt="Lou Tapage" class="logo">
         </div>
-        <div class="page page-novecento page-oggi-da-che-parte-stai">
-            <a target="_blank"><img class="novecento-cover" src="img/oggi-da-che-parte-stai-cover.jpg"></a>
-            <div class="novecento-title">
-                ASCOLTA IL NUOVO SINGOLO
-                <br><b>Oggi da che parte stai</b>
-                <br><a href="https://music.imusician.pro/a/tby-yK3w/" target="_blank" class="btn btn-important">ASCOLTA</a>
-            </div>
-        </div>
-        <div class="page page-novecento">
-            <a target="_blank"><img class="novecento-cover" src="img/novecento-cover.jpg"></a>
-            <div class="novecento-title">
-                ASCOLTA IL NUOVO DISCO
-                <br><b>Novecento</b>
-                <br><a href="https://music.imusician.pro/a/bsfoIAMZ/" target="_blank" class="btn btn-important">ASCOLTA</a>
-                <br><a onclick="UI.scrollToEl('.page-shop');" class="btn btn-important">ACQUISTA</a>
-            </div>
-        </div>
-        <div class="page page-concert">
-                <div class="page-title">CONCERTI 2026</div>
+        <div id="concerti" class="page page-concert">
+            <div class="page-title">CONCERTI</div>
 
-                <div class="concerts">
-
-                    <div class="concert">
-                        <div class="concert-date">31 Gennaio</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Centallo (CN) </div>
-                            <div class="concert-name">PALA CRF</div>
-                        </div>
-                    </div>
-
-                    <div class="show-all">
-                        <div class="btn" onclick="UI.showConcertsOld()">
-                            CONCERTI PASSATI
-                        </div>
-                    </div>
-
-                    <div class="concerts-old">
-                        <div class="concert">
-                            <div class="concert-date">2025</div>
-                            <div class="concert-text">
-                            </div>
-                        </div>
-
-                    <div class="concert">
-                        <div class="concert-date">25 Gennaio</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Centallo (CN) </div>
-                            <div class="concert-name">PALA CRF</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">5 Aprile</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Torino</div>
-                            <div class="concert-name">OFFICINE FOLK</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">27 Aprile</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Saluzzo (CN)</div>
-                            <div class="concert-name">GRANDE CONCERTO DELLA LIBERAZIONE</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">1 Maggio</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Lari (PI)</div>
-                            <div class="concert-name">FESTA ROSSA</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">5 Luglio</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Vence (France)</div>
-                            <div class="concert-name">FETE DE LA CONQUE</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">6 Luglio</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Agazzano (PC)</div>
-                            <div class="concert-name">AL TIDONE FESTIVAL</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">11 Luglio</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Venaria Reale (TO)</div>
-                            <div class="concert-name">SERE D'ESTATE ALLA REGGIA DI VENARIA</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">26 Luglio</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Valloriate (CN) </div>
-                            <div class="concert-name">VALAOURIA SUMMER FEST</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">9 Agosto</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Bolbeno (TN)</div>
-                            <div class="concert-name">NOT(T)E DI NOTE</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">15 Agosto</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Civitella del Lago (TR)</div>
-                            <div class="concert-name">CIVIFESTIVAL</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">22 Agosto</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Cismon del Grappa (VI)</div>
-                            <div class="concert-name">BRINTAAL CELTIC FOLK FESTIVAL</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">30 Agosto</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Vernante (CN)</div>
-                            <div class="concert-name">FESTIVAL OLTRE LA MONTAGNA</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">31 Agosto</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Cavallermaggiore (CN)</div>
-                            <div class="concert-name">FESTA PATRONALE</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">1 Settembre</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Peltuinum (AQ)</div>
-                            <div class="concert-name">FESTIVAL DEI POPOLI EUROPEI</div>
-                        </div>
-                    </div>
-                    <div class="concert">
-                        <div class="concert-date">7 Settembre</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Madonna Delle Grazie (CN)</div>
-                            <div class="concert-name">FESTA PATRONALE</div>
-                        </div>
-                    </div>
-                    <div class="concert">
-                        <div class="concert-date">13 Settembre</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Castellar - Saluzzo (CN)</div>
-                            <div class="concert-name">FESTIVAL DELLA CUCINA POPOLARE ALPINA</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">26 Settembre</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Spinetta (CN)</div>
-                            <div class="concert-name">FESTA DI SAN FOCA</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">27 Settembre</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Montemale (CN)</div>
-                            <div class="concert-name">FESTA DELLA RACCOLTA DEL GINEPRO</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">25 Ottobre</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Savigliano (CN)</div>
-                            <div class="concert-name">OCCITOBERFEST</div>
-                        </div>
-                    </div>
-
-                    <div class="concert">
-                        <div class="concert-date">31 Ottobre</div>
-                        <div class="concert-text">
-                            <div class="concert-place">Mondavio (PU)</div>
-                            <div class="concert-name">SAMHAIN CELTIC FESTIVAL</div>
-                        </div>
-                    </div>
-
-                        <div class="concert">
-                            <div class="concert-date">2024</div>
-                            <div class="concert-text">
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">06/01/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Torino</div>
-                                <div class="concert-name">
-                                    Officine Folk
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">27/01/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Centallo (CN)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">26/04/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cavallermaggiore (CN)</div>
-                                <div class="concert-name">
-                                    <b><i>CONCERTO ANNULLATO CAUSA MALTEMPO</i></b>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">01/05/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Lari (PI)</div>
-                                <div class="concert-name">
-                                    <b><i>CONCERTO ANNULLATO CAUSA MALTEMPO</i></b>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">01/06/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Firenze</div>
-                                <div class="concert-name">Sgrana e traballa Festival - CPA Fi Sud</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">14/06/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Moretta (CN)</div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">21/06/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">San Sebastiano da Po (TO)</div>
-                                <div class="concert-name">Armonia Festival</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">22/06/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Pregnana Milanese (MI)</div>
-                                <div class="concert-name">Comunistinfesta Festival</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">05/07/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Bernezzo (CN)</div>
-                                <div class="concert-name">Magnesia Festival</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">12/07/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cazavet (France)</div>
-                                <div class="concert-name">Celite d'Oc</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">19/07/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Manocalzati (AV)</div>
-                                <div class="concert-name">Assettati addo vuo' Festival</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">02/08/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cuneo</div>
-                                <div class="concert-name">R-Estate al foro - Open Baladin</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">03/08/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Vernasca (PC)</div>
-                                <div class="concert-name">Bascherdeis Festival</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">04/08/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Vernasca (PC)</div>
-                                <div class="concert-name">Bascherdeis Festival</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">09/08/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Ilonse (France)</div>
-                                <div class="concert-name">Festivous</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">14/08/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Sampeyre (CN)</div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">22/08/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Vado Ligure (SV)</div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">25/08/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Martiniana Po (CN)</div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">01/09/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Madonna delle Grazie (CN)</div>
-                                <div class="concert-name">Festa patronale</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">07/09/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">La Martre (France)</div>
-                                <div class="concert-name">Fête de la Forêt et du Bois</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">20/09/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Spinetta (CN)</div>
-                                <div class="concert-name">Festa di San Foca</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">29/09/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cuneo</div>
-                                <div class="concert-name">Ventinove Fest</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">05/10/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Capo di Ponte (BR)</div>
-                                <div class="concert-name">Mico Cosmo Festival</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">25/10/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Linz (Austria)</div>
-                                <div class="concert-name">Hallo Welt Fest</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">09/11/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Savigliano (CN)</div>
-                                <div class="concert-name">Occitoberfest</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">25/12/2024</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Valloriate (CN)</div>
-                                <div class="concert-name">Maledette Feste</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">2023</div>
-                            <div class="concert-text">
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">14/01/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Firenze</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">28/01/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Centallo (CN)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">18/03/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Piacenza</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="concert">
-                            <div class="concert-date">24/04/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cavallermaggiore (CN)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">01/05/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Lari (PI)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">06/05/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Alba (CN)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">09/06/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cervasca (CN)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">17/06/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Levens (France)</div>
-                                <div class="concert-name">
-                                    Festival Dou Boutaù
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">28/06/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Piana Crixia (SV)</div>
-                                <div class="concert-name">
-                                    XXXLX Fiera del commercio e dell'artigianato
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">01/07/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Torino</div>
-                                <div class="concert-name">
-                                    Evergreen Festival  - Parco della Tesoriera
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">02/07/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Mirabello Monferrato (AL)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">15/07/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Dogliani (CN)</div>
-                                <div class="concert-name">
-                                    Lou Tapage canta De André
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">16/07/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Limone (CN)</div>
-                                <div class="concert-name">
-                                    Capanna Niculin - Ore 15.00
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">21/07/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Ledro (TN)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">22/07/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Pontechianale (CN)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">30/07/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Busca (CN)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">06/08/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Chiusa Pesio (CN)</div>
-                                <div class="concert-name">
-                                    Lou Tapage canta De André - Contaminazioni Festival 2023
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">12/08/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Bolbeno (TN)</div>
-                                <div class="concert-name">Notte in note Festival
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">14/08/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Bagnères-de-Luchon (France)</div>
-                                <div class="concert-name">Hèsta Gascona Festival
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">26/08/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Prato Nevoso (CN)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">27/08/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Manta (CN)</div>
-                                <div class="concert-name">
-                                    Festa di San Leone
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">01/09/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Castelli di Lagnasco (CN)</div>
-                                <div class="concert-name">
-                                    Lou Tapage canta De André - D'acord Fest - Biglietti: <a href="https://www.mailticket.it/manifestazione/TZ36">mailticket.it</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">02/09/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Gorzegno (CN)</div>
-                                <div class="concert-name">
-                                    Gorzegno Magica Festival
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">30/09/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Rossana (CN)</div>
-                                <div class="concert-name">
-                                    Sagra del fungo e della castagna - Ore 21:30
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">01/10/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cuneo</div>
-                                <div class="concert-name">
-                                    Ventinove Fest - Ore 15:30 - Piazza Foro Boario
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">21/10/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Savigliano (CN)</div>
-                                <div class="concert-name">
-                                    Presentazione nuovo disco "Novecento" - Occitoberfest
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">04/11/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cupra Marittima (AP)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">1/11/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Dogliani (CN)</div>
-                                <div class="concert-name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">01/12/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Genova</div>
-                                <div class="concert-name">
-                                    La Claque
-                                </div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">02/12/2023</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Carugate (MI)</div>
-                                <div class="concert-name">
-                                    Arci Area
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="concert">
-                            <div class="concert-date">2022</div>
-                            <div class="concert-text">
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">11/03/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Gattinara (VC) - <b>Mulligans St. Patrick's Festival 2022</b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">19/03/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cremona - <b>Shamrock Festival 2022</b></div>
-                                <div class="concert-name">Cremona Fiere - Padiglione 1</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">10/04/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Vicoforte (CN) - <b>Carpenterie Musicali</b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">12/04/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Carpentras (84) - France<b></b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">23/04/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Centallo (CN)<b></b></div>
-                                <div class="concert-name">Pala CRF</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">09/05/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Milano - <b>Mixology International Show</b></div>
-                                <div class="concert-name">Bordiga Gin Occitan - Milord Milano</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">21/05/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Plaine Joux (Passy) - France<b>Feufliâzhe Festival</b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">12/06/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Saluzzo (CN)<b></b></div>
-                                <div class="concert-name">Cinema Magda Olivero</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">18/06/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Firenze - <b>Sgrana e traballa Festival</b></div>
-                                <div class="concert-name">CPA Fi Sud</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">25/06/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Aix En Provence - France<b></b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">09/07/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Torino - <b>Estate in circolo</b></div>
-                                <div class="concert-name">ARTeficlO Centro Culturale</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">14/07/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">La Martre - France<b></b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">16/07/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Saurat (09) - France - <b>Festen'Oc Festival 2022</b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">23/07/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Albaredo per San Marco (SO) - <b>Festival di Eriu</b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">26/07/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Robilante (CN)</div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">04/08/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Vernante (CN)<b></b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">06/08/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Castellano - Villa Lagarina (TN) - <b>Castelfolk Festival</b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">09/08/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Travo (PC)<b></b></div>
-                                <div class="concert-name">Lou Tapage canta De André</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">10/08/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Chianale (CN)<b></b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">13/08/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Limonetto (CN)<b></b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">14/08/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Sampeyre (CN)<b></b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">20/08/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Atri (TE) - <b>Periferie Sonore Festival</b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">28/08/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Canosio (CN)</div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">29/08/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Manta (CN)</div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">03/09/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cuneo (CN)<b></b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">11/09/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cervasca (CN)<b></b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">30/09/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Ameno (NO) - <b>Claddagh Festival</b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">22/10/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Savigliano (CN) - <b>Occitoberfest</b></div>
-                                <div class="concert-name">Ala Polifunzionale</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">05/11/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cupra Marittima (AP)<b></b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">23/11/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cuneo<b></b></div>
-                                <div class="concert-name">Open Baladin</div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">10/12/2022</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Atri (TE)<b></b></div>
-                                <div class="concert-name">Lou Tapage canta De André</div>
-                            </div>
-                        </div>
-
-                        <div class="concert">
-                            <div class="concert-date">2021</div>
-                            <div class="concert-text">
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">03/07/2021</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Montbrison (FR) - <b>Prabot Festival</b></div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">04/07/2021</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Valloriate (CN) - <b>Nuovi Mondi Festival</b></div>
-                                <div class="concert-name">Lou Tapage canta De André<br><b>Ingresso gratuito</b></div>
-                            </div>
-                            <div class="concert-cta">
-                                <a class="btn" href="https://www.eventbrite.it/e/biglietti-lou-tapage-canta-fabrizio-de-andre-160819701055" target="_blank" rel="noopener noreferrer" disabled>PRENOTATI</a>
-                                <a class="btn" href="http://www.nuovimondifestival.it/schedule/lou-tapage-canta-fabrizio-de-andre/" target="_blank" rel="noopener noreferrer">INFO</a>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">01/08/2021</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Pietraporzio (CN) - <b>R-Esistenze</b></div>
-                                <div class="concert-name"><b>Ingresso gratuito</b> e prenotazione obbligatoria. <br>Email: <a href="mailto:yeppvallestura@gmail.com">yeppvallestura@gmail.com</a> o tel. <a href="tel:+393479043816">+39 3479043816</a></div>
-                            </div>
-                            <div class="concert-cta">
-                                <a class="btn" href="https://www.facebook.com/yeppvallestura/posts/2028201034022747" target="_blank" rel="noopener noreferrer">INFO</a>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">02/08/2021</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cuneo - <b>Open Baladin</b></div>
-                                <div class="concert-name">Lou Tapage canta De André<br><b>Ingresso gratuito</b></div>
-                            </div>
-                            <div class="concert-cta">
-                                <a class="btn" href="https://www.facebook.com/events/369348777892594/" target="_blank" rel="noopener noreferrer">INFO</a>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">08/08/2021</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Travo (PC) - <b>Travo Balafolk Festival</b></div>
-                                <div class="concert-name"><b>Ingresso gratuito</b></div>
-                            </div>
-                            <div class="concert-cta">
-                                <a class="btn" href="https://www.festivaldalmississippialpo.com/programma_giornata_travo.php?#bg_programma_rass4_4" target="_blank" rel="noopener noreferrer">INFO</a>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">19/08/2021</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Prato Nevoso (CN)</div>
-                                <div class="concert-name"></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">28/08/2021</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Campi Bisanzio (FI) - <b>Concerto solidale lavoratori GKN</b></div>
-                                <div class="concert-name">Con Banda Bassotti, Malasuerte Fi Sud e Ivanoska</div>
-                            </div>
-                            <div class="concert-cta">
-                                <a class="btn" href="https://www.facebook.com/events/398875278472778/" target="_blank" rel="noopener noreferrer">INFO</a>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">30/08/2021</div>
-                            <div class="concert-text">
-                                <div class="concert-place">Cavallermaggiore (CN)</div>
-                                <div class="concert-name">Lou Tapage canta De André<br></div>
-                            </div>
-                        </div>
-                        <div class="concert">
-                            <div class="concert-date">11/09/2021</div>
-                            <div class="concert-text">
-                                <div class="concert-place">San Defendente - Cervasca (CN)</div>
-                                <div class="concert-name">Lou Tapage canta De André<br></div>
-                            </div>
-                        </div>
+            <div class="concert-list">
+                <div class="concert">
+                    <div class="concert-date">31 Gennaio 2026</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Centallo (CN) </div>
+                        <div class="concert-name">PALA CRF</div>
                     </div>
                 </div>
 
-                <div class="concerts-old">
+                <br><br><br>
 
+                <div class="concert">
+                    <div class="concert-date">25 Gennaio 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Centallo (CN) </div>
+                        <div class="concert-name">PALA CRF</div>
+                    </div>
                 </div>
+
+                <div class="concert">
+                    <div class="concert-date">5 Aprile 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Torino</div>
+                        <div class="concert-name">OFFICINE FOLK</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">27 Aprile 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Saluzzo (CN)</div>
+                        <div class="concert-name">GRANDE CONCERTO DELLA LIBERAZIONE</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">1 Maggio 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Lari (PI)</div>
+                        <div class="concert-name">FESTA ROSSA</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">5 Luglio 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Vence (France)</div>
+                        <div class="concert-name">FETE DE LA CONQUE</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">6 Luglio 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Agazzano (PC)</div>
+                        <div class="concert-name">VAL TIDONE FESTIVAL</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">11 Luglio 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Venaria Reale (TO)</div>
+                        <div class="concert-name">SERE D'ESTATE ALLA REGGIA DI VENARIA</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">26 Luglio 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Valloriate (CN) </div>
+                        <div class="concert-name">VALAOURIA SUMMER FEST</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">9 Agosto 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Bolbeno (TN)</div>
+                        <div class="concert-name">NOT(T)E DI NOTE</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">15 Agosto 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Civitella del Lago (TR)</div>
+                        <div class="concert-name">CIVIFESTIVAL</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">22 Agosto 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Cismon del Grappa (VI)</div>
+                        <div class="concert-name">BRINTAAL CELTIC FOLK FESTIVAL</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">30 Agosto 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Vernante (CN)</div>
+                        <div class="concert-name">FESTIVAL OLTRE LA MONTAGNA</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">31 Agosto 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Cavallermaggiore (CN)</div>
+                        <div class="concert-name">FESTA PATRONALE</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">1 Settembre 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Peltuinum (AQ)</div>
+                        <div class="concert-name">FESTIVAL DEI POPOLI EUROPEI</div>
+                    </div>
+                </div>
+                <div class="concert">
+                    <div class="concert-date">7 Settembre 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Madonna Delle Grazie (CN)</div>
+                        <div class="concert-name">FESTA PATRONALE</div>
+                    </div>
+                </div>
+                <div class="concert">
+                    <div class="concert-date">13 Settembre 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Castellar - Saluzzo (CN)</div>
+                        <div class="concert-name">FESTIVAL DELLA CUCINA POPOLARE ALPINA</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">26 Settembre 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Spinetta (CN)</div>
+                        <div class="concert-name">FESTA DI SAN FOCA</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">27 Settembre 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Montemale (CN)</div>
+                        <div class="concert-name">FESTA DELLA RACCOLTA DEL GINEPRO</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">25 Ottobre 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Savigliano (CN)</div>
+                        <div class="concert-name">OCCITOBERFEST</div>
+                    </div>
+                </div>
+
+                <div class="concert">
+                    <div class="concert-date">31 Ottobre 2025</div>
+                    <div class="concert-text">
+                        <div class="concert-place">Mondavio (PU)</div>
+                        <div class="concert-name">SAMHAIN CELTIC FESTIVAL</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="page page-about">
+        <div id="chi-siamo" class="page page-about">
             <div class="page-title">CHI SIAMO</div>
             <p>
                 La traduzione letterale di Lou Tapage è il <b>frastuono della festa</b>, il rumore della <b>folla danzante</b>, il sano casino della buona compagnia. Mescolando <b>culture</b> e <b>lingue</b> (Italiano, Francese, Occitano, Piemontese, Catalano) <b>dal 2000</b> i Lou Tapage portano a spasso tra palchi italiani ed Europei un <b>rock folk</b> nato dalla <b>musica popolare</b> delle Alpi piemontesi.
@@ -1040,10 +223,7 @@
                 Due ore di musica popolare, in un viaggio che dall'Italia di De Andrè arriva fino alle melodie delle scogliere irlandesi.
             </div>
 
-            <div class="about-image" style="background-image:url(img/photo/all.jpg)">
-
-            </div>
-            <div class="" ></div>
+            <div class="about-image" style="background-image:url(img/photo/all.jpg)"></div>
             <p>
                 Hanno suonato nei più grandi festival folk internazionali come <b>Montelago Celtic Festival, Folkest, Capodanno Celtico (Castello Sforzesco, Milano), Collisioni Festival, Musicultura, Insubria Folk Festival, Nubilaria Celtic Festival, Balla coi Cinghiali, Festival Alta Felicità, Estivada de Rodez, Hestiv' Oc, Celtie d'Oc, Taranta Power, Etnorock</b>.
             </p>
@@ -1055,7 +235,7 @@
             </p>
         </div>
 
-        <div class="page page-about page-streaming">
+        <div class="page">
             <div class="page-title">ASCOLTACI SU</div>
             <div class="streaming">
                 <a href="https://open.spotify.com/artist/6itlMlgqhm9vckjPAsIxg4?si=_NkO8O9YQqSISJif1TcddA" target="_blank" rel="noopener noreferrer"><div style="background-image: url(img/streaming/spotify.jpg);"></div></a>
@@ -1068,261 +248,154 @@
         </div>
 
         <div class="inline-gallery">
-            <div style="background-image:url(img/photo/tapage-1.jpg)"></div>
-            <div style="background-image:url(img/photo/tapage-5.jpg)"></div>
-            <div style="background-image:url(img/photo/tapage-12.jpg)"></div>
-            <div style="background-image:url(img/photo/tapage-14.jpg)"></div>
-            <div style="background-image:url(img/photo/tapage-16.jpg)"></div>
-            <div style="background-image:url(img/photo/tapage-13.jpg)"></div>
-            <div style="background-image:url(img/photo/tapage-3.jpg)"></div>
-            <div style="background-image:url(img/photo/tapage-8.jpg)"></div>
-            <div style="background-image:url(img/photo/tapage-18.jpg)"></div>
+            <div style="background-image:url(img/photo/foto-1.jpg)"></div>
+            <div style="background-image:url(img/photo/foto-2.jpg)"></div>
+            <div style="background-image:url(img/photo/foto-3.jpg)"></div>
+            <div style="background-image:url(img/photo/foto-9.jpg)"></div>
+            <div style="background-image:url(img/photo/foto-4.jpg)"></div>
+            <div style="background-image:url(img/photo/foto-5.jpg)"></div>
+            <div style="background-image:url(img/photo/foto-7.jpg)"></div>
+            <div style="background-image:url(img/photo/foto-6.jpg)"></div>
+            <div style="background-image:url(img/photo/foto-8.jpg)"></div>
         </div>
 
-        <div class="page page-disk">
-            <div id="discografia" class="page-title">DISCOGRAFIA</div>
+        <div id="discografia" class="page">
+            <div class="page-title">DISCOGRAFIA</div>
 
-            <div class="disk-container">
-                <div class="disk">
-                    <img class="disk-cover" src="/img/oggi-da-che-parte-stai-cover.jpg">
-                    <div class="disk-title">Oggi da che parte stai</div>
-                    <div class="disk-year">2025</div>
-                    <div class="disk-label">LT Records</div>
+            <div class="box-container">
+                <div class="box">
+                    <img class="box-cover" src="/img/oggi-da-che-parte-stai-cover.jpg">
+                    <div class="box-title">Oggi da che parte stai</div>
+                    <div class="box-year">LT Records 2025</div>
 
-                    <div class="disk-cta">
+                    <div class="box-cta">
                         <a href="https://music.imusician.pro/a/tby-yK3w/" target="_blank" class="btn">ASCOLTA</a>
                     </div>
                 </div>
-                <div class="disk">
-                    <img class="disk-cover" src="/img/novecento-cover.jpg">
-                    <div class="disk-title">Novecento</div>
-                    <div class="disk-year">2023</div>
-                    <div class="disk-label">LT Records</div>
-
-                    <div class="disk-cta">
+                <div class="box">
+                    <img class="box-cover" src="/img/novecento-cover.jpg">
+                    <div class="box-title">Novecento</div>
+                    <div class="box-year">LT Records 2023</div>
+                    <div class="box-cta">
                         <a href="https://music.imusician.pro/a/bsfoIAMZ/" target="_blank" class="btn">ASCOLTA</a>
-                        <a class="btn" onclick="UI.scrollToEl('.page-shop');" target="_blank">ACQUISTA</a>
+                        <a class="btn" href="https://shop.loutapage.com" target="_blank">ACQUISTA</a>
                     </div>
                 </div>
-                <div class="disk">
-                    <img class="disk-cover" src="/img/dischi/lt-canta-da.jpg">
-                    <div class="disk-title">Lou Tapage canta De André</div>
-                    <div class="disk-year">2019</div>
-                    <div class="disk-label">LT Records</div>
+                <div class="box">
+                    <img class="box-cover" src="/img/dischi/lt-canta-da.jpg">
+                    <div class="box-title">Lou Tapage canta De André</div>
+                    <div class="box-year">LT Records 2019</div>
 
-                    <div class="disk-cta">
+
+                    <div class="box-cta">
                         <a href="https://music.imusician.pro/a/vjsKvxJS/" target="_blank" class="btn">ASCOLTA</a>
-                        <a class="btn" onclick="UI.scrollToEl('.page-shop');" target="_blank">ACQUISTA</a>
+                        <a class="btn" href="https://shop.loutapage.com/products/cd-lou-tapage-canta-de-andre" target="_blank">ACQUISTA</a>
                     </div>
                 </div>
-                <div class="disk">
-                    <img class="disk-cover" src="/img/dischi/buone-nuove.jpg">
-                    <div class="disk-title">Buone Nuove</div>
-                    <div class="disk-year">2018</div>
-                    <div class="disk-label">LT Records</div>
+                <div class="box">
+                    <img class="box-cover" src="/img/dischi/buone-nuove.jpg">
+                    <div class="box-title">Buone Nuove</div>
+                    <div class="box-year">LT Records 2018</div>
 
-                    <div class="disk-cta">
+
+                    <div class="box-cta">
                         <a href="https://music.imusician.pro/a/MvdjNOm2/" class="btn" target="_blank">ASCOLTA</a>
-                        <a class="btn" onclick="UI.scrollToEl('.page-shop');" target="_blank">ACQUISTA</a>
+                        <a class="btn" href="https://shop.loutapage.com/products/vinile-buone-nuove" target="_blank">ACQUISTA</a>
                     </div>
                 </div>
-                <div class="disk">
-                    <img class="disk-cover" src="/img/dischi/live-cpa.jpg">
-                    <div class="disk-title">Live CPA Firenze Sud</div>
-                    <div class="disk-year">2015</div>
-                    <div class="disk-label">LT Records</div>
-
-                    <div class="disk-cta">
+                <div class="box">
+                    <img class="box-cover" src="/img/dischi/live-cpa.jpg">
+                    <div class="box-title">Live CPA Firenze Sud</div>
+                    <div class="box-year">LT Records 2015</div>
+                    <div class="box-cta">
                         <a href="https://music.imusician.pro/a/p89ngN15/" class="btn" target="_blank">ASCOLTA</a>
-                        <a class="btn" onclick="UI.scrollToEl('.page-shop');" target="_blank">ACQUISTA</a>
+                        <a class="btn" href="https://shop.loutapage.com/products/cd-live-cpa-firenze-sud" target="_blank">ACQUISTA</a>
                     </div>
                 </div>
-                <div class="disk">
-                    <img class="disk-cover" src="/img/dischi/finisterre.jpg">
-                    <div class="disk-title">Finisterre</div>
-                    <div class="disk-year">2013</div>
-                    <div class="disk-label">LT Records</div>
+                <div class="box">
+                    <img class="box-cover" src="/img/dischi/finisterre.jpg">
+                    <div class="box-title">Finisterre</div>
+                    <div class="box-year">LT Records 2013</div>
 
-                    <div class="disk-cta">
+
+                    <div class="box-cta">
                         <a href="https://music.imusician.pro/a/HORqKIpA/" class="btn" target="_blank">ASCOLTA</a>
-                        <a class="btn" onclick="UI.scrollToEl('.page-shop');" target="_blank">ACQUISTA</a>
+                        <a class="btn" href="https://shop.loutapage.com/products/cd-finisterre" target="_blank">ACQUISTA</a>
                     </div>
                 </div>
-                <div class="disk">
-                    <img class="disk-cover" src="/img/dischi/storia-di-un-impiegato.jpg">
-                    <div class="disk-title">Storia di un impiegato</div>
-                    <div class="disk-year">2010</div>
-                    <div class="disk-label">LT Records</div>
+                <div class="box">
+                    <img class="box-cover" src="/img/dischi/storia-di-un-impiegato.jpg">
+                    <div class="box-title">Storia di un impiegato</div>
+                    <div class="box-year"> LT Records 2010</div>
+                    <div class="box-label"></div>
 
-                    <div class="disk-cta">
+                    <div class="box-cta">
                         <a href="https://music.imusician.pro/a/9FfXfVrf/" class="btn" target="_blank">ASCOLTA</a>
-                        <a class="btn" onclick="UI.scrollToEl('.page-shop');" target="_blank">ACQUISTA</a>
+                        <a class="btn" href="https://shop.loutapage.com/products/cd-storia-di-un-impiegato" target="_blank">ACQUISTA</a>
                     </div>
                 </div>
-                <div class="disk">
-                    <img class="disk-cover" src="/img/dischi/que-vos-lej-far.jpg">
-                    <div class="disk-title">Que vos lej far</div>
-                    <div class="disk-year">2009</div>
-                    <div class="disk-label">Folkest Dischi</div>
+                <div class="box">
+                    <img class="box-cover" src="/img/dischi/que-vos-lej-far.jpg">
+                    <div class="box-title">Que vos lej far</div>
+                    <div class="box-year">Folkest Dischi 2009</div>
+                    <div class="box-label"></div>
 
-                    <div class="disk-cta">
+                    <div class="box-cta">
                         <a href="https://music.imusician.pro/a/DNZw7JUM/" class="btn" target="_blank">ASCOLTA</a>
-                        <a class="btn" onclick="UI.scrollToEl('.page-shop');" target="_blank">ACQUISTA</a>
+                        <a class="btn" href="shop.loutapage.com/products/cd-que-vos-lej-far" target="_blank">ACQUISTA</a>
                     </div>
                 </div>
-                <div class="disk">
-                    <img class="disk-cover" src="/img/dischi/reve-eterne.jpg">
-                    <div class="disk-title">Réve eternè</div>
-                    <div class="disk-year">2007</div>
-                    <div class="disk-label">Folkest Dischi</div>
+                <div class="box">
+                    <img class="box-cover" src="/img/dischi/reve-eterne.jpg">
+                    <div class="box-title">Réve eternè</div>
+                    <div class="box-year">Folkest Dischi 2007</div>
+                    <div class="box-label"></div>
 
-                    <div class="disk-cta">
+                    <div class="box-cta">
                         <a href="https://music.imusician.pro/a/XHVC1d6R/" class="btn" target="_blank">ASCOLTA</a>
-                        <a class="btn" onclick="UI.scrollToEl('.page-shop');" target="_blank">ACQUISTA</a>
+                        <a class="btn" href="https://shop.loutapage.com/products/cd-que-vos-lej-far" target="_blank">ACQUISTA</a>
                     </div>
                 </div>
-                <div class="disk">
-                    <img class="disk-cover" src="/img/dischi/lou-tapage.jpg">
-                    <div class="disk-title">Lou Tapage</div>
-                    <div class="disk-year">2005</div>
-                    <div class="disk-label">Videoradio</div>
+                <div class="box">
+                    <img class="box-cover" src="/img/dischi/lou-tapage.jpg">
+                    <div class="box-title">Lou Tapage</div>
+                    <div class="box-year">Videoradio 2005</div>
+                    <div class="box-label"></div>
 
-                    <div class="disk-cta">
+                    <div class="box-cta">
                         <a href="https://music.imusician.pro/a/SObo3tPy/" class="btn" target="_blank">ASCOLTA</a>
-                        <a class="btn" onclick="UI.scrollToEl('.page-shop');" target="_blank">ACQUISTA</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="page page-shop">
-            <div id="shop" class="page-title">SHOP</div>
-
-            <div class="shop-container">
-                <div class="shop-item">
-                    <img class="shop-item-cover" src="https://shop.loutapage.com/cdn/shop/files/OFFERTA.png">
-                    <div class="shop-item-title">OFFERTA! CD + T-shirt - Novecento</div>
-                    <div class="shop-item-label">100% cotone organico 180 g/m²</div>
-
-                    <div class="shop-item-cta">
-                        <a class="btn" href="https://shop.loutapage.com/products/2023-cd-t-shirt-novecento" target="_blank">ACQUISTA</a>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img class="shop-item-cover" src="https://shop.loutapage.com/cdn/shop/files/cd-novecento.jpg">
-                    <div class="shop-item-title">Novecento</div>
-                    <div class="shop-item-year">2023</div>
-                    <div class="shop-item-label">LT Records</div>
-
-                    <div class="shop-item-cta">
-                        <a class="btn" href="https://shop.loutapage.com/products/cd-novecento" target="_blank">ACQUISTA CD</a>
-                        <a class="btn" href="https://shop.loutapage.com/products/vinile-novecento" target="_blank">ACQUISTA VINILE</a>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img class="shop-item-cover" src="https://shop.loutapage.com/cdn/shop/files/9centoback.png">
-                    <div class="shop-item-title">T-shirt - Novecento</div>
-                    <div class="shop-item-label">100% cotone organico 180 g/m²</div>
-
-                    <div class="shop-item-cta">
-                        <a class="btn" href="https://shop.loutapage.com/products/t-shirt-novecento" target="_blank">ACQUISTA</a>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img class="shop-item-cover" src="https://shop.loutapage.com/cdn/shop/files/militanza-uomo.png">
-                    <div class="shop-item-title">T-shirt - Militanza danza</div>
-                    <div class="shop-item-label">100% cotone organico 180 g/m²</div>
-
-                    <div class="shop-item-cta">
-                        <a class="btn" href="https://shop.loutapage.com/products/t-shirt-militanza" target="_blank">ACQUISTA</a>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img class="shop-item-cover" src="https://shop.loutapage.com/cdn/shop/files/cd-de-andre.jpg">
-                    <div class="shop-item-title">Lou Tapage canta De André</div>
-                    <div class="shop-item-year">2019</div>
-                    <div class="shop-item-label">LT Records</div>
-
-                    <div class="shop-item-cta">
-                        <a class="btn" href="https://shop.loutapage.com/products/cd-lou-tapage-canta-de-andre" target="_blank">ACQUISTA CD</a>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img class="shop-item-cover" src="https://shop.loutapage.com/cdn/shop/files/cd-buone-nuove.jpg">
-                    <div class="shop-item-title">Buone Nuove</div>
-                    <div class="shop-item-year">2018</div>
-                    <div class="shop-item-label">LT Records</div>
-
-                    <div class="shop-item-cta">
-                        <div class="btn btn-soldout">CD ESAURITO</div>
-                        <a class="btn" href="https://shop.loutapage.com/products/vinile-buone-nuove" target="_blank">ACQUISTA VINILE</a>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img class="shop-item-cover" src="https://shop.loutapage.com/cdn/shop/files/cd-cpa.jpg">
-                    <div class="shop-item-title">Live CPA Firenze Sud</div>
-                    <div class="shop-item-year">2015</div>
-                    <div class="shop-item-label">LT Records</div>
-
-                    <div class="shop-item-cta">
-                        <a class="btn" href="https://shop.loutapage.com/products/cd-live-cpa-firenze-sud" target="_blank">ACQUISTA CD</a>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img class="shop-item-cover" src="https://shop.loutapage.com/cdn/shop/files/cd-finisterre.jpg">
-                    <div class="shop-item-title">Finisterre</div>
-                    <div class="shop-item-year">2013</div>
-                    <div class="shop-item-label">LT Records</div>
-
-                    <div class="shop-item-cta">
-                        <a class="btn" href="" target="_blank">ACQUISTA CD</a>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img class="shop-item-cover" src="https://shop.loutapage.com/cdn/shop/files/cd-storia-di-un-impiegato.jpg">
-                    <div class="shop-item-title">Storia di un impiegato</div>
-                    <div class="shop-item-year">2010</div>
-                    <div class="shop-item-label">LT Records</div>
-
-                    <div class="shop-item-cta">
-                        <div class="btn btn-soldout">ESAURITO</div>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img class="shop-item-cover" src="https://shop.loutapage.com/cdn/shop/files/cd-que-vos-lej-far.jpg">
-                    <div class="shop-item-title">Que vos lej far</div>
-                    <div class="shop-item-year">2009</div>
-                    <div class="shop-item-label">Folkest Dischi</div>
-
-                    <div class="shop-item-cta">
-                        <a class="btn" href="https://shop.loutapage.com/products/cd-que-vos-lej-far" target="_blank">ACQUISTA CD</a>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img class="shop-item-cover" src="https://shop.loutapage.com/cdn/shop/files/cd-reve-eterne_f6280ec3-7bfb-41ae-b8cb-56b04eeb1f73.jpg">
-                    <div class="shop-item-title">Réve eternè</div>
-                    <div class="shop-item-year">2007</div>
-                    <div class="shop-item-label">Folkest Dischi</div>
-
-                    <div class="shop-item-cta">
-                        <a class="btn" href="https://shop.loutapage.com/products/cd-reve-eterne" target="_blank">ACQUISTA CD</a>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img class="shop-item-cover" src="https://shop.loutapage.com/cdn/shop/files/cd-lou-tapage.jpg">
-                    <div class="shop-item-title">Lou Tapage</div>
-                    <div class="shop-item-year">2005</div>
-                    <div class="shop-item-label">Videoradio</div>
-
-                    <div class="shop-item-cta">
-                        <a class="btn" href="https://shop.loutapage.com/products/cd-lou-tapage" target="_blank">ACQUISTA CD</a>
+                        <a class="btn" href="https://shop.loutapage.com/products/cd-lou-tapage" target="_blank">ACQUISTA</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="page page-andre">
+        <div id="merch" class="page page-shop">
+            <div id="shop" class="page-title">MERCH</div>
+
+            <div class="box-container">
+                <div class="box">
+                    <img class="box-cover" src="https://shop.loutapage.com/cdn/shop/files/9centoback.png">
+                    <div class="box-title">Novecento T-shirt</div>
+                    <div class="box-label">100% cotone organico 180 g/m²</div>
+
+                    <div class="box-cta">
+                        <a class="btn" href="https://shop.loutapage.com" target="_blank">ACQUISTA</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="box-cover" src="https://shop.loutapage.com/cdn/shop/files/militanza-uomo.png">
+                    <div class="box-title">Militanza danza T-shirt</div>
+                    <div class="box-label">100% cotone organico 180 g/m²</div>
+
+                    <div class="box-cta">
+                        <a class="btn" href="https://shop.loutapage.com" target="_blank">ACQUISTA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="canta-de-andre" class="page page-andre">
             <div class="background-image" style="background-image: url(img/photo/Foto-1231.jpg);"></div>
 
 
@@ -1358,19 +431,19 @@
                     A suonare sul palco ci sono i Lou Tapage, ma la voce di De André rimarrà a farci compagnia per tutto il concerto, grazie ad un montaggio del repertorio di <b>video</b>, <b>interviste</b> e concerti, alcuni <b>particolarmente rari</b> e <b>poco conosciuti</b>.
                 </div>
             </div>
-
-            <div class="inline-gallery">
-                <div style="background-image:url(img/photo/Foto-1151.jpg)"></div>
-                <div style="background-image:url(img/photo/Foto-1186.jpg)"></div>
-                <div style="background-image:url(img/photo/Foto-1162.jpg)"></div>
-            </div>
-
+        </div>
+        <div class="inline-gallery">
+            <div style="background-image:url(img/photo/Foto-1151.jpg)"></div>
+            <div style="background-image:url(img/photo/Foto-1186.jpg)"></div>
+            <div style="background-image:url(img/photo/Foto-1162.jpg)"></div>
+        </div>
+        <div class="page page-andre">
             <p class="andre-text-one-column">
                 In questo spettacolo la band piemontese <b>Lou Tapage</b> ripercorre il viaggio di Fabrizio attraverso le sue canzoni.
                 <b>Due ore di concerto</b> con brani scelti attentamente nella vastissima produzione di Faber e un arrangiamento che lascia spazio tanto alla <b>tradizione popolare</b> di <b>violino</b>, <b>flauto</b> e <b>cornamusa</b> quanto al rock più imponente di marca PFM.
             </p>
 
-            <img class="andre-img"  src="img/photo/Foto-1177.jpg">
+            <img class="andre-img" src="img/photo/Foto-1177.jpg">
         </div>
 
         <div class="inline-gallery">
@@ -1385,39 +458,44 @@
             <div style="background-image:url(img/photo/Foto-1173.jpg)"></div>
         </div>
 
-        <div class="page page-newsletter">
+        <div id="contatti" class="page page-contact">
+            <div class="page-title">Contatti</div>
+            <div>
+                <div class="contact-title">Booking & management</div>
+                <a class="btn" href="mailto:info@loutapage.com">info@loutapage.com</a><br>
+                <a class="btn" href="tel:+39 3486011325">+39 3395090662</a>
+            </div>
+            <div>
+                <div class="contact-title">Press kit</div>
+                <a class="btn" href="/download/press-kit-tapage-live-2026.zip" target="_blank">Press kit - Live 2026</a><br>
+                <a class="btn" href="/download/press-kit-tapage-de-andre-2026.zip" target="_blank">Press kit - De André 2026</a><br>
+            </div>
+            <div>
+                <div class="contact-title">Technical rider</div>
+                <a class="btn" href="/download/rider-tapage-2026.pdf" target="_blank">Live 2026</a><br>
+                <a class="btn" href="/download/rider-tapage-de-andre-2026.pdf" target="_blank" target="_blank">De André 2026</a>
+            </div>
+        </div>
+
+        <div class="page">
             <div class="page-title">Iscriviti alla newsletter</div>
 
             <form action="https://loutapage.us19.list-manage.com/subscribe/post?u=13c3d7524db2d290b7902ea21&amp;id=e8df93ef50" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
                     <div class="newsletter-input">
-                        <label for="mce-EMAIL">Email</label>
-                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        <input type="email" value="" name="EMAIL" placeholder="email" class="required email" id="mce-EMAIL">
                     </div>
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_13c3d7524db2d290b7902ea21_e8df93ef50" tabindex="-1" value=""></div>
-                    <input type="submit" value="Iscriviti" name="subscribe" id="mc-embedded-subscribe" class="btn">
+                    <input type="submit" value="Iscriviti" name="subscribe"  id="mc-embedded-subscribe" class="btn">
                 </div>
             </form>
         </div>
-
-        <div class="page page-contact">
-            <div class="page-title">Contatti</div>
-            <div>
-                <div class="contact-title">Booking & management</div>
-                Email: <a href="mailto:info@loutapage.com">info@loutapage.com</a><br>
-                Tel.: <a href="tel:+39 3486011325">+39 3395090662</a>
-            </div>
-            <div>
-                <div class="contact-title">Press kit</div>
-                <a class="btn" href="/download/press-kit-tapage-live-2025.zip" target="_blank">Press kit - Live 2025</a><br>
-                <a class="btn" href="/download/press-kit-tapage-de-andre-2025.zip" target="_blank">Press kit - De André 2025</a><br>
-            </div>
-            <div>
-                <div class="contact-title">Technical rider</div>
-                <a class="btn" href="/download/rider-tapage-2025.pdf" target="_blank">Live 2025</a><br>
-                <a class="btn" href="/download/rider-tapage-de-andre-2025.pdf" target="_blank" target="_blank">De André 2025</a>
-            </div>
-        </div>
     </div>
+    <footer class="footer page">
+        <a>© Lou Tapage</a>
+        <a href="https://www.facebook.com/loutapage" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/loutapage/" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/user/loutapage" target="_blank">YouTube</a>
+        <a href="https://wa.me/+393395090662" target="_blank">WhatsApp</a>
+    </footer>
     <script src="js/main.js?v=16"></script>
 </body>
 </html>

@@ -7,8 +7,50 @@ green: #ccf5b3
 
 */
 
-@black: #191919;
-@white: #ddd;
+@black: #000000;
+@white: #ededed;
+
+/* arvo-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/font/arvo-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* arvo-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arvo';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/font/arvo-v23-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* arvo-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/font/arvo-v23-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* arvo-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arvo';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/font/arvo-v23-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-family: 'Sink';
+    src: url('/font/SinkRegular.woff2') format('woff2'),
+        url('/font/SinkRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 *,*:before,*:after {
 	box-sizing: border-box;
@@ -26,7 +68,7 @@ html {
 body {
     background-color: @black;
     color: @white;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Arvo', sans-serif;
     font-size: 20px;
 }
 
@@ -57,23 +99,36 @@ hidden, .hidden {
 }
 
 .btn {
-    background-color: transparent;
-    color: @white;
-    border: 1px solid @white;
-    font-weight: 800;
+    font-family: 'Sink', sans-serif;
+    font-size: 2rem;
+    background-color: @white;
+    color: @black;
     display: inline-block;
-    padding: 10px 22px;
-    border-radius: 4px;
+    padding: 2px 2px 8px;
     cursor: pointer;
     transition: .3s;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1rem;
+    border: none;
+    position: relative;
+    text-align: left;
 
+    &:hover:after {
+        width: 100%;
+    }
     &:hover {
+        transform: translate(4px, 0);
+    }
+    &:after {
+        content: '';
+        transition: .3s;
+        height: 100%;
+        width: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
         background-color: @white;
-        color: @black;
+        mix-blend-mode: difference;
     }
 
     &+.btn {
@@ -107,25 +162,29 @@ hidden, .hidden {
 
 /* MAIN */
 
-nav {
+
+
+.menu {
     position: absolute;
     bottom: 30px;
     left: 0;
     display: flex;
+    gap: 24px;
     flex-direction: row;
     z-index: 100;
-    font-size: .5rem;
+    font-family: 'Sink';
+    font-size: 2rem;
+    line-height: 1.2em;
     width: 100%;
-    justify-content: center;
+    padding: 0 24px;
+    justify-content: space-evenly;
 
     a {
         color: @white;
         text-decoration: none;
-        font-size: 1.6rem;
         padding: 0px 0;
         transition: .3s;
         align-self: flex-start;
-        margin-right: 20px;
         cursor: pointer;
     }
 
@@ -137,13 +196,14 @@ nav {
     }
     a:after {
         transition: .3s;
-        height: 2px;
+        height: 100%;
         content: '';
         width: 0;
         position: absolute;
         bottom: -2px;
         left: 0;
         background-color: @white;
+        mix-blend-mode: difference;
     }
 }
 
@@ -155,57 +215,17 @@ nav {
     font-size: .6rem;
 }
 
-nav.social {
-    bottom: 30px;
-    top: auto;
-    right: 30px;
-    left: auto;
-    text-align: right;
-}
-nav.social a {
-    font-size: 1.5rem;
-}
-
-.social-container {
-    position: absolute;
-}
-
-.social {
-    position: absolute;
-    top: 12px;
-    z-index: 1;
-    margin: 0 auto;
-    right: 20px;
-
-    & img {
-        width: 30px;
-        margin-left: 5px;
-    }
-}
-
-.logo {
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-    max-width: 1000px;
-    height: 80px;
-
-    & * {
-        fill: #dddddd;
-    }
-}
-
 .page {
     display: flex;
     padding: 70px 120px 100px;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 0 auto;
 
     .page-title {
+        font-family: 'Sink';
         font-size: 3rem;
-        font-weight: bold;
         text-transform: uppercase;
         width: 100%;
         margin-bottom: 50px;
@@ -220,180 +240,6 @@ nav.social a {
     margin: 0px -120px;
     background-position: bottom;
     filter: saturate(0.5);
-}
-
-.page-ventinove {
-    justify-content: center;
-    background-image: url(../img/ventinove-bkg.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: none;
-    padding: 80px 60px 100px;
-    z-index: 100;
-    position: relative;
-
-    .ventinove-cover {
-        width: 300px;
-        margin-right: 30px;
-        box-shadow: 0 0 100px #191919;
-        transition: .3s;
-
-        &:hover {
-            transform: translateY(-5px);
-        }
-    }
-    .ventinove-title {
-        font-size: 2rem;
-        text-transform: uppercase;
-        align-self: flex-end;
-
-        .btn-important {
-            margin-top: 15px;
-        }
-    }
-
-    .btn + .btn {
-        margin-top: 10px;
-        margin-left: 0;
-    }
-}
-
-.page-militanza {
-    justify-content: center;
-    background-image: url(../img/militanza-bkg.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: none;
-    padding: 80px 60px 100px;
-
-    .militanza-cover {
-        width: 300px;
-        margin-right: 30px;
-        box-shadow: 0 0 100px #191919;
-        transition: .3s;
-        z-index: 100;
-        position: relative;
-
-        &:hover {
-            transform: translateY(-5px);
-        }
-    }
-    .militanza-title {
-        font-size: 2rem;
-        text-transform: uppercase;
-        align-self: flex-end;
-        color: #4b4130;
-
-        .btn-important {
-            margin-top: 15px;
-        }
-    }
-
-    .btn + .btn {
-        margin-top: 10px;
-        margin-left: 0;
-    }
-}
-
-.page-vento {
-    justify-content: center;
-    background-image: url(../img/vento-in-tasca-bkg.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: none;
-    padding: 80px 60px 100px;
-
-    .vento-cover {
-        width: 300px;
-        margin-right: 30px;
-        box-shadow: 0 0 100px #191919;
-        transition: .3s;
-        z-index: 100;
-        position: relative;
-
-        &:hover {
-            transform: translateY(-5px);
-        }
-    }
-    .vento-title {
-        font-size: 2rem;
-        text-transform: uppercase;
-        align-self: flex-end;
-
-        .btn-important {
-            margin-top: 15px;
-        }
-    }
-
-    .btn + .btn {
-        margin-top: 10px;
-        margin-left: 0;
-    }
-}
-
-.page-novecento {
-    justify-content: center;
-    background-image: url(../img/novecento-bkg.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: none;
-    padding: 80px 60px 100px;
-
-    .novecento-cover {
-        width: 300px;
-        margin-right: 30px;
-        box-shadow: 0 0 100px #1919193f;
-        transition: .3s;
-        z-index: 100;
-        position: relative;
-
-        &:hover {
-            transform: translateY(-5px);
-        }
-    }
-    .novecento-title {
-        font-size: 2rem;
-        text-transform: uppercase;
-        color: #0F2225;
-
-        .btn-important {
-            margin-top: 15px;
-            background-color: #0F2225;
-            color:#fff;
-            border: none;
-        }
-    }
-
-    .btn + .btn {
-        margin-top: 10px;
-        margin-left: 0;
-    }
-}
-
-.page-oggi-da-che-parte-stai {
-    background-image: url(../img/oggi-da-che-parte-stai-bkg.jpg);
-
-    .novecento-cover {
-
-    }
-
-    .novecento-title {
-        font-size: 2rem;
-        text-transform: uppercase;
-        color: #d8cec6;
-        text-shadow: none;
-
-        .btn{
-            text-shadow: none;
-        }
-
-        .btn-important {
-            margin-top: 15px;
-            background-color: #d8cec6;
-            color:#000;
-            border: none;
-        }
-    }
 }
 
 .streaming {
@@ -413,138 +259,65 @@ nav.social a {
         }
     }
 }
-.page-streaming {
-    padding-top: 0;
-}
 
-.page-disk {
-    .disk-container {
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    .box {
+        font-family: 'Sink';
+        width: calc(33% - 24px);
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        gap: 16px;
+        transition: .3s;
+        will-change: transform;
 
-        .disk {
-            padding: 20px;
-            background: #222;
-            box-shadow: 0 0 30px #00000044;
-            width: calc(20% - 13px);
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            transition: .3s;
-            will-change: transform;
+        &:hover {
+            //transform: scale(1.03)
+        }
 
-            &:hover {
-                transform: scale(1.03)
-            }
+        .box-title {
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            margin-top: 15px;
+            margin-bottom: 4px;
+            text-align: right;
+        }
 
-            .disk-title {
-                font-weight: bold;
-                margin-top: 15px;
-                font-size: 1.2rem;
-                text-align: right;
-            }
-
-            .disk-year {
-                font-weight: 500;
-            }
-
-            .disk-year, .disk-label {
-                text-align: right;
-            }
-
-            .disk-cover {
-                width: calc(100% + 40px);
-                height: auto;
-                background-size: cover;
-                margin: -20px -20px 0 -20px;
-                max-width: none;
-            }
-
-            .disk-cta {
-                margin-top: 20px;
-                text-align: right;
-                flex-grow: 1;
-                display: flex;
-
-                form > .btn {
-                    margin-left: 10px;
-                }
-
-                .btn{
-                    margin-bottom: 5px;
-                    align-self: flex-end;
-                }
-            }
-
-            form {
-                display: inline;
-            }
+        .box-year {
+            font-weight: 500;
+            font-style: italic;
 
         }
 
+        .box-year, .box-label {
+            text-align: right;
 
-    }
-}
+        }
 
-.page-shop {
-    .shop-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
+        .box-cover {
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            max-width: none;
+        }
 
-        .shop-item {
-            padding: 20px;
-            background: #222;
-            box-shadow: 0 0 30px #00000044;
-            width: calc(17% - 18px);
+        .box-cta {
+            margin-top: 20px;
+            text-align: right;
+            flex-grow: 1;
             display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            transition: .3s;
-            will-change: transform;
 
-            &:hover {
-                transform: scale(1.03)
+            form > .btn {
+                margin-left: 10px;
             }
 
-            .shop-item-title {
-                font-weight: bold;
-                margin-top: 15px;
-                font-size: 1.2rem;
-                text-align: right;
-            }
-
-            .shop-item-year {
-                font-weight: 500;
-            }
-
-            .shop-item-year, .shop-item-label {
-                text-align: right;
-            }
-
-            .shop-item-cover {
-                width: calc(100% + 40px);
-                height: auto;
-                background-size: cover;
-                margin: -20px -20px 0 -20px;
-                max-width: none;
-                min-height: 200px;
-                object-fit: cover;
-            }
-
-            .shop-item-cta {
-                margin-top: 20px;
-                text-align: right;
-                flex-grow: 1;
-                display: flex;
-                justify-content: flex-end;
-                flex-wrap: wrap;
-
-                .btn{
-                    margin-bottom: 5px;
-                    align-self: flex-end;
-                }
+            .btn{
+                width: 100%;
+                margin-bottom: 5px;
+                align-self: flex-end;
             }
         }
     }
@@ -560,22 +333,27 @@ nav.social a {
         top: 0;
         left: 0;
         right: 0;
-        width: calc(100% + 70px);
+        width: 100%;
         height: 500px;
-        background-size: 100%;
+        background-size: cover;
         background-position: center;
-        margin: 0 -70px;
+        background-repeat: no-repeat;
+        margin: 0;
 
         &:after {
             content: '';
             position: absolute;
+
+            width: 100%;
+            height: 100%;
+            background: #1e1e1e;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(
-        0deg
-        , #191919, transparent);
+            background: linear-gradient(0deg, #000, transparent);
         }
     }
 
@@ -593,12 +371,9 @@ nav.social a {
         justify-content: end;
         margin-bottom: 40px;
 
-
-
         .andre-cit {
             font-style: italic;
-            width: 500px;
-            font-size: 1.1rem;
+            max-width: 530px;
             text-align: right;
             align-self: flex-end;
         }
@@ -633,21 +408,14 @@ nav.social a {
     .andre-text-strong {
         font-weight: 600;
         font-style: italic;
-        font-size: 1.5rem;
         text-align: center;
-        margin: 50px 40px;
+        margin: 50px 0;
     }
 
     .andre-text-one-column {
         max-width: 800px;
         margin: 0 auto 60px;
     }
-
-    .inline-gallery {
-        margin: 0 -120px 60px;
-        width: calc(100% + 240px);
-    }
-
 }
 
 .inline-gallery {
@@ -668,50 +436,37 @@ nav.social a {
 .highlights {
     font-weight: 600;
     font-style: italic;
-    font-size: 1.5rem;
     text-align: center;
-    margin: 50px 40px;
+    margin: 50px 0;
     z-index: 10;
     position: relative;
 }
 
-.page-newsletter {
-    justify-content: center;
-    background-color: #222222;
-    padding: 50px;
+form {
+    display: flex;
+    width: 100%;
+}
 
-    .page-title {
-        text-align: center;
-        font-size: 1.65rem;
-    }
+.newsletter-input {
+    position: relative;
+    flex-grow: 1;
 
-    form {
-        display: flex;
-    }
-
-    .newsletter-input {
-        position: relative;
-
-        label {
-            position: absolute;
-            top: -20px;
-        }
-
-        input {
-            height: 33px;
-            border-radius: 4px;
-            border: none;
-            width: 240px;
-            background-color: @white;
-            margin-right: 20px;
-        }
+    input {
+        height: 42px;
+        border: none;
+        width: 100%;
+        background-color: #282828;
+        padding: 2px 2px 9px;
+        text-transform: uppercase;
+        font-family: 'Sink';
+        font-size: 2rem;
     }
 }
 
 .page-contact {
 
     a {
-        color: @white;
+
         margin-bottom: 10px;
     }
 
@@ -726,76 +481,52 @@ nav.social a {
     }
 }
 
-.page-concert {
+
+.concert-list {
     width: 100%;
-    max-width: 1000px;
     margin: 0 auto;
 
-    a {
-        color: #fff;
-    }
-
-    .concerts {
-        width: 100%;
-        margin: 0 auto;
-
-        .concert:nth-child(odd) {
-            background-color: #222;
-        }
-
-        .concert {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            padding: 10px 20px;
-
-            .concert-date {
-                font-size: 1.3rem;
-                font-weight: bold;
-                margin-right: 20px;
-            }
-            .concert-text {
-                flex-grow: 1;
-            }
-            .concert-place {
-                margin-right: 10px;
-                margin-bottom: 5px;
-            }
-            .concert-name {
-                width: 100%;
-                font-style: italic;
-                font-size: .9rem;
-            }
-
-            .concert-cta {
-                display: flex;
-                margin-left: 15px;
-            }
-        }
-    }
-
-    .show-all {
-        width: 100%;
-        margin: 40px 0;
+    .concert {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-    }
+        align-items: flex-start;
+        width: 100%;
+        font-size: 1.8rem;
+        font-family: 'Sink';
+        margin-bottom: 16px;
 
-    .concerts-old {
-        display: none;
+        .concert-date {
+            margin-right: 20px;
+            background: @white;
+            color: black;
+            height: 100%;
+            padding-bottom: 16px;
+            text-transform: uppercase;
+        }
+        .concert-text {
+            flex-grow: 1;
+        }
+        .concert-place {
+            font-family: 'Sink';
+            text-transform: uppercase;
+            margin-right: 10px;
+        }
+        .concert-name {
+            width: 100%;
+            font-style: italic;
+            font-size: 1rem;
+            font-family: 'Arvo';
+        }
 
-        &.visible {
-            display: block;
+        .concert-cta {
+            display: flex;
+            margin-left: 15px;
         }
     }
 }
 
 .page-about {
-    max-width: 1000px;
-    margin: 0 auto;
-
     .about-image {
         width: 100%;
         height: 500px;
@@ -803,14 +534,22 @@ nav.social a {
         background-size: cover;
         position: relative;
         margin: 0px 0 60px;
-
-        .highlights {
-        }
     }
 
     p {
         margin-bottom: 10px;
     }
+}
+
+.logo{
+    position: absolute;
+    width: 600px;
+    bottom: 100px;
+    z-index: 100;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    mix-blend-mode: color-dodge;
 }
 
 /* PAGE FULLSCREEN */
@@ -820,16 +559,6 @@ nav.social a {
     width: 100%;
     max-width: none;
     max-height: 1000px;
-
-    .logo {
-        width: 300px;
-        position: absolute;
-        bottom: 90px;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        z-index: 10;
-    }
 
     .volume-off, .volume-on {
         position: absolute;
@@ -976,43 +705,26 @@ video {
     border: 2px solid #ccf5b3;
 }
 
-/*
-.cursor {
-    width: 50px;
-    height: 50px;
-    border: 1px solid white;
-    border-radius: 50%;
-    position: absolute;
-    transition-duration: .3s;
-    transition-timing-function: ease-out;
-    pointer-events: none;
-    margin: -10px 0 0 -10px;
-}*/
+.footer{
+    a {
+        font-family: 'Arvo';
 
-.cursor:after {
-    content: "";
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    background-color: #ccf5b3;
-    border-radius: 50%;
-    opacity: .5;
-    top: 6px;
-    left: 6px;
-    transition: .5s ;
-
-}
-.cursor-hover:after  {
-    width: 40px;
-    height: 40px;
-    top: 2.5px;
-    left: 2.5px;
-    backdrop-filter: invert(1);
+        color: @white;
+        text-decoration: none;
+        padding: 0px 0;
+        transition: .3s;
+        align-self: flex-start;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-    .disk {
-        width: calc(33% - 10px) !important;
+    .menu{
+        font-size: 1.6rem;
+    }
+
+    .box {
+        width: calc(50% - 18px) !important;
     }
     .page-shop {
         .shop-container {
@@ -1053,11 +765,6 @@ video {
         }
     }
 
-    .page-andre .inline-gallery {
-        margin: 0 -40px 60px !important;
-        width: calc(100% + 80px)  !important;
-    }
-
     .streaming {
         justify-content: center;
 
@@ -1066,74 +773,96 @@ video {
         }
     }
 
-
-    nav {
-        flex-direction: column;
+    .menu {
+        max-width: 400px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        //flex-direction: column;
     }
 
-    nav a {
-        align-self: center;
-        font-size: 3rem;
-    }
-
-    .page-fullscreen .logo {
-        top: 100px;
+    .logo {
+        width: 240px;
+        top: 24px;
+        //top: 100px;
     }
 
     .inline-gallery > * {
         width: 50%;
     }
 
-    .disk {
-        width: calc(50% - 10px) !important;
+    .box {
+        max-width: 300px;
+        width: 100% !important;
     }
 
-    .page-concert .concerts .concert {
+    .andre-text{
         flex-direction: column;
-        text-align: center;
 
-        .concert-cta {
-            margin-top: 15px;
-            margin-bottom: 5px;
-            margin-left: 0;
+        .andre-cit {
+        text-align: left;
+    }
+
+       div{
+        width: 100% !important;
+       }
+    }
+
+    .concert-list{
+        flex-direction: column;
+
+        .concert{
+            width: 100%;
+            flex-direction: column;
+            margin-bottom: 40px;
+
+            .concert-date{
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            .concert-text{
+                width: 100%;
+            }
+        }
+        font-size: 1.6rem;
+    }
+
+    form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-input {
+        position: relative;
+
+        label {
+            position: absolute;
+            top: -20px;
+        }
+
+        input {
+            width: 100%;
+            margin: 10px 0;
         }
     }
 
-    .page-ventinove {
-        .ventinove-cover {
-            margin-right: 0;
-        }
-
-        .ventinove-title {
-            text-align: center;
-            margin-top: 30px;
-        }
-    }
-
-    .page-vento {
-        .vento-cover {
-            margin-right: 0;
-        }
-
-        .vento-title {
-            text-align: center;
-            margin-top: 30px;
-        }
+    footer{
+        flex-direction: column;
     }
 
 }
 
 @media screen and (max-width: 425px) {
+    .menu {
+        gap: 10px;
+    }
     .page {
         padding: 30px 40px 60px;
-
-        .page-title {
-            font-size: 1.8rem !important;
-        }
     }
 
-    .page-fullscreen .logo {
-        width: calc(100% - 40px);
+    .logo {
         bottom: 160px;
     }
 
@@ -1149,10 +878,6 @@ video {
     .page-andre .background-image {
         height: 250px;
         background-repeat: no-repeat;
-    }
-
-    .page-andre .andre-text-strong {
-        margin: 0px 0px 50px;
     }
 
     .andre-text {
@@ -1178,44 +903,15 @@ video {
         }
     }
 
-
-    .page-newsletter {
-        padding: 30px 30px 50px;
-
-        form {
-            flex-direction: column;
-            width: 100%;
-        }
-
-        .newsletter-input {
-            position: relative;
-
-            label {
-                position: absolute;
-                top: -20px;
-            }
-
-            input {
-                width: 100%;
-                margin: 10px 0;
-            }
-        }
-    }
-
-    .highlights {
-        font-size: 1rem;
-    }
-
     .about-image {
         height: 100px !important;
     }
-
 
     .inline-gallery > * {
         width: 100%;
     }
 
-    .disk {
+    .box {
         width: calc(100% - 10px) !important;
     }
 
